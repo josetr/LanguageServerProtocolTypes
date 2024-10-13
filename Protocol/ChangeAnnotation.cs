@@ -24,7 +24,6 @@ namespace LspTypes
 		 * before applying the change.
 		 */
         [DataMember(Name = "needsConfirmation")]
-        [JsonProperty(Required = Required.Default)]
         public bool? NeedsConfirmation { get; set; }
 
         /**
@@ -32,7 +31,6 @@ namespace LspTypes
 		 * the user interface.
 		 */
         [DataMember(Name = "description")]
-        [JsonProperty(Required = Required.Default)]
         public string Description { get; set; }
     }
 }

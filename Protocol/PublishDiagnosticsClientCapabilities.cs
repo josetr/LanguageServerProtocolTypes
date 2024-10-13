@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether the clients accepts diagnostics with related information.
          */
         [DataMember(Name = "relatedInformation")]
-        [JsonProperty(Required = Required.Default)]
         public bool? RelatedInformation { get; set; }
 
         /**
@@ -22,7 +21,7 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "tagSupport")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public _PublishDiagnosticsClientCapabilities_TagSupport TagSupport { get; set; }
 
         /**
@@ -32,7 +31,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "versionSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? VersionSupport { get; set; }
 
         /**
@@ -41,7 +39,6 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "codeDescriptionSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? CodeDescriptionSupport { get; set; }
 
         /**
@@ -52,7 +49,6 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "dataSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DataSupport { get; set; }
     }
 }

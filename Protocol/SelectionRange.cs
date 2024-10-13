@@ -20,7 +20,6 @@ namespace LspTypes
 	     * `parent.range` must contain `this.range`.
          */
         [DataMember(Name = "parent")]
-        [JsonProperty(Required = Required.Default)]
         public SelectionRange Parent { get; set; }
     }
 }

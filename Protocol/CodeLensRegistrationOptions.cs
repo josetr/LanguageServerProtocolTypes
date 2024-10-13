@@ -15,7 +15,6 @@ namespace LspTypes
         public bool? ResolveProvider { get; set; }
 
         [DataMember(Name = "workDoneProgress")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkDoneProgress { get; set; }
     }
 }

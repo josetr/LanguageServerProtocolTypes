@@ -28,7 +28,6 @@ namespace LspTypes
          * of available values is defined in `CompletionItemKind`.
          */
         [DataMember(Name = "kind")]
-        [JsonProperty(Required = Required.Default)]
         public CompletionItemKind? Kind { get; set; }
 
         /**
@@ -37,7 +36,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "tags")]
-        [JsonProperty(Required = Required.Default)]
         public CompletionItemTag[] Tags { get; set; }
 
         /**
@@ -45,14 +43,13 @@ namespace LspTypes
          * about this item, like type or symbol information.
          */
         [DataMember(Name = "detail")]
-        [JsonProperty(Required = Required.Default)]
         public string Detail { get; set; }
 
         /**
          * A human-readable string that represents a doc-comment.
          */
         [DataMember(Name = "documentation")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkupContent> Documentation { get; set; }
 
         /**
@@ -61,7 +58,6 @@ namespace LspTypes
          * @deprecated Use `tags` instead if supported.
          */
         [DataMember(Name = "deprecated")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Deprecated { get; set; }
 
         /**
@@ -72,7 +68,6 @@ namespace LspTypes
          * item of those that match best is selected.
          */
         [DataMember(Name = "preselect")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Preselect { get; set; }
 
         /**
@@ -80,7 +75,6 @@ namespace LspTypes
          * with other items. When `falsy` the label is used.
          */
         [DataMember(Name = "sortText")]
-        [JsonProperty(Required = Required.Default)]
         public string SortText { get; set; }
 
         /**
@@ -88,7 +82,6 @@ namespace LspTypes
          * completion items. When `falsy` the label is used.
          */
         [DataMember(Name = "filterText")]
-        [JsonProperty(Required = Required.Default)]
         public string FilterText { get; set; }
 
         /**
@@ -104,7 +97,6 @@ namespace LspTypes
 	     * side interpretation.
          */
         [DataMember(Name = "insertText")]
-        [JsonProperty(Required = Required.Default)]
         public string InsertText { get; set; }
 
         /**
@@ -114,7 +106,6 @@ namespace LspTypes
 	     */
         [DataMember(Name = "insertTextFormat")]
         [DefaultValue(InsertTextFormat.Plaintext)]
-        [JsonProperty(Required = Required.Default)]
         public InsertTextFormat InsertTextFormat { get; set; }
 
         /**
@@ -125,7 +116,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "insertTextMode")]
-        [JsonProperty(Required = Required.Default)]
         public InsertTextMode? InsertTextMode { get; set; }
 
         /**
@@ -153,7 +143,6 @@ namespace LspTypes
 	     * @since 3.16.0 additional type `InsertReplaceEdit`
          */
         [DataMember(Name = "textEdit")]
-        [JsonProperty(Required = Required.Default)]
         public SumType<TextEdit, InsertReplaceEdit>? TextEdit { get; set; }
 
         /**
@@ -166,7 +155,6 @@ namespace LspTypes
 	     * top of the file if the completion item will insert an unqualified type).
 	     */
         [DataMember(Name = "additionalTextEdits")]
-        [JsonProperty(Required = Required.Default)]
         public TextEdit[] AdditionalTextEdits { get; set; }
 
         /**
@@ -176,7 +164,6 @@ namespace LspTypes
 	     * will be ignored.
          */
         [DataMember(Name = "commitCharacters")]
-        [JsonProperty(Required = Required.Default)]
         public string[] CommitCharacters { get; set; }
 
         /**
@@ -185,7 +172,6 @@ namespace LspTypes
 	     * described with the additionalTextEdits-property.
          */
         [DataMember(Name = "command")]
-        [JsonProperty(Required = Required.Default)]
         public Command Command { get; set; }
 
         /**
@@ -193,7 +179,6 @@ namespace LspTypes
          * a completion and a completion resolve request.
          */
         [DataMember(Name = "data")]
-        [JsonProperty(Required = Required.Default)]
         public object Data { get; set; }
     }
 }

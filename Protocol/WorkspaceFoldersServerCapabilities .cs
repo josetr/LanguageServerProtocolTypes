@@ -12,7 +12,6 @@ namespace LspTypes
          * The server has support for workspace folders
          */
         [DataMember(Name = "supported")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Supported { get; set; }
 
         /**
@@ -25,7 +24,7 @@ namespace LspTypes
          * using the `client/unregisterCapability` request.
          */
         [DataMember(Name = "changeNotifications")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, bool> ChangeNotifications { get; set; }
     }
 }

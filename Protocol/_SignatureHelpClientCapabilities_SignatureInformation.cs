@@ -13,7 +13,6 @@ namespace LspTypes
          * property. The order describes the preferred format of the client.
          */
         [DataMember(Name = "documentationFormat")]
-        [JsonProperty(Required = Required.Default)]
         public MarkupKind[] DocumentationFormat { get; set; }
 
         /**
@@ -30,7 +29,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "activeParameterSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? ActiveParameterSupport { get; set; }
     }
 }

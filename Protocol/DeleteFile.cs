@@ -30,7 +30,6 @@ namespace LspTypes
          * Delete options.
          */
         [DataMember(Name = "options")]
-        [JsonProperty(Required = Required.Default)]
         public DeleteFileOptions Options { get; set; }
 
         /**

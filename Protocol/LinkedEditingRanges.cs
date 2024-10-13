@@ -22,7 +22,6 @@ namespace LspTypes
 		 * pattern will be used.
 		 */
         [DataMember(Name = "wordPattern")]
-        [JsonProperty(Required = Required.Default)]
         public string WordPattern { get; set; }
     }
 }

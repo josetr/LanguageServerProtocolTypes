@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether hover supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -21,7 +20,6 @@ namespace LspTypes
 	     * The order describes the preferred format of the client.
          */
         [DataMember(Name = "contentFormat")]
-        [JsonProperty(Required = Required.Default)]
         public MarkupKind[] ContentFormat { get; set; }
     }
 }

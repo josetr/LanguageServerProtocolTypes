@@ -19,7 +19,6 @@ namespace LspTypes
 		 * The engine's version.
 		 */
         [DataMember(Name = "version")]
-        [JsonProperty(Required = Required.Default)]
         public string Version { get; set; }
     }
 }

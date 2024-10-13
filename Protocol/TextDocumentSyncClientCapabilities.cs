@@ -12,14 +12,12 @@ namespace LspTypes
          * Whether text document synchronization supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? dynamicRegistration { get; set; }
 
         /**
          * The client supports sending will save notifications.
          */
         [DataMember(Name = "willSave")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WillSave { get; set; }
 
         /**
@@ -28,14 +26,12 @@ namespace LspTypes
          * be applied to the document before it is saved.
          */
         [DataMember(Name = "willSaveWaitUntil")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WillSaveWaitUntil { get; set; }
 
         /**
          * The client supports did save notifications.
          */
         [DataMember(Name = "didSave")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DidSave { get; set; }
     }
 }

@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether completion supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -20,11 +19,9 @@ namespace LspTypes
          * capabilities.
          */
         [DataMember(Name = "completionItem")]
-        [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItem completionItem { get; set; }
 
         [DataMember(Name = "completionItemKind")]
-        [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItemKind completionItemKind { get; set; }
 
         /**
@@ -32,7 +29,6 @@ namespace LspTypes
          * `textDocument/completion` request.
          */
         [DataMember(Name = "contextSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? ContextSupport { get; set; }
     }
 }

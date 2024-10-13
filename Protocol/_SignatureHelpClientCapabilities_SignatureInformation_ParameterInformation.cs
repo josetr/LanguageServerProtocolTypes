@@ -15,7 +15,6 @@ namespace LspTypes
          * @since 3.14.0
          */
         [DataMember(Name = "labelOffsetSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? LabelOffsetSupport { get; set; }
     }
 }

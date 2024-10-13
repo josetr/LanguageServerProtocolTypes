@@ -28,7 +28,6 @@ namespace LspTypes
          * triggered the edit.
          */
         [DataMember(Name = "failureReason")]
-        [JsonProperty(Required = Required.Default)]
         public string FailureReason { get; set; }
 
         /**
@@ -38,7 +37,6 @@ namespace LspTypes
          * in its client capabilities.
          */
         [DataMember(Name = "failedChange")]
-        [JsonProperty(Required = Required.Default)]
         public uint? FailedChange { get; set; }
     }
 }

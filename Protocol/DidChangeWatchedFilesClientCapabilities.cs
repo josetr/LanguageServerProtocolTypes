@@ -14,7 +14,6 @@ namespace LspTypes
 	     * configuration for file changes from the server side.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
     }
 }

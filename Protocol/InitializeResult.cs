@@ -21,7 +21,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "serverInfo")]
-        [JsonProperty(Required = Required.Default)]
         public _InitializeResults_ServerInfo ServerInfo { get; set; }
     }
 }

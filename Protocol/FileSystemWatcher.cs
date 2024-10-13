@@ -33,7 +33,6 @@ namespace LspTypes
          * which is 7.
          */
         [DataMember(Name = "kind")]
-        [JsonProperty(Required = Required.Default)]
         public uint? Kind { get; set; }
     }
 }

@@ -20,7 +20,6 @@ namespace LspTypes
 	     * button's enablement state are allowed to ignore the setting.
          */
         [DataMember(Name = "cancellable")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Cancellable { get; set; }
 
         /**
@@ -31,7 +30,6 @@ namespace LspTypes
          * If unset, the previous progress message (if any) is still valid.
          */
         [DataMember(Name = "message")]
-        [JsonProperty(Required = Required.Default)]
         public string Message { get; set; }
 
         /**
@@ -43,7 +41,6 @@ namespace LspTypes
          * that are not following this rule. The value range is [0, 100]
          */
         [DataMember(Name = "percentage")]
-        [JsonProperty(Required = Required.Default)]
         public uint? Percentage { get; set; }
     }
 }

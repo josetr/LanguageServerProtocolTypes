@@ -9,7 +9,6 @@ namespace LspTypes
         public HoverParams() : base() { }
 
         [DataMember(Name = "workDoneToken")]
-        [JsonProperty(Required = Required.Default)]
         public SumType<string, int> WorkDoneToken { get; set; }
     }
 }

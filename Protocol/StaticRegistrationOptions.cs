@@ -22,7 +22,6 @@ namespace LspTypes
          * the request again. See also Registration#id.
          */
         [DataMember(Name = "id")]
-        [JsonProperty(Required = Required.Default)]
         public string Id { get; set; }
     }
 }

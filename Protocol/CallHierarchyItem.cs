@@ -12,35 +12,30 @@ namespace LspTypes
 		 * The name of this item.
 		 */
         [DataMember(Name = "name")]
-        [JsonProperty(Required = Required.Default)]
         public string Name { get; set; }
 
         /**
 		 * The kind of this item.
 		 */
         [DataMember(Name = "kind")]
-        [JsonProperty(Required = Required.Default)]
         public SymbolKind Kind { get; set; }
 
         /**
 		 * Tags for this item.
 		 */
         [DataMember(Name = "tags")]
-        [JsonProperty(Required = Required.Default)]
         public SymbolTag[] Tags { get; set; }
 
         /**
 		 * More detail for this item, e.g. the signature of a function.
 		 */
         [DataMember(Name = "detail")]
-        [JsonProperty(Required = Required.Default)]
         public string Detail { get; set; }
 
         /**
 		 * The resource identifier of this item.
 		 */
         [DataMember(Name = "uri")]
-        [JsonProperty(Required = Required.Default)]
         public string Uri { get; set; }
 
         /**
@@ -48,7 +43,6 @@ namespace LspTypes
 		 * but everything else, e.g. comments and code.
 		 */
         [DataMember(Name = "range")]
-        [JsonProperty(Required = Required.Default)]
         public Range Range { get; set; }
 
         /**
@@ -57,7 +51,6 @@ namespace LspTypes
 		 * [`range`](#CallHierarchyItem.range).
 		 */
         [DataMember(Name = "selectionRange")]
-        [JsonProperty(Required = Required.Default)]
         public Range SelectionRange { get; set; }
 
         /**
@@ -65,7 +58,6 @@ namespace LspTypes
 		 * incoming calls or outgoing calls requests.
 		 */
         [DataMember(Name = "data")]
-        [JsonProperty(Required = Required.Default)]
         public object Data { get; set; }
     }
 }

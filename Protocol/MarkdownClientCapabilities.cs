@@ -24,7 +24,6 @@ namespace LspTypes
 	     * The version of the parser.
 	     */
         [DataMember(Name = "version")]
-        [JsonProperty(Required = Required.Default)]
         public string Version { get; set; }
     }
 }

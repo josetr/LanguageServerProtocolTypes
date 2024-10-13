@@ -32,7 +32,6 @@ namespace LspTypes
 		 * main [edit](#ColorPresentation.textEdit) nor with themselves.
 		 */
         [DataMember(Name = "additionalTextEdits")]
-        [JsonProperty(Required = Required.Default)]
         public TextEdit[] AdditionalTextEdits { get; set; }
     }
 }

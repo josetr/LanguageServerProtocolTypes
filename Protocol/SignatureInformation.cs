@@ -25,7 +25,7 @@ namespace LspTypes
          * in the UI but can be omitted.
          */
         [DataMember(Name = "documentation")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkupContent> Documentation { get; set; }
 
         /**

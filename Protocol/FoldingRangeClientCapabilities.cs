@@ -15,7 +15,6 @@ namespace LspTypes
 	     * server capability as well.
 	     */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -24,7 +23,6 @@ namespace LspTypes
 	     * limit.
          */
         [DataMember(Name = "rangeLimit")]
-        [JsonProperty(Required = Required.Default)]
         public uint? RangeLimit { get; set; }
 
         /**
@@ -33,7 +31,6 @@ namespace LspTypes
 	     * properties in a FoldingRange.
          */
         [DataMember(Name = "lineFoldingOnly")]
-        [JsonProperty(Required = Required.Default)]
         public bool? LineFoldingOnly { get; set; }
     }
 }

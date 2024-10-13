@@ -15,7 +15,6 @@ namespace LspTypes
 	     * capability as well.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -29,42 +28,36 @@ namespace LspTypes
 	     * even decide to not show any semantic tokens at all.
          */
         [DataMember(Name = "requests")]
-        [JsonProperty(Required = Required.Default)]
         public _SemanticTokensClientCapabilities_Requests Requests { get; set; }
 
         /**
          * The token types that the client supports.
          */
         [DataMember(Name = "tokenTypes")]
-        [JsonProperty(Required = Required.Default)]
         public string[] TokenTypes { get; set; }
 
         /**
          * The token modifiers that the client supports.
          */
         [DataMember(Name = "tokenModifiers")]
-        [JsonProperty(Required = Required.Default)]
         public string[] TokenModifiers { get; set; }
 
         /**
          * The formats the clients supports.
          */
         [DataMember(Name = "formats")]
-        [JsonProperty(Required = Required.Default)]
         public TokenFormat[] Formats { get; set; }
 
         /**
          * Whether the client supports tokens that can overlap each other.
          */
         [DataMember(Name = "overlappingTokenSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? OverlappingTokenSupport { get; set; }
 
         /**
 	     * Whether the client supports tokens that can span multiple lines.
 	     */
         [DataMember(Name = "multilineTokenSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? MultilineTokenSupport { get; set; }
     }
 }

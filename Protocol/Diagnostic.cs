@@ -20,14 +20,13 @@ namespace LspTypes
          * client to interpret diagnostics as error, warning, info or hint.
          */
         [DataMember(Name = "severity")]
-        [JsonProperty(Required = Required.Default)]
         public DiagnosticSeverity Severity { get; set; }
 
         /**
          * The diagnostic's code, which might appear in the user interface.
          */
         [DataMember(Name = "code")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, int> Code { get; set; }
 
         /**
@@ -36,7 +35,6 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "codeDescription")]
-        [JsonProperty(Required = Required.Default)]
         public CodeDescription CodeDescription { get; set; }
 
         /**
@@ -44,7 +42,6 @@ namespace LspTypes
          * diagnostic, e.g. 'typescript' or 'super lint'.
          */
         [DataMember(Name = "source")]
-        [JsonProperty(Required = Required.Default)]
         public string Source { get; set; }
 
         /**
@@ -60,7 +57,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "tags")]
-        [JsonProperty(Required = Required.Default)]
         public DiagnosticTag[] Tags { get; set; }
 
         /**
@@ -68,7 +64,6 @@ namespace LspTypes
          * a scope collide all definitions can be marked via this property.
          */
         [DataMember(Name = "relatedInformation")]
-        [JsonProperty(Required = Required.Default)]
         public DiagnosticRelatedInformation[] RelatedInformation { get; set; }
 
         /**
@@ -79,7 +74,6 @@ namespace LspTypes
            * @since 3.16.0
            */
         [DataMember(Name = "data")]
-        [JsonProperty(Required = Required.Default)]
         public object Data { get; set; }
     }
 }

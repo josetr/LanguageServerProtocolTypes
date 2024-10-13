@@ -26,7 +26,6 @@ namespace LspTypes
 		 * in the default WEB browser set `external` to `true`.
 		 */
         [DataMember(Name = "external")]
-        [JsonProperty(Required = Required.Default)]
         public bool? External { get; set; }
 
         /**
@@ -36,7 +35,6 @@ namespace LspTypes
 		 * program is started.
 		 */
         [DataMember(Name = "takeFocus")]
-        [JsonProperty(Required = Required.Default)]
         public bool? TakeFocus { get; set; }
 
         /**
@@ -46,7 +44,6 @@ namespace LspTypes
 		 * file.
 		 */
         [DataMember(Name = "selection")]
-        [JsonProperty(Required = Required.Default)]
         public Range Selection { get; set; }
     }
 }

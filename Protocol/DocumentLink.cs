@@ -23,7 +23,6 @@ namespace LspTypes
          * The uri this link points to. If missing a resolve request is sent later.
          */
         [DataMember(Name = "target")]
-        [JsonProperty(Required = Required.Default)]
         public string Target { get; set; }
 
         /**
@@ -37,7 +36,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "tooltip")]
-        [JsonProperty(Required = Required.Default)]
         public string Tooltip { get; set; }
 
         /**
@@ -45,7 +43,6 @@ namespace LspTypes
          * DocumentLinkRequest and a DocumentLinkResolveRequest.
          */
         [DataMember(Name = "data")]
-        [JsonProperty(Required = Required.Default)]
         public object Data { get; set; }
     }
 }

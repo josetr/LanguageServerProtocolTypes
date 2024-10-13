@@ -34,7 +34,6 @@ namespace LspTypes
 		 * The moniker kind if known.
 		 */
         [DataMember(Name = "kine")]
-        [JsonProperty(Required = Required.Default)]
         public MonikerKind? Kind { get; set; }
     }
 }

@@ -27,7 +27,6 @@ namespace LspTypes
          * More detail for this symbol, e.g the signature of a function.
          */
         [DataMember(Name = "detail")]
-        [JsonProperty(Required = Required.Default)]
         public string Detail { get; set; }
 
         /**
@@ -43,7 +42,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "tags")]
-        [JsonProperty(Required = Required.Default)]
         public SymbolTag[] Tags { get; set; }
 
         /**
@@ -52,7 +50,6 @@ namespace LspTypes
          * @deprecated Use tags instead
          */
         [DataMember(Name = "deprecated")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Deprecated { get; set; }
 
         /**
@@ -77,7 +74,6 @@ namespace LspTypes
          * Children of this symbol, e.g. properties of a class.
          */
         [DataMember(Name = "children")]
-        [JsonProperty(Required = Required.Default)]
         public DocumentSymbol[] Children { get; set; }
     }
 }

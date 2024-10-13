@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether definition supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -21,7 +20,6 @@ namespace LspTypes
          * @since 3.14.0
          */
         [DataMember(Name = "linkSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? LinkSupport { get; set; }
     }
 }

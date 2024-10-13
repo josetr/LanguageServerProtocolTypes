@@ -25,7 +25,6 @@ namespace LspTypes
          * The highlight kind, default is DocumentHighlightKind.Text.
          */
         [DataMember(Name = "kind")]
-        [JsonProperty(Required = Required.Default)]
         public DocumentHighlightKind? Kind { get; set; }
     }
 }

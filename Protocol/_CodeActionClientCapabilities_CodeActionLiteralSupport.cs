@@ -13,7 +13,6 @@ namespace LspTypes
          * set.
          */
         [DataMember(Name = "codeActionKind")]
-        [JsonProperty(Required = Required.Default)]
         public _CodeActionClientCapabilities_CodeActionLiteralSupport_CodeActionKind CodeActionKind { get; set; }
     }
 }

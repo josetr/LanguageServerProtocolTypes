@@ -16,7 +16,6 @@ namespace LspTypes
          * @Since 3.15.0
          */
         [DataMember(Name = "workDoneProgress")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkDoneProgress { get; set; }
 
         /**
@@ -25,7 +24,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "showMessage")]
-        [JsonProperty(Required = Required.Default)]
         public ShowMessageRequestClientCapabilities ShowMessage { get; set; }
 
         /**
@@ -34,7 +32,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "showDocument")]
-        [JsonProperty(Required = Required.Default)]
         public ShowDocumentClientCapabilities ShowDocument { get; set; }
     }
 }

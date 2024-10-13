@@ -18,7 +18,6 @@ namespace LspTypes
 		 * wide change that requires such a calculation.
 		 */
         [DataMember(Name = "refreshSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? RefreshSupport { get; set; }
     }
 }

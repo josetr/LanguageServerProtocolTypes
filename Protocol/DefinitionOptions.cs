@@ -13,7 +13,6 @@ namespace LspTypes
         public DocumentFilter[] DocumentSelector { get; set; }
 
         [DataMember(Name = "id")]
-        [JsonProperty(Required = Required.Default)]
         public string Id { get; set; }
     }
 }

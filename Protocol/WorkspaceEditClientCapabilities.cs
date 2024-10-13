@@ -44,7 +44,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "normalizesLineEndings")]
-        [JsonProperty(Required = Required.Default)]
         public bool? NormalizesLineEndings { get; set; }
 
         /**
@@ -54,7 +53,6 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "changeAnnotationSupport")]
-        [JsonProperty(Required = Required.Default)]
         public _WorkspaceEditClientCapabilities_ChangeAnnotationSupport ChangeAnnotationSupport { get; set; }
     }
 }

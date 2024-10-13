@@ -15,7 +15,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "label")]
-        [JsonProperty(Required = Required.Default)]
         public string Label { get; set; }
     }
 

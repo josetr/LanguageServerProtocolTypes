@@ -17,7 +17,6 @@ namespace LspTypes
 	     */
         [DataMember(Name = "processId")]
         //OK if missing [JsonProperty(Required = Required.Always)]
-        [JsonProperty(Required = Required.Default)]
         public int? ProcessId { get; set; }
 
         /**
@@ -26,7 +25,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "clientInfo")]
-        [JsonProperty(Required = Required.Default)]
         public _InitializeParams_ClientInfo ClientInfo { get; set; }
 
         /**
@@ -40,7 +38,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "locale")]
-        [JsonProperty(Required = Required.Default)]
         public string Locale { get; set; }
 
         /**
@@ -50,7 +47,6 @@ namespace LspTypes
          * @deprecated in favour of `rootUri`.
          */
         [DataMember(Name = "rootPath")]
-        [JsonProperty(Required = Required.Default)]
         public string RootPath { get; set; }
 
         /**
@@ -61,21 +57,18 @@ namespace LspTypes
         [DataMember(Name = "rootUri")]
         [JsonConverter(typeof(DocumentUriConverter))]
         //OK if missing [JsonProperty(Required = Required.Always)]
-        [JsonProperty(Required = Required.Default)]
         public Uri RootUri { get; set; }
 
         /**
          * User provided initialization options.
          */
         [DataMember(Name = "initializationOptions")]
-        [JsonProperty(Required = Required.Default)]
         public object InitializationOptions { get; set; }
 
         /**
          * The initial trace setting. If omitted trace is disabled ('off').
          */
         [DataMember(Name = "trace")]
-        [JsonProperty(Required = Required.Default)]
         public TraceValue Trace { get; set; }
 
         /**
@@ -87,7 +80,6 @@ namespace LspTypes
          * @since 3.6.0
          */
         [DataMember(Name = "workspaceFolders")]
-        [JsonProperty(Required = Required.Default)]
         public WorkspaceFolder[] WorkspaceFolders { get; set; }
     }
 }

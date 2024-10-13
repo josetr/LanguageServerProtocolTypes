@@ -37,14 +37,12 @@ namespace LspTypes
 		 * Matches both if undefined.
 		 */
         [DataMember(Name = "matches")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationPatternKind Matches { get; set; }
 
         /**
 		 * Additional options used during matching.
 		 */
         [DataMember(Name = "options")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationPatternOptions Options { get; set; }
     }
 }

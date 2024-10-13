@@ -15,7 +15,6 @@ namespace LspTypes
 	     * or the server may list out every specific kind they provide.
          */
         [DataMember(Name = "codeActionKinds")]
-        [JsonProperty(Required = Required.Default)]
         public CodeActionKind[] CodeActionKinds { get; set; }
 
         /**
@@ -25,7 +24,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "resolveProvider")]
-        [JsonProperty(Required = Required.Default)]
         public bool? ResolveProvider { get; set; }
     }
 

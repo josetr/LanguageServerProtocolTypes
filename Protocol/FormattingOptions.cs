@@ -32,7 +32,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "trimTrailingWhitespace")]
-        [JsonProperty(Required = Required.Default)]
         public bool? TrimTrailingWhitespace { get; set; }
 
         /**
@@ -41,7 +40,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "insertFinalNewline")]
-        [JsonProperty(Required = Required.Default)]
         public bool? InsertFinalNewline { get; set; }
 
         /**
@@ -50,14 +48,12 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "trimFinalNewlines")]
-        [JsonProperty(Required = Required.Default)]
         public bool? TrimFinalNewlines { get; set; }
 
         /**
          * Signature for further properties.
          */
         [JsonExtensionData]
-        [JsonProperty(Required = Required.Default)]
         public Dictionary<string, SumType<bool, int, string>> OtherOptions { get; set; }
     }
 }

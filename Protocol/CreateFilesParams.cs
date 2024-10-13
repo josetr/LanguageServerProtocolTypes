@@ -18,7 +18,6 @@ namespace LspTypes
 	     * An array of all files/folders created in this operation.
 	     */
         [DataMember(Name = "files")]
-        [JsonProperty(Required = Required.Default)]
         public FileCreate[] Files { get; set; }
     }
 }

@@ -9,7 +9,6 @@ namespace LspTypes
         public SemanticTokensDelta() { }
 
         [DataMember(Name = "resultId")]
-        [JsonProperty(Required = Required.Default)]
         public string ResultId { get; set; }
 
         /**
@@ -17,7 +16,6 @@ namespace LspTypes
 	     * result.
 	     */
         [DataMember(Name = "edits")]
-        [JsonProperty(Required = Required.Default)]
         public SemanticTokensEdit[] Edits { get; set; }
     }
 }

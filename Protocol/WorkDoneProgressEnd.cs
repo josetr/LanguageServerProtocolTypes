@@ -17,7 +17,6 @@ namespace LspTypes
          * of the operation.
          */
         [DataMember(Name = "message")]
-        [JsonProperty(Required = Required.Default)]
         public string Message { get; set; }
     }
 }

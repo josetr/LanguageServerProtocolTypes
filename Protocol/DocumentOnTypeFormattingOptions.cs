@@ -25,7 +25,6 @@ namespace LspTypes
          * More trigger characters.
          */
         [DataMember(Name = "moreTriggerCharacter")]
-        [JsonProperty(Required = Required.Default)]
         public string[] MoreTriggerCharacter { get; set; }
     }
 }

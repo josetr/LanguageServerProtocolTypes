@@ -9,7 +9,6 @@ namespace LspTypes
         public ReferenceRegistrationOptions() : base() { }
 
         [DataMember(Name = "workDoneProgress")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkDoneProgress { get; set; }
     }
 }

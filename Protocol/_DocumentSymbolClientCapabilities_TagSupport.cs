@@ -12,7 +12,6 @@ namespace LspTypes
          * The tags supported by the client.
          */
         [DataMember(Name = "valueSet")]
-        [JsonProperty(Required = Required.Default)]
         public SymbolTag[] ValueSet { get; set; }
     }
 }

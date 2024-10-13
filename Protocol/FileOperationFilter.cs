@@ -18,7 +18,6 @@ namespace LspTypes
 	     * A Uri like `file` or `untitled`.
 	     */
         [DataMember(Name = "scheme")]
-        [JsonProperty(Required = Required.Default)]
         public string Scheme { get; set; }
 
         /**

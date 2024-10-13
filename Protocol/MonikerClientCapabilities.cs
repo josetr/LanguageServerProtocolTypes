@@ -14,7 +14,6 @@ namespace LspTypes
          * capability as well.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
     }
 }

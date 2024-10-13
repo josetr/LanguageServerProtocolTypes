@@ -20,7 +20,6 @@ namespace LspTypes
          * the initial version of the protocol.
          */
         [DataMember(Name = "valueSet")]
-        [JsonProperty(Required = Required.Default)]
         public CompletionItemKind[] ValueSet { get; set; }
     }
 }

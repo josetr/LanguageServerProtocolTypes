@@ -9,7 +9,6 @@ namespace LspTypes
         public SemanticTokensDeltaPartialResult() { }
 
         [DataMember(Name = "edits")]
-        [JsonProperty(Required = Required.Default)]
         public SemanticTokensEdit[] Edits { get; set; }
     }
 }

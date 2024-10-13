@@ -13,11 +13,9 @@ namespace LspTypes
          * send a delta.
          */
         [DataMember(Name = "resultId")]
-        [JsonProperty(Required = Required.Default)]
         public string ResultId { get; set; }
 
         [DataMember(Name = "data")]
-        [JsonProperty(Required = Required.Default)]
         public uint[] Data { get; set; }
     }
 }

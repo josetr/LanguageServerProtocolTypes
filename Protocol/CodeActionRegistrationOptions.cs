@@ -9,11 +9,9 @@ namespace LspTypes
         public CodeActionRegistrationOptions() { }
 
         [DataMember(Name = "codeActionKinds")]
-        [JsonProperty(Required = Required.Default)]
         public CodeActionKind[] CodeActionKinds { get; set; }
 
         [DataMember(Name = "resolveProvider")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkDoneProgress { get; set; }
     }
 }

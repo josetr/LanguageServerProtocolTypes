@@ -20,7 +20,6 @@ namespace LspTypes
          * when the save notification was requested.
          */
         [DataMember(Name = "text")]
-        [JsonProperty(Required = Required.Default)]
         public string Text { get; set; }
     }
 }

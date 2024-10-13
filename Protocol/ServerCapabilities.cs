@@ -15,21 +15,21 @@ namespace LspTypes
 	     * `TextDocumentSyncKind.None`.
          */
         [DataMember(Name = "textDocumentSync")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<TextDocumentSyncOptions, TextDocumentSyncKind> TextDocumentSync { get; set; }
 
         /**
          * The server provides completion support.
          */
         [DataMember(Name = "completionProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public CompletionOptions CompletionProvider { get; set; }
 
         /**
          * The server provides hover support.
          */
         [DataMember(Name = "hoverProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, HoverOptions> HoverProvider { get; set; }
 
         /**
@@ -44,14 +44,14 @@ namespace LspTypes
          * @since 3.14.0
          */
         [DataMember(Name = "declarationProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DeclarationOptions, DeclarationRegistrationOptions> DeclarationProvider { get; set; }
 
         /**
          * The server provides goto definition support.
          */
         [DataMember(Name = "definitionProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DefinitionOptions> DefinitionProvider { get; set; }
 
         /**
@@ -60,7 +60,7 @@ namespace LspTypes
          * @since 3.6.0
          */
         [DataMember(Name = "typeDefinitionProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, TypeDefinitionOptions, TypeDefinitionRegistrationOptions> TypeDefinitionProvider { get; set; }
 
         /**
@@ -69,28 +69,28 @@ namespace LspTypes
          * @since 3.6.0
          */
         [DataMember(Name = "implementationProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, ImplementationOptions, ImplementationRegistrationOptions> ImplementationProvider { get; set; }
 
         /**
          * The server provides find references support.
          */
         [DataMember(Name = "referencesProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, ReferenceOptions> ReferencesProvider { get; set; }
 
         /**
          * The server provides document highlight support.
          */
         [DataMember(Name = "documentHighlightProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentHighlightOptions> DocumentHighlightProvider { get; set; }
 
         /**
          * The server provides document symbol support.
          */
         [DataMember(Name = "documentSymbolProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentSymbolOptions> DocumentSymbolProvider { get; set; }
 
         /**
@@ -99,7 +99,7 @@ namespace LspTypes
 	     * property `textDocument.codeAction.codeActionLiteralSupport`.
          */
         [DataMember(Name = "codeActionProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, CodeActionOptions> CodeActionProvider { get; set; }
 
         /**
@@ -120,21 +120,21 @@ namespace LspTypes
          * @since 3.6.0
          */
         [DataMember(Name = "colorProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentColorOptions, DocumentColorRegistrationOptions> ColorProvider { get; set; }
 
         /**
          * The server provides document formatting.
          */
         [DataMember(Name = "documentFormattingProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentFormattingOptions> DocumentFormattingProvider { get; set; }
 
         /**
          * The server provides document range formatting.
          */
         [DataMember(Name = "documentRangeFormattingProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentRangeFormattingOptions> DocumentRangeFormattingProvider { get; set; }
 
         /**
@@ -149,7 +149,7 @@ namespace LspTypes
          * `prepareSupport` in its initial `initialize` request.
          */
         [DataMember(Name = "renameProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, RenameOptions> RenameProvider { get; set; }
 
         /**
@@ -158,7 +158,7 @@ namespace LspTypes
          * @since 3.10.0
          */
         [DataMember(Name = "foldingRangeProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, FoldingRangeOptions, FoldingRangeRegistrationOptions> FoldingRangeProvider { get; set; }
 
         /**
@@ -173,7 +173,7 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "selectionRangeProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, SelectionRangeOptions, SelectionRangeRegistrationOptions> SelectionRangeProvider { get; set; }
 
         /**
@@ -182,7 +182,7 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "linkedEditingRangeProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, LinkedEditingRangeOptions, LinkedEditingRangeRegistrationOptions> LinkedEditingRangeProvider { get; set; }
 
         /**
@@ -191,7 +191,7 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "callHierarchyProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, CallHierarchyOptions, CallHierarchyRegistrationOptions> CallHierarchyProvider { get; set; }
 
         /**
@@ -200,7 +200,7 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "semanticTokensProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<SemanticTokensOptions, SemanticTokensRegistrationOptions> SemanticTokensProvider { get; set; }
 
         /**
@@ -209,14 +209,14 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [DataMember(Name = "monikerProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, MonikerOptions, MonikerRegistrationOptions> MonikerProvider { get; set; }
 
         /**
          * The server provides workspace symbol support.
          */
         [DataMember(Name = "workspaceSymbolProvider")]
-        [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, WorkspaceSymbolOptions> WorkspaceSymbolProvider { get; set; }
 
         /**

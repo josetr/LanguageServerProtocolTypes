@@ -19,7 +19,6 @@ namespace LspTypes
          * The client's version as defined by the client.
          */
         [DataMember(Name = "version")]
-        [JsonProperty(Required = Required.Default)]
         public string Version { get; set; }
     }
 }

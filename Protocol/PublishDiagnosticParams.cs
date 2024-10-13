@@ -23,7 +23,6 @@ namespace LspTypes
 	     * @since 3.15.0
 	     */
         [DataMember(Name = "version")]
-        [JsonProperty(Required = Required.Default)]
         public uint? Version { get; set; }
 
 

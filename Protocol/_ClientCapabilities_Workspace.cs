@@ -14,14 +14,12 @@ namespace LspTypes
          * 'workspace/applyEdit'
          */
         [DataMember(Name = "applyEdit")]
-        [JsonProperty(Required = Required.Default)]
         public bool? ApplyEdit { get; set; }
 
         /**
          * Capabilities specific to `WorkspaceEdit`s
          */
         [DataMember(Name = "workspaceEdit")]
-        [JsonProperty(Required = Required.Default)]
         public WorkspaceEditClientCapabilities WorkspaceEdit { get; set; }
 
         /**
@@ -29,7 +27,6 @@ namespace LspTypes
 		 * notification.
          */
         [DataMember(Name = "didChangeConfiguration")]
-        [JsonProperty(Required = Required.Default)]
         public DidChangeConfigurationClientCapabilities DidChangeConfiguration { get; set; }
 
         /**
@@ -37,21 +34,18 @@ namespace LspTypes
 		 * notification.
 		 */
         [DataMember(Name = "didChangeWatchedFiles")]
-        [JsonProperty(Required = Required.Default)]
         public DidChangeWatchedFilesClientCapabilities DidChangeWatchedFiles { get; set; }
 
         /**
          * Capabilities specific to the `workspace/symbol` request.
          */
         [DataMember(Name = "symbol")]
-        [JsonProperty(Required = Required.Default)]
         public WorkspaceSymbolClientCapabilities Symbol { get; set; }
 
         /**
          * Capabilities specific to the `workspace/executeCommand` request.
          */
         [DataMember(Name = "executeCommand")]
-        [JsonProperty(Required = Required.Default)]
         public ExecuteCommandClientCapabilities ExecuteCommand { get; set; }
 
         /**
@@ -60,7 +54,6 @@ namespace LspTypes
          * @since 3.6.0
          */
         [DataMember(Name = "workspaceFolders")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkspaceFolders { get; set; }
 
         /**
@@ -69,7 +62,6 @@ namespace LspTypes
          * @since 3.6.0
          */
         [DataMember(Name = "configuration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Configuration { get; set; }
 
         /**
@@ -79,7 +71,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "semanticTokens")]
-        [JsonProperty(Required = Required.Default)]
         public SemanticTokensWorkspaceClientCapabilities SemanticTokens { get; set; }
 
         /**
@@ -89,7 +80,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "codeLens")]
-        [JsonProperty(Required = Required.Default)]
         public CodeLensWorkspaceClientCapabilities CodeLens { get; set; }
 
         /**
@@ -98,7 +88,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "fileOperations")]
-        [JsonProperty(Required = Required.Default)]
         public _ClientCapabilities_Workspace_FileOperations fileOperations { get; set; }
 
     }

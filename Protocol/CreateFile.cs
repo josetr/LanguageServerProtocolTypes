@@ -29,7 +29,6 @@ namespace LspTypes
          * Additional options
          */
         [DataMember(Name = "options")]
-        [JsonProperty(Required = Required.Default)]
         public CreateFileOptions Options { get; set; }
 
         /**
@@ -38,7 +37,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "annotationId")]
-        [JsonProperty(Required = Required.Default)]
         public string AnnotationId { get; set; }
     }
 }

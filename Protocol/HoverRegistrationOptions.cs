@@ -7,7 +7,6 @@ namespace LspTypes
     public class HoverRegistrationOptions : TextDocumentRegistrationOptions, IHoverOptions
     {
         [DataMember(Name = "workDoneProgress")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkDoneProgress { get; set; }
     }
 }

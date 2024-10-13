@@ -15,14 +15,12 @@ namespace LspTypes
          * Overwrite existing file. Overwrite wins over `ignoreIfExists`
          */
         [DataMember(Name = "overwrite")]
-        [JsonProperty(Required = Required.Default)]
         public bool? Overwrite { get; set; }
 
         /**
          * Ignore if exists.
          */
         [DataMember(Name = "ignoreIfExists")]
-        [JsonProperty(Required = Required.Default)]
         public bool? IgnoreIfExists { get; set; }
     }
 }

@@ -27,7 +27,6 @@ namespace LspTypes
          * invoked with.
          */
         [DataMember(Name = "arguments")]
-        [JsonProperty(Required = Required.Default)]
         public object[] Arguments { get; set; }
     }
 }

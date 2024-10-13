@@ -17,14 +17,12 @@ namespace LspTypes
 		 * linked, that is typing in one will update others too.
          */
         [DataMember(Name = "snippetSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? SnippetSupport { get; set; }
 
         /**
          * Client supports commit characters on a completion item.
          */
         [DataMember(Name = "commitCharactersSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? CommitCharactersSupport { get; set; }
 
         /**
@@ -32,21 +30,18 @@ namespace LspTypes
          * property. The order describes the preferred format of the client.
          */
         [DataMember(Name = "documentationFormat")]
-        [JsonProperty(Required = Required.Default)]
         public MarkupKind[] DocumentationFormat { get; set; }
 
         /**
          * Client supports the deprecated property on a completion item.
          */
         [DataMember(Name = "deprecatedSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DeprecatedSupport { get; set; }
 
         /**
          * Client supports the preselect property on a completion item.
          */
         [DataMember(Name = "preselectSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? PreselectSupport { get; set; }
 
         /**
@@ -58,7 +53,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "tagSupport")]
-        [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItem_TagSupport TagSupport { get; set; }
 
         /**
@@ -68,7 +62,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "insertReplaceSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? InsertReplaceSupport { get; set; }
 
         /**
@@ -79,7 +72,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "resolveSupport")]
-        [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItem_ResolveSupport ResolveSupport { get; set; }
 
         /**
@@ -90,7 +82,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "insertTextModeSupport")]
-        [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItem_InsertTextModeSupport InsertTextModeSupport { get; set; }
     }
 }

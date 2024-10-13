@@ -10,7 +10,6 @@ namespace LspTypes
 		 * The item that makes the call.
 		 */
         [DataMember(Name = "from")]
-        [JsonProperty(Required = Required.Default)]
         public CallHierarchyItem From { get; set; }
 
         /**
@@ -18,7 +17,6 @@ namespace LspTypes
 		 * denoted by [`this.from`](#CallHierarchyIncomingCall.from).
 		 */
         [DataMember(Name = "fromRanges")]
-        [JsonProperty(Required = Required.Default)]
         public Range[] FromRanges { get; set; }
     }
 }

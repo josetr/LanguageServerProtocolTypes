@@ -28,7 +28,6 @@ namespace LspTypes
          * Used to filter code actions.
          */
         [DataMember(Name = "kind")]
-        [JsonProperty(Required = Required.Default)]
         public CodeActionKind? Kind { get; set; }
 
         /**
@@ -49,7 +48,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "isPreferred")]
-        [JsonProperty(Required = Required.Default)]
         public bool? IsPreferred { get; set; }
         /**
          * Marks that the code action cannot currently be applied.
@@ -71,14 +69,12 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "disabled")]
-        [JsonProperty(Required = Required.Default)]
         public _CodeAction_Disabled Disabled { get; set; }
 
         /**
          * The workspace edit this code action performs.
          */
         [DataMember(Name = "edit")]
-        [JsonProperty(Required = Required.Default)]
         public WorkspaceEdit Edit { get; set; }
 
         /**
@@ -87,7 +83,6 @@ namespace LspTypes
          * executed and then the command.
          */
         [DataMember(Name = "command")]
-        [JsonProperty(Required = Required.Default)]
         public Command Command { get; set; }
         /**
           * A data entry field that is preserved on a code action between
@@ -96,7 +91,6 @@ namespace LspTypes
           * @since 3.16.0
           */
         [DataMember(Name = "data")]
-        [JsonProperty(Required = Required.Default)]
         public object Data { get; set; }
     }
 }

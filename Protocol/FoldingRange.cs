@@ -27,7 +27,6 @@ namespace LspTypes
 	     * not defined, defaults to the length of the start line.
          */
         [DataMember(Name = "startCharacter")]
-        [JsonProperty(Required = Required.Default)]
         public uint? StartCharacter { get; set; }
 
         /**
@@ -44,7 +43,6 @@ namespace LspTypes
 	     * defined, defaults to the length of the end line.
          */
         [DataMember(Name = "endCharacter")]
-        [JsonProperty(Required = Required.Default)]
         public uint? EndCharacter { get; set; }
 
         /**
@@ -54,7 +52,6 @@ namespace LspTypes
 	     * enumeration of standardized kinds.
          */
         [DataMember(Name = "kind")]
-        [JsonProperty(Required = Required.Default)]
         public string Kind { get; set; }
     }
 }

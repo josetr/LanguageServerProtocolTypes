@@ -23,7 +23,6 @@ namespace LspTypes
          * that is used to visualize a hover, e.g. by changing the background color.
          */
         [DataMember(Name = "range")]
-        [JsonProperty(Required = Required.Default)]
         public Range Range { get; set; }
     }
 }

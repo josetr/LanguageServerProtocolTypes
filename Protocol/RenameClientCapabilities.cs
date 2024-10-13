@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether rename supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -22,7 +21,6 @@ namespace LspTypes
          * @since version 3.12.0
          */
         [DataMember(Name = "prepareSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? PrepareSupport { get; set; }
 
         /**
@@ -35,7 +33,6 @@ namespace LspTypes
          * @since version 3.16.0
          */
         [DataMember(Name = "prepareSupportDefaultBehavior")]
-        [JsonProperty(Required = Required.Default)]
         public PrepareSupportDefaultBehavior? PrepareSupportDefaultBehavior { get; set; }
 
         /**
@@ -48,7 +45,6 @@ namespace LspTypes
          * @since 3.16.0
          */
         [DataMember(Name = "honorsChangeAnnotations")]
-        [JsonProperty(Required = Required.Default)]
         public bool? HonorsChangeAnnotations { get; set; }
     }
 }

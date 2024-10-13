@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether formatting supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool DynamicRegistration { get; set; }
     }
 }

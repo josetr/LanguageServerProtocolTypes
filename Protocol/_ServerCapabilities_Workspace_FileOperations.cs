@@ -13,14 +13,12 @@ namespace LspTypes
 		 * notifications.
 	 	 */
         [DataMember(Name = "didCreate")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationRegistrationOptions DidCreate { get; set; }
 
         /**
 		 * The server is interested in receiving willCreateFiles requests.
 		 */
         [DataMember(Name = "willCreate")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationRegistrationOptions WillCreate { get; set; }
 
         /**
@@ -28,14 +26,12 @@ namespace LspTypes
 		 * notifications.
 		 */
         [DataMember(Name = "didRename")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationRegistrationOptions DidRename { get; set; }
 
         /**
 		 * The server is interested in receiving willRenameFiles requests.
 		 */
         [DataMember(Name = "willRename")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationRegistrationOptions WillRename { get; set; }
 
         /**
@@ -43,7 +39,6 @@ namespace LspTypes
 		 * notifications.
 		 */
         [DataMember(Name = "didDelete")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationRegistrationOptions DidDelete { get; set; }
 
         /**
@@ -51,7 +46,6 @@ namespace LspTypes
 		 * requests.
 		 */
         [DataMember(Name = "willDelete")]
-        [JsonProperty(Required = Required.Default)]
         public FileOperationRegistrationOptions WillDelete { get; set; }
     }
 }

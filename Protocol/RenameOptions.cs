@@ -12,7 +12,6 @@ namespace LspTypes
          * Renames should be checked and tested before being executed.
          */
         [DataMember(Name = "prepareProvider")]
-        [JsonProperty(Required = Required.Default)]
         public bool? PrepareProvider { get; set; }
     }
 

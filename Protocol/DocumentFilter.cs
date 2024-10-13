@@ -12,14 +12,12 @@ namespace LspTypes
          * A language id, like `typescript`.
          */
         [DataMember(Name = "language")]
-        [JsonProperty(Required = Required.Default)]
         public string Language { get; set; }
 
         /**
          * A Uri [scheme](#Uri.scheme), like `file` or `untitled`.
          */
         [DataMember(Name = "scheme")]
-        [JsonProperty(Required = Required.Default)]
         public string Scheme { get; set; }
 
         /**
@@ -38,7 +36,6 @@ namespace LspTypes
 	     *   not `example.0`)
 	     */
         [DataMember(Name = "pattern")]
-        [JsonProperty(Required = Required.Default)]
         public string Pattern { get; set; }
     }
 }

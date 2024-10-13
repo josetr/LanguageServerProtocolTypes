@@ -15,7 +15,6 @@ namespace LspTypes
          * to a default value when unknown.
          */
         [DataMember(Name = "valueSet")]
-        [JsonProperty(Required = Required.Default)]
         public CodeActionKind[] ValueSet { get; set; }
     }
 }

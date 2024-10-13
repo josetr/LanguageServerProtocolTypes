@@ -20,7 +20,6 @@ namespace LspTypes
          * stack to undo the workspace edit.
          */
         [DataMember(Name = "label")]
-        [JsonProperty(Required = Required.Default)]
         public string Label { get; set; }
 
         /**

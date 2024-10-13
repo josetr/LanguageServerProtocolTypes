@@ -12,7 +12,6 @@ namespace LspTypes
          * Whether code action supports dynamic registration.
          */
         [DataMember(Name = "dynamicRegistration")]
-        [JsonProperty(Required = Required.Default)]
         public bool DynamicRegistration { get; set; }
 
         /**
@@ -22,7 +21,6 @@ namespace LspTypes
          * @since 3.8.0
          */
         [DataMember(Name = "codeActionLiteralSupport")]
-        [JsonProperty(Required = Required.Default)]
         public _CodeActionClientCapabilities_CodeActionLiteralSupport CodeActionLiteralSupport { get; set; }
 
         /**
@@ -30,7 +28,6 @@ namespace LspTypes
          * @since 3.15.0
          */
         [DataMember(Name = "isPreferredSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? IsPreferredSupport { get; set; }
 
         /**
@@ -39,7 +36,6 @@ namespace LspTypes
 	     * @since 3.16.0
 		 */
         [DataMember(Name = "disabledSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DisabledSupport { get; set; }
 
         /**
@@ -50,7 +46,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "dataSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? DataSupport { get; set; }
 
         /**
@@ -60,7 +55,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "resolveSupport")]
-        [JsonProperty(Required = Required.Default)]
         public _CodeActionClientCapabilities_ResolveSupport ResolveSupport { get; set; }
 
         /**
@@ -73,7 +67,6 @@ namespace LspTypes
 		 * @since 3.16.0
 		 */
         [DataMember(Name = "honorsChangeAnnotations")]
-        [JsonProperty(Required = Required.Default)]
         public bool? HonorsChangeAnnotations { get; set; }
     }
 }

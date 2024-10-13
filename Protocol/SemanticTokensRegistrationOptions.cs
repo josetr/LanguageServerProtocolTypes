@@ -16,11 +16,9 @@ namespace LspTypes
         public SumType<bool, object> Full { get; set; }
 
         [DataMember(Name = "id")]
-        [JsonProperty(Required = Required.Default)]
         public string Id { get; set; }
 
         [DataMember(Name = "workDoneProgress")]
-        [JsonProperty(Required = Required.Default)]
         public bool? WorkDoneProgress { get; set; }
     }
 }

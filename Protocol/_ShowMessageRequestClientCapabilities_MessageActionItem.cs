@@ -14,7 +14,6 @@ namespace LspTypes
 		 * request's response.
 		 */
         [DataMember(Name = "additionalPropertiesSupport")]
-        [JsonProperty(Required = Required.Default)]
         public bool? AdditionalPropertiesSupport { get; set; }
     }
 }
