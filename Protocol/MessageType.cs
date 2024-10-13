@@ -9,7 +9,7 @@ namespace LspTypes
          * An error message.
          */
         Error = 1,
-            
+
         /**
          * A warning message.
          */

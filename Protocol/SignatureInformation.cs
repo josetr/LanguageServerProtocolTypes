@@ -27,7 +27,7 @@ namespace LspTypes
         [DataMember(Name = "documentation")]
         [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkupContent> Documentation { get; set; }
-        
+
         /**
          * The parameters of this signature.
          */

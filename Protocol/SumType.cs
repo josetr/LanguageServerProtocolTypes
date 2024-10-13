@@ -88,9 +88,9 @@ namespace LspTypes
         }
         public static explicit operator T1(SumType<T1, T2, T3> sum)
         {
-                if (sum.Value is T1 obj)
-                        return obj;
-                throw new InvalidCastException();
+            if (sum.Value is T1 obj)
+                return obj;
+            throw new InvalidCastException();
         }
         public static explicit operator T2(SumType<T1, T2, T3> sum)
         {

@@ -29,7 +29,7 @@ namespace LspTypes
         [DataMember(Name = "label")]
         [JsonProperty(Required = Required.Always, DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, Tuple<uint, uint>> Label { get; set; }
-        
+
         /**
          * The human-readable doc-comment of this parameter. Will be shown
          * in the UI but can be omitted.

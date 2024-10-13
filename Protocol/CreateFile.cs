@@ -40,5 +40,5 @@ namespace LspTypes
         [DataMember(Name = "annotationId")]
         [JsonProperty(Required = Required.Default)]
         public string AnnotationId { get; set; }
- }
+    }
 }

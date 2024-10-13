@@ -22,7 +22,7 @@ namespace LspTypes
         [DataMember(Name = "completionItem")]
         [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItem completionItem { get; set; }
-        
+
         [DataMember(Name = "completionItemKind")]
         [JsonProperty(Required = Required.Default)]
         public _CompletionClientCapabilities_CompletionItemKind completionItemKind { get; set; }

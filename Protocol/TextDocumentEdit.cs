@@ -23,6 +23,6 @@ namespace LspTypes
          */
         [DataMember(Name = "edits")]
         [JsonProperty(Required = Required.Always)]
-        public SumType<TextEdit,AnnotatedTextEdit>[] Edits { get; set; }
+        public SumType<TextEdit, AnnotatedTextEdit>[] Edits { get; set; }
     }
 }

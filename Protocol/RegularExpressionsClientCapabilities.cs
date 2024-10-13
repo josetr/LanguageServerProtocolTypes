@@ -8,18 +8,18 @@ namespace LspTypes
     {
         public RegularExpressionsClientCapabilities() { }
 
-		/**
+        /**
 		 * The engine's name.
 		 */
-		[DataMember(Name = "engine")]
-		[JsonProperty(Required = Required.Always)]
-		public string Engine { get; set; }
+        [DataMember(Name = "engine")]
+        [JsonProperty(Required = Required.Always)]
+        public string Engine { get; set; }
 
-		/**
+        /**
 		 * The engine's version.
 		 */
-		[DataMember(Name = "version")]
-		[JsonProperty(Required = Required.Default)]
-		public string Version { get; set; }
+        [DataMember(Name = "version")]
+        [JsonProperty(Required = Required.Default)]
+        public string Version { get; set; }
     }
 }

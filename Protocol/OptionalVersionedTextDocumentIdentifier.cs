@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public OptionalVersionedTextDocumentIdentifier() : base() { }
 
-		/**
+        /**
 		 * The version number of this document.If an optional versioned text document
 		 * identifier is sent from the server to the client and the file is not
 		 * open in the editor(the server has not received an open notification
@@ -19,8 +19,8 @@ namespace LspTypes
 		 * The version number of a document will increase after each change,
 		 * including undo/redo.The number doesn't need to be consecutive.
 		 */
-		[DataMember(Name = "version")]
-		[JsonProperty(Required = Required.Always)]
-		public int? Version { get; set; }
+        [DataMember(Name = "version")]
+        [JsonProperty(Required = Required.Always)]
+        public int? Version { get; set; }
     }
 }

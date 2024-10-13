@@ -23,7 +23,7 @@ namespace LspTypes
         [DataMember(Name = "workDoneToken")]
         [JsonProperty(Required = Required.Default, DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, int> WorkDoneToken { get; set; }
-        
+
         /**
          * An optional token that a server can use to report partial results (e.g. streaming) to
          * the client.

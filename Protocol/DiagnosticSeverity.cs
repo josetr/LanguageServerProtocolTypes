@@ -6,7 +6,7 @@
          * Reports an error.
          */
         Error = 1,
-            
+
         /**
          * Reports a warning.
          */

@@ -53,5 +53,5 @@
         public const string TextDocumentSemanticTokensRange = "textDocument/semanticTokens/range";
 
     }
-    
+
 }

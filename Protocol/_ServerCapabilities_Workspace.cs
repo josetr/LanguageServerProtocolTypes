@@ -18,6 +18,6 @@ namespace LspTypes
 
         [DataMember(Name = "fileOperations")]
         public _ServerCapabilities_Workspace_FileOperations FileOperations { get; set; }
-        
+
     }
 }

@@ -9,7 +9,7 @@
          * The file got created.
          */
         Created = 1,
-            
+
         /**
          * The file got changed.
          */

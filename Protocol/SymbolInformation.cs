@@ -40,7 +40,7 @@ namespace LspTypes
          */
         [DataMember(Name = "deprecated")]
         public bool? Deprecated { get; set; }
-        
+
         /**
          * The location of this symbol. The location's range is used by a tool
          * to reveal the location in the editor. If the symbol is selected in the
@@ -74,9 +74,9 @@ namespace LspTypes
         public override int GetHashCode()
         {
             return (int)((((long)1633890234 * (long)-1521134295
-                + EqualityComparer<string>.Default.GetHashCode(this.Name)) * -1521134295 
+                + EqualityComparer<string>.Default.GetHashCode(this.Name)) * -1521134295
                 + this.Kind.GetHashCode()) * -1521134295
-                + EqualityComparer<Location>.Default.GetHashCode(this.Location)) * -1521134295 
+                + EqualityComparer<Location>.Default.GetHashCode(this.Location)) * -1521134295
                 + EqualityComparer<string>.Default.GetHashCode(this.ContainerName);
         }
     }

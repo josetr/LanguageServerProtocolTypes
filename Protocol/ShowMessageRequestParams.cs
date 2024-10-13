@@ -18,7 +18,7 @@ namespace LspTypes
          */
         [DataMember(Name = "message")]
         public string Message { get; set; }
-        
+
         /**
          * The message action items to present.
          */

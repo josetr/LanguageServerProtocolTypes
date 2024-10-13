@@ -3,12 +3,12 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-	[DataContract]
-	public class CodeLensWorkspaceClientCapabilities
-	{
-		public CodeLensWorkspaceClientCapabilities() { }
+    [DataContract]
+    public class CodeLensWorkspaceClientCapabilities
+    {
+        public CodeLensWorkspaceClientCapabilities() { }
 
-		/**
+        /**
 		   * Whether the client implementation supports a refresh request sent from the
 		   * server to the client.
 		   *
@@ -17,8 +17,8 @@ namespace LspTypes
 		   * useful for situation where a server for example detect a project wide
 		   * change that requires such a calculation.
 		   */
-		[DataMember(Name = "refreshSupport")]
-		[JsonProperty(Required = Required.Default)]
-		public bool? RefreshSupport { get; set; }
-	}
+        [DataMember(Name = "refreshSupport")]
+        [JsonProperty(Required = Required.Default)]
+        public bool? RefreshSupport { get; set; }
+    }
 }

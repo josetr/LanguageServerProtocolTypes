@@ -224,7 +224,7 @@ namespace LspTypes
          */
         [DataMember(Name = "workspace")]
         public _ServerCapabilities_Workspace Workspace { get; set; }
-        
+
         /**
          * Experimental server capabilities.
          */

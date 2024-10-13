@@ -25,10 +25,10 @@ namespace LspTypes
         [JsonProperty(Required = Required.Always)]
         public Color Color { get; set; }
 
-	    /**
+        /**
 	     * The range where the color would be inserted. Serves as a context.
 	     */
-	    [DataMember(Name = "range")]
+        [DataMember(Name = "range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 

@@ -25,7 +25,7 @@ namespace LspTypes
         /**
 	     * The elements to insert.
 	     */
-	    [DataMember(Name = "data")]
+        [DataMember(Name = "data")]
         [JsonProperty(Required = Required.Default)]
         public uint[] Data { get; set; }
     }
