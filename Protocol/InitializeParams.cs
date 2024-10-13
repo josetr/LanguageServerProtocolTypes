@@ -15,7 +15,7 @@ namespace LspTypes
 	     * process is not alive then the server should exit (see exit notification)
 	     * its process.
 	     */
-        [DataMember(Name = "processId")]
+        [JsonPropertyName("processId")]
         //OK if missing [JsonProperty(Required = Required.Always)]
         public int? ProcessId { get; set; }
 
@@ -24,7 +24,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "clientInfo")]
+        [JsonPropertyName("clientInfo")]
         public _InitializeParams_ClientInfo ClientInfo { get; set; }
 
         /**
@@ -37,7 +37,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "locale")]
+        [JsonPropertyName("locale")]
         public string Locale { get; set; }
 
         /**
@@ -46,7 +46,7 @@ namespace LspTypes
          *
          * @deprecated in favour of `rootUri`.
          */
-        [DataMember(Name = "rootPath")]
+        [JsonPropertyName("rootPath")]
         public string RootPath { get; set; }
 
         /**
@@ -54,7 +54,7 @@ namespace LspTypes
          * folder is open. If both `rootPath` and `rootUri` are set
          * `rootUri` wins.
          */
-        [DataMember(Name = "rootUri")]
+        [JsonPropertyName("rootUri")]
         [JsonConverter(typeof(DocumentUriConverter))]
         //OK if missing [JsonProperty(Required = Required.Always)]
         public Uri RootUri { get; set; }
@@ -62,13 +62,13 @@ namespace LspTypes
         /**
          * User provided initialization options.
          */
-        [DataMember(Name = "initializationOptions")]
+        [JsonPropertyName("initializationOptions")]
         public object InitializationOptions { get; set; }
 
         /**
          * The initial trace setting. If omitted trace is disabled ('off').
          */
-        [DataMember(Name = "trace")]
+        [JsonPropertyName("trace")]
         public TraceValue Trace { get; set; }
 
         /**
@@ -79,7 +79,7 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "workspaceFolders")]
+        [JsonPropertyName("workspaceFolders")]
         public WorkspaceFolder[] WorkspaceFolders { get; set; }
     }
 }

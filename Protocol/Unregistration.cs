@@ -14,13 +14,13 @@ namespace LspTypes
          * The id used to unregister the request or notification. Usually an id
          * provided during the register request.
          */
-        [DataMember(Name = "id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
 
         /**
          * The method / capability to unregister for.
          */
-        [DataMember(Name = "method")]
+        [JsonPropertyName("method")]
         public string Method { get; set; }
     }
 }

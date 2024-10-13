@@ -13,7 +13,7 @@ namespace LspTypes
 		 * are preserved and sent back to the server in the
 		 * request's response.
 		 */
-        [DataMember(Name = "additionalPropertiesSupport")]
+        [JsonPropertyName("additionalPropertiesSupport")]
         public bool? AdditionalPropertiesSupport { get; set; }
     }
 }

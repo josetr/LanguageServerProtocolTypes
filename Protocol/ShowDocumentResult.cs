@@ -16,7 +16,7 @@ namespace LspTypes
         /**
 	     * A boolean indicating if the show was successful.
 	     */
-        [DataMember(Name = "success")]
+        [JsonPropertyName("success")]
         [JsonProperty(Required = Required.Always)]
         public bool Success { get; set; }
     }

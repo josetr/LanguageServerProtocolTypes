@@ -14,7 +14,7 @@ namespace LspTypes
 	     * StaticRegistrationOptions)` return value for the corresponding server
 	     * capability as well.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -27,37 +27,37 @@ namespace LspTypes
 	     * range provider the client might not render a minimap correctly or might
 	     * even decide to not show any semantic tokens at all.
          */
-        [DataMember(Name = "requests")]
+        [JsonPropertyName("requests")]
         public _SemanticTokensClientCapabilities_Requests Requests { get; set; }
 
         /**
          * The token types that the client supports.
          */
-        [DataMember(Name = "tokenTypes")]
+        [JsonPropertyName("tokenTypes")]
         public string[] TokenTypes { get; set; }
 
         /**
          * The token modifiers that the client supports.
          */
-        [DataMember(Name = "tokenModifiers")]
+        [JsonPropertyName("tokenModifiers")]
         public string[] TokenModifiers { get; set; }
 
         /**
          * The formats the clients supports.
          */
-        [DataMember(Name = "formats")]
+        [JsonPropertyName("formats")]
         public TokenFormat[] Formats { get; set; }
 
         /**
          * Whether the client supports tokens that can overlap each other.
          */
-        [DataMember(Name = "overlappingTokenSupport")]
+        [JsonPropertyName("overlappingTokenSupport")]
         public bool? OverlappingTokenSupport { get; set; }
 
         /**
 	     * Whether the client supports tokens that can span multiple lines.
 	     */
-        [DataMember(Name = "multilineTokenSupport")]
+        [JsonPropertyName("multilineTokenSupport")]
         public bool? MultilineTokenSupport { get; set; }
     }
 }

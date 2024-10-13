@@ -16,13 +16,13 @@ namespace LspTypes
         /**
          * The name of this symbol.
          */
-        [DataMember(Name = "name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /**
          * The kind of this symbol.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         public SymbolKind Kind { get; set; }
 
         /**
@@ -30,7 +30,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "tags")]
+        [JsonPropertyName("tags")]
         public SymbolTag[] Tags { get; set; }
 
         /**
@@ -38,7 +38,7 @@ namespace LspTypes
          *
          * @deprecated Use tags instead
          */
-        [DataMember(Name = "deprecated")]
+        [JsonPropertyName("deprecated")]
         public bool? Deprecated { get; set; }
 
         /**
@@ -52,7 +52,7 @@ namespace LspTypes
          * syntax tree. It can therefore not be used to re-construct a hierarchy of
          * the symbols.
          */
-        [DataMember(Name = "location")]
+        [JsonPropertyName("location")]
         public Location Location { get; set; }
 
         /**
@@ -61,7 +61,7 @@ namespace LspTypes
          * if necessary). It can't be used to re-infer a hierarchy for the document
          * symbols.
          */
-        [DataMember(Name = "containerName")]
+        [JsonPropertyName("containerName")]
         public string ContainerName { get; set; }
 
         public override bool Equals(object obj) { return this.Equals(obj as SymbolInformation); }

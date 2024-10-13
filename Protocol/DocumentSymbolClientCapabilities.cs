@@ -11,20 +11,20 @@ namespace LspTypes
         /**
          * Whether document symbol supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
          * Specific capabilities for the `SymbolKind` in the
 	     * `textDocument/documentSymbol` request.
 	     */
-        [DataMember(Name = "symbolKind")]
+        [JsonPropertyName("symbolKind")]
         public _DocumentSymbolClientCapabilities_SymbolKind SymbolKind { get; set; }
 
         /**
          * The client supports hierarchical document symbols.
          */
-        [DataMember(Name = "hierarchicalDocumentSymbolSupport")]
+        [JsonPropertyName("hierarchicalDocumentSymbolSupport")]
         public bool? HierarchicalDocumentSymbolSupport { get; set; }
 
         /**
@@ -34,7 +34,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "tagSupport")]
+        [JsonPropertyName("tagSupport")]
         public _DocumentSymbolClientCapabilities_TagSupport TagSupport { get; set; }
 
         /**
@@ -43,7 +43,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "labelSupport")]
+        [JsonPropertyName("labelSupport")]
         public bool? LabelSupport { get; set; }
     }
 }

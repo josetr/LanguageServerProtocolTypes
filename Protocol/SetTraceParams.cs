@@ -11,7 +11,7 @@ namespace LspTypes
         /**
 		 * The new value that should be assigned to the trace setting.
 		 */
-        [DataMember(Name = "value")]
+        [JsonPropertyName("value")]
         public TraceValue Value { get; set; }
     }
 }

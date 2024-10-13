@@ -14,7 +14,7 @@ namespace LspTypes
          * handle values outside its set gracefully and falls back
          * to a default value when unknown.
          */
-        [DataMember(Name = "valueSet")]
+        [JsonPropertyName("valueSet")]
         public CodeActionKind[] ValueSet { get; set; }
     }
 }

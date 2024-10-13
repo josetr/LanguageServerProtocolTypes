@@ -14,25 +14,25 @@ namespace LspTypes
         /**
 	     * The text document.
 	     */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
         /**
 	     * The color information to request presentations for.
 	     */
-        [DataMember(Name = "color")]
+        [JsonPropertyName("color")]
         [JsonProperty(Required = Required.Always)]
         public Color Color { get; set; }
 
         /**
 	     * The range where the color would be inserted. Serves as a context.
 	     */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

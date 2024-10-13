@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The text document's URI.
          */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
     }

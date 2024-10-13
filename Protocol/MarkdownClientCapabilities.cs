@@ -16,14 +16,14 @@ namespace LspTypes
         /**
 	     * The name of the parser.
 	     */
-        [DataMember(Name = "parser")]
+        [JsonPropertyName("parser")]
         [JsonProperty(Required = Required.Always)]
         public string Parser { get; set; }
 
         /**
 	     * The version of the parser.
 	     */
-        [DataMember(Name = "version")]
+        [JsonPropertyName("version")]
         public string Version { get; set; }
     }
 }

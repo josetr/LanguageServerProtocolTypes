@@ -17,7 +17,7 @@ namespace LspTypes
 	     * The client has support for the show document
 	     * request.
 	     */
-        [DataMember(Name = "support")]
+        [JsonPropertyName("support")]
         [JsonProperty(Required = Required.Always)]
         public bool Support { get; set; }
     }

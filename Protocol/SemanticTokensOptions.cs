@@ -6,13 +6,13 @@ namespace LspTypes
     [DataContract]
     public class SemanticTokensOptions : WorkDoneProgressOptions, ISemanticTokensOptions
     {
-        [DataMember(Name = "legend")]
+        [JsonPropertyName("legend")]
         public SemanticTokensLegend Legend { get; set; }
 
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public SumType<bool, object> Range { get; set; }
 
-        [DataMember(Name = "full")]
+        [JsonPropertyName("full")]
         public SumType<bool, object> Full { get; set; }
     }
 

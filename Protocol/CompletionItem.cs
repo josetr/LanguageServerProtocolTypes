@@ -18,7 +18,7 @@ namespace LspTypes
          * also the text that is inserted when selecting
          * this completion.
          */
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         [JsonProperty(Required = Required.Always)]
         public string Label { get; set; }
 
@@ -27,7 +27,7 @@ namespace LspTypes
          * an icon is chosen by the editor. The standardized set
          * of available values is defined in `CompletionItemKind`.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         public CompletionItemKind? Kind { get; set; }
 
         /**
@@ -35,20 +35,20 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "tags")]
+        [JsonPropertyName("tags")]
         public CompletionItemTag[] Tags { get; set; }
 
         /**
          * A human-readable string with additional information
          * about this item, like type or symbol information.
          */
-        [DataMember(Name = "detail")]
+        [JsonPropertyName("detail")]
         public string Detail { get; set; }
 
         /**
          * A human-readable string that represents a doc-comment.
          */
-        [DataMember(Name = "documentation")]
+        [JsonPropertyName("documentation")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkupContent> Documentation { get; set; }
 
@@ -57,7 +57,7 @@ namespace LspTypes
          *
          * @deprecated Use `tags` instead if supported.
          */
-        [DataMember(Name = "deprecated")]
+        [JsonPropertyName("deprecated")]
         public bool? Deprecated { get; set; }
 
         /**
@@ -67,21 +67,21 @@ namespace LspTypes
          * tool / client decides which item that is. The rule is that the *first*
          * item of those that match best is selected.
          */
-        [DataMember(Name = "preselect")]
+        [JsonPropertyName("preselect")]
         public bool? Preselect { get; set; }
 
         /**
          * A string that should be used when comparing this item
          * with other items. When `falsy` the label is used.
          */
-        [DataMember(Name = "sortText")]
+        [JsonPropertyName("sortText")]
         public string SortText { get; set; }
 
         /**
          * A string that should be used when filtering a set of
          * completion items. When `falsy` the label is used.
          */
-        [DataMember(Name = "filterText")]
+        [JsonPropertyName("filterText")]
         public string FilterText { get; set; }
 
         /**
@@ -96,7 +96,7 @@ namespace LspTypes
 	     * recommended to use `textEdit` instead since it avoids additional client
 	     * side interpretation.
          */
-        [DataMember(Name = "insertText")]
+        [JsonPropertyName("insertText")]
         public string InsertText { get; set; }
 
         /**
@@ -104,7 +104,7 @@ namespace LspTypes
 	     * `insertText` property and the `newText` property of a provided
 	     * `textEdit`. If omitted defaults to `InsertTextFormat.PlainText`.
 	     */
-        [DataMember(Name = "insertTextFormat")]
+        [JsonPropertyName("insertTextFormat")]
         [DefaultValue(InsertTextFormat.Plaintext)]
         public InsertTextFormat InsertTextFormat { get; set; }
 
@@ -115,7 +115,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "insertTextMode")]
+        [JsonPropertyName("insertTextMode")]
         public InsertTextMode? InsertTextMode { get; set; }
 
         /**
@@ -142,7 +142,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0 additional type `InsertReplaceEdit`
          */
-        [DataMember(Name = "textEdit")]
+        [JsonPropertyName("textEdit")]
         public SumType<TextEdit, InsertReplaceEdit>? TextEdit { get; set; }
 
         /**
@@ -154,7 +154,7 @@ namespace LspTypes
 	     * current cursor position (for example adding an import statement at the
 	     * top of the file if the completion item will insert an unqualified type).
 	     */
-        [DataMember(Name = "additionalTextEdits")]
+        [JsonPropertyName("additionalTextEdits")]
         public TextEdit[] AdditionalTextEdits { get; set; }
 
         /**
@@ -163,7 +163,7 @@ namespace LspTypes
 	     * commit characters should have `length=1` and that superfluous characters
 	     * will be ignored.
          */
-        [DataMember(Name = "commitCharacters")]
+        [JsonPropertyName("commitCharacters")]
         public string[] CommitCharacters { get; set; }
 
         /**
@@ -171,14 +171,14 @@ namespace LspTypes
 	     * *Note* that additional modifications to the current document should be
 	     * described with the additionalTextEdits-property.
          */
-        [DataMember(Name = "command")]
+        [JsonPropertyName("command")]
         public Command Command { get; set; }
 
         /**
          * A data entry field that is preserved on a completion item between
          * a completion and a completion resolve request.
          */
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public object Data { get; set; }
     }
 }

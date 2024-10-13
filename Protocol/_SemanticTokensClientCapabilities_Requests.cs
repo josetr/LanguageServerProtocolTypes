@@ -12,7 +12,7 @@ namespace LspTypes
          * The client will send the `textDocument/semanticTokens/range` request
 		 * if the server provides a corresponding handler.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, object> Range { get; set; }
 
@@ -20,7 +20,7 @@ namespace LspTypes
          * The client will send the `textDocument/semanticTokens/full` request
 		 * if the server provides a corresponding handler.
          */
-        [DataMember(Name = "full")]
+        [JsonPropertyName("full")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, object> Full { get; set; }
     }

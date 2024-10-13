@@ -12,13 +12,13 @@ namespace LspTypes
          * Client supports the follow content formats for the documentation
          * property. The order describes the preferred format of the client.
          */
-        [DataMember(Name = "documentationFormat")]
+        [JsonPropertyName("documentationFormat")]
         public MarkupKind[] DocumentationFormat { get; set; }
 
         /**
          * Client capabilities specific to parameter information.
          */
-        [DataMember(Name = "parameterInformation")]
+        [JsonPropertyName("parameterInformation")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public _SignatureHelpClientCapabilities_SignatureInformation_ParameterInformation ParameterInformation { get; set; }
 
@@ -28,7 +28,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "activeParameterSupport")]
+        [JsonPropertyName("activeParameterSupport")]
         public bool? ActiveParameterSupport { get; set; }
     }
 }

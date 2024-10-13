@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public SemanticTokensDeltaPartialResult() { }
 
-        [DataMember(Name = "edits")]
+        [JsonPropertyName("edits")]
         public SemanticTokensEdit[] Edits { get; set; }
     }
 }

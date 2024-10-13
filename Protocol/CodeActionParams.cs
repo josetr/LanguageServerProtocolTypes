@@ -14,26 +14,26 @@ namespace LspTypes
         /**
          * The document in which the command was invoked.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         public TextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * The range for which the command was invoked.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public Range Range { get; set; }
 
         /**
          * Context carrying additional information.
          */
-        [DataMember(Name = "context")]
+        [JsonPropertyName("context")]
         public CodeActionContext Context { get; set; }
 
         /**
          * An optional token that a server can use to report partial results (e.g. streaming) to
          * the client.
          */
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

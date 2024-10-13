@@ -8,13 +8,13 @@ namespace LspTypes
     {
         public SignatureHelpRegistrationOptions() { }
 
-        [DataMember(Name = "triggerCharacters")]
+        [JsonPropertyName("triggerCharacters")]
         public string[] TriggerCharacters { get; set; }
 
-        [DataMember(Name = "retriggerCharacters")]
+        [JsonPropertyName("retriggerCharacters")]
         public string[] RetriggerCharacters { get; set; }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

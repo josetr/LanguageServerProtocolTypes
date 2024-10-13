@@ -13,7 +13,7 @@ namespace LspTypes
          * to the version after all provided content changes have
          * been applied.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public VersionedTextDocumentIdentifier TextDocument { get; set; }
 
@@ -32,7 +32,7 @@ namespace LspTypes
 	     * - apply the `TextDocumentContentChangeEvent`s in a single notification
 	     *   in the order you receive them.
          */
-        [DataMember(Name = "contentChanges")]
+        [JsonPropertyName("contentChanges")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentContentChangeEvent[] ContentChanges { get; set; }
     }

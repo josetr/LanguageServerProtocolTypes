@@ -11,7 +11,7 @@ namespace LspTypes
          * Open and close notifications are sent to the server. If omitted open
 	     * close notification should not be sent.
 	     */
-        [DataMember(Name = "openClose")]
+        [JsonPropertyName("openClose")]
         public bool? OpenClose { get; set; }
 
         /**
@@ -20,27 +20,27 @@ namespace LspTypes
 	     * TextDocumentSyncKind.Incremental. If omitted it defaults to
 	     * TextDocumentSyncKind.None.
 	     */
-        [DataMember(Name = "change")]
+        [JsonPropertyName("change")]
         public TextDocumentSyncKind? Change { get; set; }
         /**
 		 * If present will save notifications are sent to the server. If omitted
 		 * the notification should not be sent.
 		 */
-        [DataMember(Name = "willSave")]
+        [JsonPropertyName("willSave")]
         public bool? WillSave { get; set; }
 
         /**
 		 * If present will save wait until requests are sent to the server. If
 		 * omitted the request should not be sent.
 		 */
-        [DataMember(Name = "willSaveWaitUntil")]
+        [JsonPropertyName("willSaveWaitUntil")]
         public bool? WillSaveWaitUntil { get; set; }
 
         /**
 		 * If present save notifications are sent to the server. If omitted the
 		 * notification should not be sent.
 		 */
-        [DataMember(Name = "save")]
+        [JsonPropertyName("save")]
         public SumType<bool, SaveOptions> Save { get; set; }
     }
 }

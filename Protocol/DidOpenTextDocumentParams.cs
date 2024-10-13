@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The document that was opened.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentItem TextDocument { get; set; }
     }

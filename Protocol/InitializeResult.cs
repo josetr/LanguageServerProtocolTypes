@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The capabilities the language server provides.
          */
-        [DataMember(Name = "capabilities")]
+        [JsonPropertyName("capabilities")]
         [JsonProperty(Required = Required.Always)]
         public ServerCapabilities Capabilities { get; set; }
 
@@ -20,7 +20,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "serverInfo")]
+        [JsonPropertyName("serverInfo")]
         public _InitializeResults_ServerInfo ServerInfo { get; set; }
     }
 }

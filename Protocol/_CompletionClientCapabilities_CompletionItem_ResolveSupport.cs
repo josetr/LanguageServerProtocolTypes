@@ -11,7 +11,7 @@ namespace LspTypes
         /**
 		 * The properties that a client can resolve lazily.
 		 */
-        [DataMember(Name = "properties")]
+        [JsonPropertyName("properties")]
         public string[] Properties { get; set; }
     }
 }

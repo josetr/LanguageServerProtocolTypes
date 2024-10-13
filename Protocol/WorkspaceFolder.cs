@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The associated URI for this workspace folder.
          */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
@@ -19,7 +19,7 @@ namespace LspTypes
          * The name of the workspace folder. Used to refer to this
          * workspace folder in the user interface.
          */
-        [DataMember(Name = "name")]
+        [JsonPropertyName("name")]
         [JsonProperty(Required = Required.Always)]
         public string Name { get; set; }
     }

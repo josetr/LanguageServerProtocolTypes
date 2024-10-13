@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * Execute command supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
     }
 }

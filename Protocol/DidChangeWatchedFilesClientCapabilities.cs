@@ -13,7 +13,7 @@ namespace LspTypes
 	     * Please note that the current protocol doesn't support static
 	     * configuration for file changes from the server side.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
     }
 }

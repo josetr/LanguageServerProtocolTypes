@@ -16,13 +16,13 @@ namespace LspTypes
          * Used as the underlined span for mouse interaction. Defaults to the word range at
          * the mouse position.
          */
-        [DataMember(Name = "originSelectionRange")]
+        [JsonPropertyName("originSelectionRange")]
         public Range OriginSelectionRange { get; set; }
 
         /**
          * The target resource identifier of this link.
          */
-        [DataMember(Name = "targetUri")]
+        [JsonPropertyName("targetUri")]
         [JsonProperty(Required = Required.Always)]
         public string TargetUri { get; set; }
 
@@ -31,7 +31,7 @@ namespace LspTypes
          * range enclosing this symbol not including leading/trailing whitespace but everything else
          * like comments. This information is typically used to highlight the range in the editor.
          */
-        [DataMember(Name = "targetRange")]
+        [JsonPropertyName("targetRange")]
         [JsonProperty(Required = Required.Always)]
         public Range TargetRange { get; set; }
 
@@ -39,7 +39,7 @@ namespace LspTypes
          * The range that should be selected and revealed when this link is being followed, e.g the name of a function.
          * Must be contained by the the `targetRange`. See also `DocumentSymbol#range`
          */
-        [DataMember(Name = "targetSelectionRange")]
+        [JsonPropertyName("targetSelectionRange")]
         [JsonProperty(Required = Required.Always)]
         public Range TargetSelectionRange { get; set; }
     }

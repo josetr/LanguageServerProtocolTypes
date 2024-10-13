@@ -8,11 +8,11 @@ namespace LspTypes
     {
         public DefinitionOptions() { }
 
-        [DataMember(Name = "documentSelector")]
+        [JsonPropertyName("documentSelector")]
         [JsonProperty(Required = Required.Always)]
         public DocumentFilter[] DocumentSelector { get; set; }
 
-        [DataMember(Name = "id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
     }
 }

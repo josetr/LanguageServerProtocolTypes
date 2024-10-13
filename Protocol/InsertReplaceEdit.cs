@@ -16,21 +16,21 @@ namespace LspTypes
         /**
 	     * The string to be inserted.
 	     */
-        [DataMember(Name = "newText")]
+        [JsonPropertyName("newText")]
         [JsonProperty(Required = Required.Always)]
         public string NewText { get; set; }
 
         /**
 	     * The range if the insert is requested
 	     */
-        [DataMember(Name = "insert")]
+        [JsonPropertyName("insert")]
         [JsonProperty(Required = Required.Always)]
         public Range Insert { get; set; }
 
         /**
 	     * The range if the replace is requested.
 	     */
-        [DataMember(Name = "replace")]
+        [JsonPropertyName("replace")]
         [JsonProperty(Required = Required.Always)]
         public Range Replace { get; set; }
     }

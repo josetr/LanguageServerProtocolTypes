@@ -11,14 +11,14 @@ namespace LspTypes
         /**
 		 * The engine's name.
 		 */
-        [DataMember(Name = "engine")]
+        [JsonPropertyName("engine")]
         [JsonProperty(Required = Required.Always)]
         public string Engine { get; set; }
 
         /**
 		 * The engine's version.
 		 */
-        [DataMember(Name = "version")]
+        [JsonPropertyName("version")]
         public string Version { get; set; }
     }
 }

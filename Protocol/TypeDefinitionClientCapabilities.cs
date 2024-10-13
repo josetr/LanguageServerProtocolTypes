@@ -13,7 +13,7 @@ namespace LspTypes
 	     * `true` the client supports the new `TypeDefinitionRegistrationOptions`
 	     * return value for the corresponding server capability as well.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -21,7 +21,7 @@ namespace LspTypes
          *
          * @since 3.14.0
          */
-        [DataMember(Name = "linkSupport")]
+        [JsonPropertyName("linkSupport")]
         public bool? LinkSupport { get; set; }
     }
 }

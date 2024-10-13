@@ -19,20 +19,20 @@ namespace LspTypes
          * The range in which this code lens is valid. Should only span a single
 	     * line.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public Range Range { get; set; }
 
         /**
          * The command this code lens represents.
          */
-        [DataMember(Name = "command")]
+        [JsonPropertyName("command")]
         public Command Command { get; set; }
 
         /**
          * A data entry field that is preserved on a code lens item between
          * a code lens and a code lens resolve request.
          */
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public object Data { get; set; }
     }
 }

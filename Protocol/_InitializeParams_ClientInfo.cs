@@ -11,14 +11,14 @@ namespace LspTypes
         /**
          * The name of the client as defined by the client.
          */
-        [DataMember(Name = "name")]
+        [JsonPropertyName("name")]
         [JsonProperty(Required = Required.Always)]
         public string Name { get; set; }
 
         /**
          * The client's version as defined by the client.
          */
-        [DataMember(Name = "version")]
+        [JsonPropertyName("version")]
         public string Version { get; set; }
     }
 }

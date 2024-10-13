@@ -17,7 +17,7 @@ namespace LspTypes
 		 * and is useful for situation where a server for example detect a project
 		 * wide change that requires such a calculation.
 		 */
-        [DataMember(Name = "refreshSupport")]
+        [JsonPropertyName("refreshSupport")]
         public bool? RefreshSupport { get; set; }
     }
 }

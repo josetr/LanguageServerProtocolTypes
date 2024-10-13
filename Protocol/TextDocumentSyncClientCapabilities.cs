@@ -11,13 +11,13 @@ namespace LspTypes
         /**
          * Whether text document synchronization supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? dynamicRegistration { get; set; }
 
         /**
          * The client supports sending will save notifications.
          */
-        [DataMember(Name = "willSave")]
+        [JsonPropertyName("willSave")]
         public bool? WillSave { get; set; }
 
         /**
@@ -25,13 +25,13 @@ namespace LspTypes
          * waits for a response providing text edits which will
          * be applied to the document before it is saved.
          */
-        [DataMember(Name = "willSaveWaitUntil")]
+        [JsonPropertyName("willSaveWaitUntil")]
         public bool? WillSaveWaitUntil { get; set; }
 
         /**
          * The client supports did save notifications.
          */
-        [DataMember(Name = "didSave")]
+        [JsonPropertyName("didSave")]
         public bool? DidSave { get; set; }
     }
 }

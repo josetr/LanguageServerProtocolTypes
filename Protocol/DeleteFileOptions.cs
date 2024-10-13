@@ -14,13 +14,13 @@ namespace LspTypes
         /**
          * Delete the content recursively if a folder is denoted.
          */
-        [DataMember(Name = "recursive")]
+        [JsonPropertyName("recursive")]
         public bool? Recursive { get; set; }
 
         /**
          * Ignore the operation if the file doesn't exist.
          */
-        [DataMember(Name = "ignoreIfNotExists")]
+        [JsonPropertyName("ignoreIfNotExists")]
         public bool? IgnoreIfNotExists { get; set; }
     }
 }

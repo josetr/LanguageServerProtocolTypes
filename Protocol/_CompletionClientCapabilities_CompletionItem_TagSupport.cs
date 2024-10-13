@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The tags supported by the client.
          */
-        [DataMember(Name = "valueSet")]
+        [JsonPropertyName("valueSet")]
         public CompletionItemTag[] ValueSet { get; set; }
     }
 }

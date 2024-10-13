@@ -11,7 +11,7 @@ namespace LspTypes
         /**
 	     * Capabilities specific to the `MessageActionItem` type.
 	     */
-        [DataMember(Name = "messageActionItem")]
+        [JsonPropertyName("messageActionItem")]
         public _ShowMessageRequestClientCapabilities_MessageActionItem AnnotationId { get; set; }
 
     }

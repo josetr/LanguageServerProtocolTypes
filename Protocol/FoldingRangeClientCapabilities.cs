@@ -14,7 +14,7 @@ namespace LspTypes
 	     * `FoldingRangeRegistrationOptions` return value for the corresponding
 	     * server capability as well.
 	     */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -22,7 +22,7 @@ namespace LspTypes
 	     * per document. The value serves as a hint, servers are free to follow the
 	     * limit.
          */
-        [DataMember(Name = "rangeLimit")]
+        [JsonPropertyName("rangeLimit")]
         public uint? RangeLimit { get; set; }
 
         /**
@@ -30,7 +30,7 @@ namespace LspTypes
 	     * If set, client will ignore specified `startCharacter` and `endCharacter`
 	     * properties in a FoldingRange.
          */
-        [DataMember(Name = "lineFoldingOnly")]
+        [JsonPropertyName("lineFoldingOnly")]
         public bool? LineFoldingOnly { get; set; }
     }
 }

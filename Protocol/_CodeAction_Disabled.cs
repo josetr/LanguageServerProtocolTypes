@@ -14,7 +14,7 @@ namespace LspTypes
 		 *
 		 * This is displayed in the code actions UI.
 		 */
-        [DataMember(Name = "reason")]
+        [JsonPropertyName("reason")]
         public string Reason { get; set; }
     }
 }

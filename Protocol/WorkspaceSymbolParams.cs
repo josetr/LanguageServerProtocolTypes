@@ -15,14 +15,14 @@ namespace LspTypes
          * A query string to filter symbols by. Clients may send an empty
          * string here to request all symbols.
          */
-        [DataMember(Name = "query")]
+        [JsonPropertyName("query")]
         public string Query { get; set; }
 
         /**
          * An optional token that a server can use to report partial results (e.g. streaming) to
          * the client.
          */
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

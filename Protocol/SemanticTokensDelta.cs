@@ -8,14 +8,14 @@ namespace LspTypes
     {
         public SemanticTokensDelta() { }
 
-        [DataMember(Name = "resultId")]
+        [JsonPropertyName("resultId")]
         public string ResultId { get; set; }
 
         /**
 	     * The semantic token edits to transform a previous result into a new
 	     * result.
 	     */
-        [DataMember(Name = "edits")]
+        [JsonPropertyName("edits")]
         public SemanticTokensEdit[] Edits { get; set; }
     }
 }

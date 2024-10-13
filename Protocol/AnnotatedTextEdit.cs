@@ -16,7 +16,7 @@ namespace LspTypes
         /**
 	     * The actual annotation identifier.
 	     */
-        [DataMember(Name = "annotationId")]
+        [JsonPropertyName("annotationId")]
         [JsonProperty(Required = Required.Always)]
         public string AnnotationId { get; set; }
     }

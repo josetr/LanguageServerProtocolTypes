@@ -16,14 +16,14 @@ namespace LspTypes
         /**
          * The location of this related diagnostic information.
          */
-        [DataMember(Name = "location")]
+        [JsonPropertyName("location")]
         [JsonProperty(Required = Required.Always)]
         public Location Location { get; set; }
 
         /**
          * The message of this related diagnostic information.
          */
-        [DataMember(Name = "message")]
+        [JsonPropertyName("message")]
         [JsonProperty(Required = Required.Always)]
         public string Message { get; set; }
     }

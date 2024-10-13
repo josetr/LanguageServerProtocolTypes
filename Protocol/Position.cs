@@ -17,7 +17,7 @@ namespace LspTypes
         /**
          * Line position in a document (zero-based).
          */
-        [DataMember(Name = "line")]
+        [JsonPropertyName("line")]
         public uint Line { get; set; }
 
         /**
@@ -28,7 +28,7 @@ namespace LspTypes
 	     * If the character value is greater than the line length it defaults back
 	     * to the line length.
          */
-        [DataMember(Name = "character")]
+        [JsonPropertyName("character")]
         public uint Character { get; set; }
 
         public override bool Equals(object obj)

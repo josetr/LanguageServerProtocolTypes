@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * Code lens has a resolve provider as well.
          */
-        [DataMember(Name = "resolveProvider")]
+        [JsonPropertyName("resolveProvider")]
         public bool? ResolveProvider { get; set; }
     }
 

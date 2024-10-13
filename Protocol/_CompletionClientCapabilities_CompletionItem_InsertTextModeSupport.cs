@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public _CompletionClientCapabilities_CompletionItem_InsertTextModeSupport() { }
 
-        [DataMember(Name = "valueSet")]
+        [JsonPropertyName("valueSet")]
         public InsertTextMode[] ValueSet { get; set; }
     }
 }

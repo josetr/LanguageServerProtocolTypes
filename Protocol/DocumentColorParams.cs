@@ -11,11 +11,11 @@ namespace LspTypes
         /**
 	     * The text document.
 	     */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
 

@@ -17,7 +17,7 @@ namespace LspTypes
         /**
          * Indicates whether the edit was applied or not.
          */
-        [DataMember(Name = "applied")]
+        [JsonPropertyName("applied")]
         [JsonProperty(Required = Required.Always)]
         public bool Applied { get; set; }
 
@@ -27,7 +27,7 @@ namespace LspTypes
          * logging or to provide a suitable error for a request that
          * triggered the edit.
          */
-        [DataMember(Name = "failureReason")]
+        [JsonPropertyName("failureReason")]
         public string FailureReason { get; set; }
 
         /**
@@ -36,7 +36,7 @@ namespace LspTypes
          * only available if the client signals a `failureHandlingStrategy`
          * in its client capabilities.
          */
-        [DataMember(Name = "failedChange")]
+        [JsonPropertyName("failedChange")]
         public uint? FailedChange { get; set; }
     }
 }

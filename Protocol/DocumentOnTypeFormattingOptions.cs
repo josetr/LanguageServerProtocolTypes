@@ -17,14 +17,14 @@ namespace LspTypes
         /**
          * A character on which formatting should be triggered, like `}`.
          */
-        [DataMember(Name = "firstTriggerCharacter")]
+        [JsonPropertyName("firstTriggerCharacter")]
         [JsonProperty(Required = Required.Always)]
         public string FirstTriggerCharacter { get; set; }
 
         /**
          * More trigger characters.
          */
-        [DataMember(Name = "moreTriggerCharacter")]
+        [JsonPropertyName("moreTriggerCharacter")]
         public string[] MoreTriggerCharacter { get; set; }
     }
 }

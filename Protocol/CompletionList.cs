@@ -15,13 +15,13 @@ namespace LspTypes
          * This list it not complete. Further typing should result in recomputing
          * this list.
          */
-        [DataMember(Name = "isIncomplete")]
+        [JsonPropertyName("isIncomplete")]
         public bool IsIncomplete { get; set; }
 
         /**
          * The completion items.
          */
-        [DataMember(Name = "items")]
+        [JsonPropertyName("items")]
         public CompletionItem[] Items { get; set; }
     }
 }

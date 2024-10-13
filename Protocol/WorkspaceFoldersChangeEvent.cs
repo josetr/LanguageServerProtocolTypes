@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The array of added workspace folders
          */
-        [DataMember(Name = "added")]
+        [JsonPropertyName("added")]
         [JsonProperty(Required = Required.Always)]
         public WorkspaceFolder[] Added { get; set; }
 
@@ -19,7 +19,7 @@ namespace LspTypes
         /**
          * The array of the removed workspace folders
          */
-        [DataMember(Name = "removed")]
+        [JsonPropertyName("removed")]
         [JsonProperty(Required = Required.Always)]
         public WorkspaceFolder[] Removed { get; set; }
     }

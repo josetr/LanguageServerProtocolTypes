@@ -10,7 +10,7 @@ namespace LspTypes
         /**
          * A short title like 'Retry', 'Open Log' etc.
          */
-        [DataMember(Name = "title")]
+        [JsonPropertyName("title")]
         public string Title { get; set; }
     }
 }

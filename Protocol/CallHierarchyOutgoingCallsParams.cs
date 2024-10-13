@@ -6,10 +6,10 @@ namespace LspTypes
     [DataContract]
     public class CallHierarchyOutgoingCallsParams : WorkDoneProgressParams, IPartialResultParams
     {
-        [DataMember(Name = "item")]
+        [JsonPropertyName("item")]
         public CallHierarchyItem Item { get; set; }
 
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

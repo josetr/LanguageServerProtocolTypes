@@ -18,7 +18,7 @@ namespace LspTypes
          * If code complete should automatically be trigger on characters not being valid inside
          * an identifier (for example `.` in JavaScript) list them in `triggerCharacters`.
          */
-        [DataMember(Name = "triggerCharacters")]
+        [JsonPropertyName("triggerCharacters")]
         public string[] TriggerCharacters { get; set; }
 
         /**
@@ -31,7 +31,7 @@ namespace LspTypes
          *
          * @since 3.2.0
          */
-        [DataMember(Name = "allCommitCharacters")]
+        [JsonPropertyName("allCommitCharacters")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string[] AllCommitCharacters { get; set; }
 
@@ -39,11 +39,11 @@ namespace LspTypes
          * The server provides support to resolve additional
          * information for a completion item.
          */
-        [DataMember(Name = "resolveProvider")]
+        [JsonPropertyName("resolveProvider")]
         public bool? ResolveProvider { get; set; }
 
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

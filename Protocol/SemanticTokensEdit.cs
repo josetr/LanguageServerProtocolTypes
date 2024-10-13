@@ -11,21 +11,21 @@ namespace LspTypes
         /**
 	     * The start offset of the edit.
 	     */
-        [DataMember(Name = "start")]
+        [JsonPropertyName("start")]
         [JsonProperty(Required = Required.Always)]
         public uint Start { get; set; }
 
         /**
 	     * The count of elements to remove.
 	     */
-        [DataMember(Name = "deleteCount")]
+        [JsonPropertyName("deleteCount")]
         [JsonProperty(Required = Required.Always)]
         public uint DeleteCount { get; set; }
 
         /**
 	     * The elements to insert.
 	     */
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public uint[] Data { get; set; }
     }
 }

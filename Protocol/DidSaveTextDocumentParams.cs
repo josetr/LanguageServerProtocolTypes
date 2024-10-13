@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The document that was saved.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
@@ -19,7 +19,7 @@ namespace LspTypes
          * Optional the content when saved. Depends on the includeText value
          * when the save notification was requested.
          */
-        [DataMember(Name = "text")]
+        [JsonPropertyName("text")]
         public string Text { get; set; }
     }
 }

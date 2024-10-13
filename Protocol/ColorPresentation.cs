@@ -13,7 +13,7 @@ namespace LspTypes
 	     * picker header. By default this is also the text that is inserted when
 		 * selecting this color presentation.
 		 */
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         [JsonProperty(Required = Required.Always)]
         public string Label { get; set; }
 
@@ -22,7 +22,7 @@ namespace LspTypes
 		 * this presentation for the color.  When `falsy` the
 		 * [label](#ColorPresentation.label) is used.
 		 */
-        [DataMember(Name = "textEdit")]
+        [JsonPropertyName("textEdit")]
         [JsonProperty(Required = Required.Always)]
         public TextEdit TextEdit { get; set; }
 
@@ -31,7 +31,7 @@ namespace LspTypes
 		 * when selecting this color presentation. Edits must not overlap with the
 		 * main [edit](#ColorPresentation.textEdit) nor with themselves.
 		 */
-        [DataMember(Name = "additionalTextEdits")]
+        [JsonPropertyName("additionalTextEdits")]
         public TextEdit[] AdditionalTextEdits { get; set; }
     }
 }

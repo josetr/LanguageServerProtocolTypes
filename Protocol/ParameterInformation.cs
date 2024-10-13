@@ -26,7 +26,7 @@ namespace LspTypes
 	     * signature label. Its intended use case is to highlight the parameter
 	     * label part in the `SignatureInformation.label`.
 	     */
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         [JsonProperty(Required = Required.Always, DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, Tuple<uint, uint>> Label { get; set; }
 
@@ -34,7 +34,7 @@ namespace LspTypes
          * The human-readable doc-comment of this parameter. Will be shown
          * in the UI but can be omitted.
          */
-        [DataMember(Name = "documentation")]
+        [JsonPropertyName("documentation")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkupContent> Documentation { get; set; }
     }

@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public HoverParams() : base() { }
 
-        [DataMember(Name = "workDoneToken")]
+        [JsonPropertyName("workDoneToken")]
         public SumType<string, int> WorkDoneToken { get; set; }
     }
 }

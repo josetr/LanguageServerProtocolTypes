@@ -10,7 +10,7 @@ namespace LspTypes
         /**
 	     * The text document.
 	     */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
@@ -18,7 +18,7 @@ namespace LspTypes
 	     * The result id of a previous response. The result Id can either point to
 	     * a full response or a delta response depending on what was received last.
 	     */
-        [DataMember(Name = "previousResultId")]
+        [JsonPropertyName("previousResultId")]
         [JsonProperty(Required = Required.Always)]
         public string PreviousResultId { get; set; }
 
@@ -26,7 +26,7 @@ namespace LspTypes
          * An optional token that a server can use to report partial results (e.g. streaming) to
          * the client.
          */
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

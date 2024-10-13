@@ -12,7 +12,7 @@ namespace LspTypes
 		  * A list of ranges that can be renamed together. The ranges must have
 		  * identical length and contain identical text content. The ranges cannot overlap.
 		  */
-        [DataMember(Name = "ranges")]
+        [JsonPropertyName("ranges")]
         [JsonProperty(Required = Required.Always)]
         public Range Ranges { get; set; }
 
@@ -21,7 +21,7 @@ namespace LspTypes
 		 * the given ranges. If no pattern is provided, the client configuration's word
 		 * pattern will be used.
 		 */
-        [DataMember(Name = "wordPattern")]
+        [JsonPropertyName("wordPattern")]
         public string WordPattern { get; set; }
     }
 }

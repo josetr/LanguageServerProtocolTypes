@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * Renames should be checked and tested before being executed.
          */
-        [DataMember(Name = "prepareProvider")]
+        [JsonPropertyName("prepareProvider")]
         public bool? PrepareProvider { get; set; }
     }
 

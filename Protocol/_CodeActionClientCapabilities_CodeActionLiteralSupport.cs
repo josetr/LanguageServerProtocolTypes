@@ -12,7 +12,7 @@ namespace LspTypes
          * The code action kind is supported with the following value
          * set.
          */
-        [DataMember(Name = "codeActionKind")]
+        [JsonPropertyName("codeActionKind")]
         public _CodeActionClientCapabilities_CodeActionLiteralSupport_CodeActionKind CodeActionKind { get; set; }
     }
 }

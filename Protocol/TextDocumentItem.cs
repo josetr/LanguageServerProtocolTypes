@@ -11,14 +11,14 @@ namespace LspTypes
         /**
          * The text document's URI.
          */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
         /**
          * The text document's language identifier.
          */
-        [DataMember(Name = "languageId")]
+        [JsonPropertyName("languageId")]
         [JsonProperty(Required = Required.Always)]
         public string LanguageId { get; set; }
 
@@ -26,14 +26,14 @@ namespace LspTypes
          * The version number of this document (it will increase after each
          * change, including undo/redo).
          */
-        [DataMember(Name = "version")]
+        [JsonPropertyName("version")]
         [JsonProperty(Required = Required.Always)]
         public int Version { get; set; }
 
         /**
          * The content of the opened text document.
          */
-        [DataMember(Name = "text")]
+        [JsonPropertyName("text")]
         [JsonProperty(Required = Required.Always)]
         public string Text { get; set; }
     }

@@ -10,13 +10,13 @@ namespace LspTypes
         /**
          * The message type. See {@link MessageType}
          */
-        [DataMember(Name = "type")]
+        [JsonPropertyName("type")]
         public MessageType MessageType { get; set; }
 
         /**
          * The actual message
          */
-        [DataMember(Name = "message")]
+        [JsonPropertyName("message")]
         public string Message { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace LspTypes
         /**
 	     * The URI for which diagnostic information is reported.
 	     */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
@@ -22,14 +22,14 @@ namespace LspTypes
 	     *
 	     * @since 3.15.0
 	     */
-        [DataMember(Name = "version")]
+        [JsonPropertyName("version")]
         public uint? Version { get; set; }
 
 
         /**
 	     * An array of diagnostic information items.
 	     */
-        [DataMember(Name = "diagnostics")]
+        [JsonPropertyName("diagnostics")]
         [JsonProperty(Required = Required.Always)]
         public Diagnostic[] Diagnostics { get; set; }
     }

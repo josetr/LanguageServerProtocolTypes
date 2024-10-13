@@ -14,21 +14,21 @@ namespace LspTypes
         /**
          * A create
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public string Kind { get; set; }
 
         /**
          * The resource to create.
          */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
         /**
          * Additional options
          */
-        [DataMember(Name = "options")]
+        [JsonPropertyName("options")]
         public CreateFileOptions Options { get; set; }
 
         /**
@@ -36,7 +36,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "annotationId")]
+        [JsonPropertyName("annotationId")]
         public string AnnotationId { get; set; }
     }
 }

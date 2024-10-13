@@ -19,7 +19,7 @@ namespace LspTypes
          * the completion items kinds from `Text` to `Reference` as defined in
          * the initial version of the protocol.
          */
-        [DataMember(Name = "valueSet")]
+        [JsonPropertyName("valueSet")]
         public CompletionItemKind[] ValueSet { get; set; }
     }
 }

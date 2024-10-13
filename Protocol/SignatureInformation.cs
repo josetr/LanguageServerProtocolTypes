@@ -17,21 +17,21 @@ namespace LspTypes
          * The label of this signature. Will be shown in
          * the UI.
          */
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         public string Label { get; set; }
 
         /**
          * The human-readable doc-comment of this signature. Will be shown
          * in the UI but can be omitted.
          */
-        [DataMember(Name = "documentation")]
+        [JsonPropertyName("documentation")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkupContent> Documentation { get; set; }
 
         /**
          * The parameters of this signature.
          */
-        [DataMember(Name = "parameters")]
+        [JsonPropertyName("parameters")]
         public ParameterInformation[] Parameters { get; set; }
 
         /**
@@ -41,7 +41,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "activeParameter")]
+        [JsonPropertyName("activeParameter")]
         public uint? ActiveParameter { get; set; }
     }
 }

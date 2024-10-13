@@ -14,7 +14,7 @@ namespace LspTypes
         /**
          * The watchers to register.
          */
-        [DataMember(Name = "watchers")]
+        [JsonPropertyName("watchers")]
         [JsonProperty(Required = Required.Always)]
         public FileSystemWatcher[] Watchers { get; set; }
     }

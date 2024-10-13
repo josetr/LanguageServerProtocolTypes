@@ -13,13 +13,13 @@ namespace LspTypes
          * request must return a [ResponseError](#ResponseError) with an
          * appropriate message set.
          */
-        [DataMember(Name = "newName")]
+        [JsonPropertyName("newName")]
         public string NewName { get; set; }
 
         /**
          * An optional token that a server can use to report work done progress.
          */
-        [DataMember(Name = "workDoneToken")]
+        [JsonPropertyName("workDoneToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, int> WorkDoneToken { get; set; }
     }

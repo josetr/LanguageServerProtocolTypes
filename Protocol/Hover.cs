@@ -14,7 +14,7 @@ namespace LspTypes
         /**
          * The hover's content
          */
-        [DataMember(Name = "contents")]
+        [JsonPropertyName("contents")]
         [JsonProperty(Required = Required.Always, DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, MarkedString, MarkedString[], MarkupContent> Contents { get; set; }
 
@@ -22,7 +22,7 @@ namespace LspTypes
          * An optional range is a range inside a text document
          * that is used to visualize a hover, e.g. by changing the background color.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public Range Range { get; set; }
     }
 }

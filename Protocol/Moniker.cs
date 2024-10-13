@@ -11,7 +11,7 @@ namespace LspTypes
         /**
 		 * The scheme of the moniker. For example tsc or .Net
 		 */
-        [DataMember(Name = "scheme")]
+        [JsonPropertyName("scheme")]
         [JsonProperty(Required = Required.Always)]
         public string Scheme { get; set; }
 
@@ -19,21 +19,21 @@ namespace LspTypes
 		 * The identifier of the moniker. The value is opaque in LSIF however
 		 * schema owners are allowed to define the structure if they want.
 		 */
-        [DataMember(Name = "identifier")]
+        [JsonPropertyName("identifier")]
         [JsonProperty(Required = Required.Always)]
         public string Identifier { get; set; }
 
         /**
 		 * The scope in which the moniker is unique
 		 */
-        [DataMember(Name = "unique")]
+        [JsonPropertyName("unique")]
         [JsonProperty(Required = Required.Always)]
         public UniquenessLevel Unique { get; set; }
 
         /**
 		 * The moniker kind if known.
 		 */
-        [DataMember(Name = "kine")]
+        [JsonPropertyName("kine")]
         public MonikerKind? Kind { get; set; }
     }
 }

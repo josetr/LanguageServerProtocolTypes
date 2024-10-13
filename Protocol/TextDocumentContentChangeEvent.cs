@@ -14,7 +14,7 @@ namespace LspTypes
         /**
          * The range of the document that changed.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public Range Range { get; set; }
 
         /**
@@ -22,14 +22,14 @@ namespace LspTypes
          *
          * @deprecated use range instead.
          */
-        [DataMember(Name = "rangeLength")]
+        [JsonPropertyName("rangeLength")]
         public uint? RangeLength { get; set; }
 
         /**
          * The new text for the provided range.
          */
         // (or document)
-        [DataMember(Name = "text")]
+        [JsonPropertyName("text")]
         public string Text { get; set; }
     }
 }

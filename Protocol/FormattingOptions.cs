@@ -15,14 +15,14 @@ namespace LspTypes
         /**
          * Size of a tab in spaces.
          */
-        [DataMember(Name = "tabSize")]
+        [JsonPropertyName("tabSize")]
         [JsonProperty(Required = Required.Always)]
         public uint TabSize { get; set; }
 
         /**
          * Prefer spaces over tabs.
          */
-        [DataMember(Name = "insertSpaces")]
+        [JsonPropertyName("insertSpaces")]
         [JsonProperty(Required = Required.Always)]
         public bool InsertSpaces { get; set; }
 
@@ -31,7 +31,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "trimTrailingWhitespace")]
+        [JsonPropertyName("trimTrailingWhitespace")]
         public bool? TrimTrailingWhitespace { get; set; }
 
         /**
@@ -39,7 +39,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "insertFinalNewline")]
+        [JsonPropertyName("insertFinalNewline")]
         public bool? InsertFinalNewline { get; set; }
 
         /**
@@ -47,7 +47,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "trimFinalNewlines")]
+        [JsonPropertyName("trimFinalNewlines")]
         public bool? TrimFinalNewlines { get; set; }
 
         /**

@@ -15,7 +15,7 @@ namespace LspTypes
 		 * A human-readable string describing the actual change. The string
 		 * is rendered prominent in the user interface.
 		 */
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         [JsonProperty(Required = Required.Always)]
         public string Label { get; set; }
 
@@ -23,14 +23,14 @@ namespace LspTypes
 		 * A flag which indicates that user confirmation is needed
 		 * before applying the change.
 		 */
-        [DataMember(Name = "needsConfirmation")]
+        [JsonPropertyName("needsConfirmation")]
         public bool? NeedsConfirmation { get; set; }
 
         /**
 		 * A human-readable string which is rendered less prominent in
 		 * the user interface.
 		 */
-        [DataMember(Name = "description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
     }
 }

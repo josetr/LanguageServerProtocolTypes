@@ -11,14 +11,14 @@ namespace LspTypes
         /**
 		 * The message to be logged.
 		 */
-        [DataMember(Name = "message")]
+        [JsonPropertyName("message")]
         public string Message { get; set; }
 
         /**
 		 * Additional information that can be computed if the `trace` configuration
 		 * is set to `'verbose'`
 		 */
-        [DataMember(Name = "verbose")]
+        [JsonPropertyName("verbose")]
         public string Verbose { get; set; }
     }
 }

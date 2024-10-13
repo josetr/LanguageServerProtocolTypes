@@ -16,7 +16,7 @@ namespace LspTypes
         /**
 	     * A file:// URI for the location of the file/folder being created.
 	     */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         public string Uri { get; set; }
     }
 }

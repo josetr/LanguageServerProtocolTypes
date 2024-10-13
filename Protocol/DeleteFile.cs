@@ -15,21 +15,21 @@ namespace LspTypes
          * A delete
          */
         // Must always be 'delete'.
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public string Kind { get; set; }
 
         /**
          * The file to delete.
          */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
         /**
          * Delete options.
          */
-        [DataMember(Name = "options")]
+        [JsonPropertyName("options")]
         public DeleteFileOptions Options { get; set; }
 
         /**
@@ -37,7 +37,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "annotationId")]
+        [JsonPropertyName("annotationId")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string AnnotationId { get; set; }
     }

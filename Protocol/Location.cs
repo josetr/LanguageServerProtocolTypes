@@ -10,11 +10,11 @@ namespace LspTypes
     {
         public Location() { }
 
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public Range Range { get; set; }
 
         public override bool Equals(object obj) { return this.Equals(obj as Location); }

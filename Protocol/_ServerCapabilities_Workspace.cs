@@ -13,10 +13,10 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "workspaceFolders")]
+        [JsonPropertyName("workspaceFolders")]
         public WorkspaceFoldersServerCapabilities WorkspaceFolders { get; set; }
 
-        [DataMember(Name = "fileOperations")]
+        [JsonPropertyName("fileOperations")]
         public _ServerCapabilities_Workspace_FileOperations FileOperations { get; set; }
 
     }

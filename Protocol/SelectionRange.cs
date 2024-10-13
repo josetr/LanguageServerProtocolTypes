@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The [range](#Range) of this selection range.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 
@@ -19,7 +19,7 @@ namespace LspTypes
          * The parent selection range containing this range. Therefore
 	     * `parent.range` must contain `this.range`.
          */
-        [DataMember(Name = "parent")]
+        [JsonPropertyName("parent")]
         public SelectionRange Parent { get; set; }
     }
 }

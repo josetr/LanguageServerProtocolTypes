@@ -15,14 +15,14 @@ namespace LspTypes
         /**
          * The range this link applies to.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 
         /**
          * The uri this link points to. If missing a resolve request is sent later.
          */
-        [DataMember(Name = "target")]
+        [JsonPropertyName("target")]
         public string Target { get; set; }
 
         /**
@@ -35,14 +35,14 @@ namespace LspTypes
 	     *
          * @since 3.15.0
          */
-        [DataMember(Name = "tooltip")]
+        [JsonPropertyName("tooltip")]
         public string Tooltip { get; set; }
 
         /**
          * A data entry field that is preserved on a document link between a
          * DocumentLinkRequest and a DocumentLinkResolveRequest.
          */
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public object Data { get; set; }
     }
 }

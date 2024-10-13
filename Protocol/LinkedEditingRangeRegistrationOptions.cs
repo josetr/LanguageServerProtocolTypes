@@ -8,10 +8,10 @@ namespace LspTypes
     {
         public LinkedEditingRangeRegistrationOptions() { }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
 
-        [DataMember(Name = "id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
     }
 }

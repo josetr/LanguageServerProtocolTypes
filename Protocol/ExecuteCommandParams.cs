@@ -11,14 +11,14 @@ namespace LspTypes
         /**
          * The identifier of the actual command handler.
          */
-        [DataMember(Name = "command")]
+        [JsonPropertyName("command")]
         [JsonProperty(Required = Required.Always)]
         public string Command { get; set; }
 
         /**
          * Arguments that the command should be invoked with.
          */
-        [DataMember(Name = "arguments")]
+        [JsonPropertyName("arguments")]
         public object[] Arguments { get; set; }
     }
 }

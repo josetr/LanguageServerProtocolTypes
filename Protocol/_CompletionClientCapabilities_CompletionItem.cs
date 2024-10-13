@@ -16,32 +16,32 @@ namespace LspTypes
          * the end of the snippet. Placeholders with equal identifiers are
 		 * linked, that is typing in one will update others too.
          */
-        [DataMember(Name = "snippetSupport")]
+        [JsonPropertyName("snippetSupport")]
         public bool? SnippetSupport { get; set; }
 
         /**
          * Client supports commit characters on a completion item.
          */
-        [DataMember(Name = "commitCharactersSupport")]
+        [JsonPropertyName("commitCharactersSupport")]
         public bool? CommitCharactersSupport { get; set; }
 
         /**
          * Client supports the follow content formats for the documentation
          * property. The order describes the preferred format of the client.
          */
-        [DataMember(Name = "documentationFormat")]
+        [JsonPropertyName("documentationFormat")]
         public MarkupKind[] DocumentationFormat { get; set; }
 
         /**
          * Client supports the deprecated property on a completion item.
          */
-        [DataMember(Name = "deprecatedSupport")]
+        [JsonPropertyName("deprecatedSupport")]
         public bool? DeprecatedSupport { get; set; }
 
         /**
          * Client supports the preselect property on a completion item.
          */
-        [DataMember(Name = "preselectSupport")]
+        [JsonPropertyName("preselectSupport")]
         public bool? PreselectSupport { get; set; }
 
         /**
@@ -52,7 +52,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "tagSupport")]
+        [JsonPropertyName("tagSupport")]
         public _CompletionClientCapabilities_CompletionItem_TagSupport TagSupport { get; set; }
 
         /**
@@ -61,7 +61,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "insertReplaceSupport")]
+        [JsonPropertyName("insertReplaceSupport")]
         public bool? InsertReplaceSupport { get; set; }
 
         /**
@@ -71,7 +71,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "resolveSupport")]
+        [JsonPropertyName("resolveSupport")]
         public _CompletionClientCapabilities_CompletionItem_ResolveSupport ResolveSupport { get; set; }
 
         /**
@@ -81,7 +81,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "insertTextModeSupport")]
+        [JsonPropertyName("insertTextModeSupport")]
         public _CompletionClientCapabilities_CompletionItem_InsertTextModeSupport InsertTextModeSupport { get; set; }
     }
 }

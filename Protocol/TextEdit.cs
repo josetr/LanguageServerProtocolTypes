@@ -12,7 +12,7 @@ namespace LspTypes
          * The range of the text document to be manipulated. To insert
          * text into a document create a range where start === end.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 
@@ -20,7 +20,7 @@ namespace LspTypes
          * The string to be inserted. For delete operations use an
          * empty string.
          */
-        [DataMember(Name = "newText")]
+        [JsonPropertyName("newText")]
         [JsonProperty(Required = Required.Always)]
         public string NewText { get; set; }
     }

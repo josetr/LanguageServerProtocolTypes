@@ -13,7 +13,7 @@ namespace LspTypes
          * (2) user selects retry or cancel
          * (3) if user selected retry the initialize method is sent again.
          */
-        [DataMember(Name = "retry")]
+        [JsonPropertyName("retry")]
         public bool Retry { get; set; }
     }
 }

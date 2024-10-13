@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The text document.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
@@ -19,7 +19,7 @@ namespace LspTypes
          * An optional token that a server can use to report partial results (e.g. streaming) to
          * the client.
          */
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

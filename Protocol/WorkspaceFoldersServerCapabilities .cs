@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The server has support for workspace folders
          */
-        [DataMember(Name = "supported")]
+        [JsonPropertyName("supported")]
         public bool? Supported { get; set; }
 
         /**
@@ -23,7 +23,7 @@ namespace LspTypes
          * side. The ID can be used to unregister for these events
          * using the `client/unregisterCapability` request.
          */
-        [DataMember(Name = "changeNotifications")]
+        [JsonPropertyName("changeNotifications")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, bool> ChangeNotifications { get; set; }
     }

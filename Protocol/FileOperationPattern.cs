@@ -27,7 +27,7 @@ namespace LspTypes
 		 *   (e.g., `example.[!0-9]` to match on `example.a`, `example.b`, but
 		 *   not `example.0`)
 		 */
-        [DataMember(Name = "glob")]
+        [JsonPropertyName("glob")]
         [JsonProperty(Required = Required.Always)]
         public string Glob { get; set; }
 
@@ -36,13 +36,13 @@ namespace LspTypes
 		 *
 		 * Matches both if undefined.
 		 */
-        [DataMember(Name = "matches")]
+        [JsonPropertyName("matches")]
         public FileOperationPatternKind Matches { get; set; }
 
         /**
 		 * Additional options used during matching.
 		 */
-        [DataMember(Name = "options")]
+        [JsonPropertyName("options")]
         public FileOperationPatternOptions Options { get; set; }
     }
 }

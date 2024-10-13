@@ -12,43 +12,43 @@ namespace LspTypes
 		 * Whether the client supports dynamic registration for file
 		 * requests/notifications.
 		 */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
 		 * The client has support for sending didCreateFiles notifications.
 		 */
-        [DataMember(Name = "didCreate")]
+        [JsonPropertyName("didCreate")]
         public bool? DidCreate { get; set; }
 
         /**
 		 * The client has support for sending willCreateFiles requests.
 		 */
-        [DataMember(Name = "willCreate")]
+        [JsonPropertyName("willCreate")]
         public bool? WillCreate { get; set; }
 
         /**
 		 * The client has support for sending didRenameFiles notifications.
 		 */
-        [DataMember(Name = "didRename")]
+        [JsonPropertyName("didRename")]
         public bool? DidRename { get; set; }
 
         /**
 	 	 * The client has support for sending willRenameFiles requests.
 		 */
-        [DataMember(Name = "willRename")]
+        [JsonPropertyName("willRename")]
         public bool? WillRename { get; set; }
 
         /**
 		 * The client has support for sending didDeleteFiles notifications.
 		 */
-        [DataMember(Name = "didDelete")]
+        [JsonPropertyName("didDelete")]
         public bool? DidDelete { get; set; }
 
         /**
 		 * The client has support for sending willDeleteFiles requests.
 		 */
-        [DataMember(Name = "willDelete")]
+        [JsonPropertyName("willDelete")]
         public bool? WillDelete { get; set; }
     }
 }

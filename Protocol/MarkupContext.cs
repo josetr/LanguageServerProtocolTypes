@@ -37,14 +37,14 @@ namespace LspTypes
         /**
          * The type of the Markup
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public MarkupKind Kind { get; set; }
 
         /**
          * The content itself
          */
-        [DataMember(Name = "value")]
+        [JsonPropertyName("value")]
         [JsonProperty(Required = Required.Always)]
         public string Value { get; set; }
     }

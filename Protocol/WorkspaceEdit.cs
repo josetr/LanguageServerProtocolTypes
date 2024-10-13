@@ -12,7 +12,7 @@ namespace LspTypes
         /**
          * Holds changes to existing resources.
          */
-        [DataMember(Name = "changes")]
+        [JsonPropertyName("changes")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public Dictionary<string, TextEdit[]> Changes { get; set; }
 
@@ -31,7 +31,7 @@ namespace LspTypes
 	     * `workspace.workspaceEdit.resourceOperations` then only plain `TextEdit`s
 	     * using the `changes` property are supported.
          */
-        [DataMember(Name = "documentChanges")]
+        [JsonPropertyName("documentChanges")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public SumType<TextDocumentEdit[], SumType<TextDocumentEdit, CreateFile, RenameFile, DeleteFile>[]> DocumentChanges { get; set; }
 
@@ -45,7 +45,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "changeAnnotations")]
+        [JsonPropertyName("changeAnnotations")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public Dictionary<string, ChangeAnnotation> ChangeAnnotations { get; set; }
     }

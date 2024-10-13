@@ -15,14 +15,14 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "context")]
+        [JsonPropertyName("context")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public SignatureHelpContext Context { get; set; }
 
         /**
          * An optional token that a server can use to report work done progress.
          */
-        [DataMember(Name = "workDoneToken")]
+        [JsonPropertyName("workDoneToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, int> WorkDoneToken { get; set; }
     }

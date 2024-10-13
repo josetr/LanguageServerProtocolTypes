@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public DocumentFormattingRegistrationOptions() : base() { }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

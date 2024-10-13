@@ -9,14 +9,14 @@ namespace LspTypes
         /**
 		 * The item that is called.
 		 */
-        [DataMember(Name = "to")]
+        [JsonPropertyName("to")]
         public CallHierarchyItem To { get; set; }
 
         /**
 		 * The range at which this item is called. This is the range relative to
 		 * the caller, e.g the item passed to `callHierarchy/outgoingCalls` request.
 		 */
-        [DataMember(Name = "fromRanges")]
+        [JsonPropertyName("fromRanges")]
         public Range FromRanges { get; set; }
     }
 }

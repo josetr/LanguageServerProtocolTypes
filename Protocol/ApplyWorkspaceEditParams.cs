@@ -19,13 +19,13 @@ namespace LspTypes
          * presented in the user interface for example on an undo
          * stack to undo the workspace edit.
          */
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         public string Label { get; set; }
 
         /**
          * The edits to apply.
          */
-        [DataMember(Name = "edit")]
+        [JsonPropertyName("edit")]
         [JsonProperty(Required = Required.Always)]
         public WorkspaceEdit Edit { get; set; }
     }

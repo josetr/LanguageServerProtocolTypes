@@ -8,10 +8,10 @@ namespace LspTypes
     {
         public CodeActionRegistrationOptions() { }
 
-        [DataMember(Name = "codeActionKinds")]
+        [JsonPropertyName("codeActionKinds")]
         public CodeActionKind[] CodeActionKinds { get; set; }
 
-        [DataMember(Name = "resolveProvider")]
+        [JsonPropertyName("resolveProvider")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

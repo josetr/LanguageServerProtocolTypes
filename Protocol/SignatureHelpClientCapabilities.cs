@@ -11,14 +11,14 @@ namespace LspTypes
         /**
          * Whether signature help supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
          * The client supports the following `SignatureInformation`
          * specific properties.
          */
-        [DataMember(Name = "signatureInformation")]
+        [JsonPropertyName("signatureInformation")]
         public _SignatureHelpClientCapabilities_SignatureInformation SignatureInformation { get; set; }
 
         /**
@@ -29,7 +29,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "contextSupport")]
+        [JsonPropertyName("contextSupport")]
         public bool? ContextSupport { get; set; }
     }
 }

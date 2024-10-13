@@ -18,7 +18,7 @@ namespace LspTypes
 	     * An array of all files/folders renamed in this operation. When a folder
 	     * is renamed, only the folder will be included, and not its children.
 	     */
-        [DataMember(Name = "files")]
+        [JsonPropertyName("files")]
         [JsonProperty(Required = Required.Always)]
         public FileRename[] Files { get; set; }
     }

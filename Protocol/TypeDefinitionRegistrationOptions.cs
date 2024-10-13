@@ -8,14 +8,14 @@ namespace LspTypes
     {
         public TypeDefinitionRegistrationOptions() { }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
 
         /**
          * The id used to register the request. The id can be used to deregister
          * the request again. See also Registration#id.
          */
-        [DataMember(Name = "id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
     }
 }

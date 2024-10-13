@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * Document links have a resolve provider as well.
          */
-        [DataMember(Name = "resolveProvider")]
+        [JsonPropertyName("resolveProvider")]
         public bool? ResolveProvider { get; set; }
     }
 }

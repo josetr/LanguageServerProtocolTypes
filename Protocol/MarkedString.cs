@@ -22,11 +22,11 @@ namespace LspTypes
     {
         public MarkedString() { }
 
-        [DataMember(Name = "language")]
+        [JsonPropertyName("language")]
         [JsonProperty(Required = Required.Always)]
         public string Language { get; set; }
 
-        [DataMember(Name = "value")]
+        [JsonPropertyName("value")]
         [JsonProperty(Required = Required.Always)]
         public string Value { get; set; }
     }

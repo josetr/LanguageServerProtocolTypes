@@ -8,10 +8,10 @@ namespace LspTypes
     {
         public RenameRegistrationOptions() : base() { }
 
-        [DataMember(Name = "prepareProvider")]
+        [JsonPropertyName("prepareProvider")]
         public bool? PrepareProvider { get; set; }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

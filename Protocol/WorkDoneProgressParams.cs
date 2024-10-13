@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * An optional token that a server can use to report work done progress.
          */
-        [DataMember(Name = "workDoneToken")]
+        [JsonPropertyName("workDoneToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, int> WorkDoneToken { get; set; }
     }

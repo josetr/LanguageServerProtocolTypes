@@ -17,7 +17,7 @@ namespace LspTypes
         /**
          * Action that caused signature help to be triggered.
          */
-        [DataMember(Name = "triggerKind")]
+        [JsonPropertyName("triggerKind")]
         public SignatureHelpTriggerKind TriggerKind { get; set; }
 
         /**
@@ -26,7 +26,7 @@ namespace LspTypes
          * This is undefined when triggerKind !==
 	     * SignatureHelpTriggerKind.TriggerCharacter
 	     */
-        [DataMember(Name = "triggerCharacter")]
+        [JsonPropertyName("triggerCharacter")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string TriggerCharacter { get; set; }
 
@@ -37,7 +37,7 @@ namespace LspTypes
 	     * caused by actions such as typing a trigger character, a cursor move, or
 	     * document content changes.
 	     */
-        [DataMember(Name = "isRetrigger")]
+        [JsonPropertyName("isRetrigger")]
         public bool IsRetrigger { get; set; }
 
         /**
@@ -46,7 +46,7 @@ namespace LspTypes
          * The `activeSignatureHelp` has its `SignatureHelp.activeSignature` field
 	     * updated based on the user navigating through available signatures.
 	     */
-        [DataMember(Name = "activeSignatureHelp")]
+        [JsonPropertyName("activeSignatureHelp")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public SignatureHelp ActiveSignatureHelp { get; set; }
     }

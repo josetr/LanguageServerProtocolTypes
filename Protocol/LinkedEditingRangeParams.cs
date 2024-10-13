@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public LinkedEditingRangeParams() { }
 
-        [DataMember(Name = "workDoneToken")]
+        [JsonPropertyName("workDoneToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<string, int> WorkDoneToken { get; set; }
     }

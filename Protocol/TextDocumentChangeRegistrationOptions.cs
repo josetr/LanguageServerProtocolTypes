@@ -11,7 +11,7 @@ namespace LspTypes
          * How documents are synced to the server. See TextDocumentSyncKind.Full
          * and TextDocumentSyncKind.Incremental.
          */
-        [DataMember(Name = "syncKind")]
+        [JsonPropertyName("syncKind")]
         public TextDocumentSyncKind SyncKind { get; set; }
     }
 }

@@ -26,13 +26,13 @@ namespace LspTypes
         /**
          * More detail for this symbol, e.g the signature of a function.
          */
-        [DataMember(Name = "detail")]
+        [JsonPropertyName("detail")]
         public string Detail { get; set; }
 
         /**
          * The kind of this symbol.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public SymbolKind Kind { get; set; }
 
@@ -41,7 +41,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "tags")]
+        [JsonPropertyName("tags")]
         public SymbolTag[] Tags { get; set; }
 
         /**
@@ -49,7 +49,7 @@ namespace LspTypes
          *
          * @deprecated Use tags instead
          */
-        [DataMember(Name = "deprecated")]
+        [JsonPropertyName("deprecated")]
         public bool? Deprecated { get; set; }
 
         /**
@@ -58,7 +58,7 @@ namespace LspTypes
 	     * determine if the clients cursor is inside the symbol to reveal in the
 	     * symbol in the UI.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 
@@ -66,14 +66,14 @@ namespace LspTypes
          * The range that should be selected and revealed when this symbol is being
 	     * picked, e.g. the name of a function. Must be contained by the `range`.
          */
-        [DataMember(Name = "selectionRange")]
+        [JsonPropertyName("selectionRange")]
         [JsonProperty(Required = Required.Always)]
         public Range SelectionRange { get; set; }
 
         /**
          * Children of this symbol, e.g. properties of a class.
          */
-        [DataMember(Name = "children")]
+        [JsonPropertyName("children")]
         public DocumentSymbol[] Children { get; set; }
     }
 }

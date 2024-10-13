@@ -12,40 +12,40 @@ namespace LspTypes
 		 * The server is interested in receiving didCreateFiles
 		 * notifications.
 	 	 */
-        [DataMember(Name = "didCreate")]
+        [JsonPropertyName("didCreate")]
         public FileOperationRegistrationOptions DidCreate { get; set; }
 
         /**
 		 * The server is interested in receiving willCreateFiles requests.
 		 */
-        [DataMember(Name = "willCreate")]
+        [JsonPropertyName("willCreate")]
         public FileOperationRegistrationOptions WillCreate { get; set; }
 
         /**
 		 * The server is interested in receiving didRenameFiles
 		 * notifications.
 		 */
-        [DataMember(Name = "didRename")]
+        [JsonPropertyName("didRename")]
         public FileOperationRegistrationOptions DidRename { get; set; }
 
         /**
 		 * The server is interested in receiving willRenameFiles requests.
 		 */
-        [DataMember(Name = "willRename")]
+        [JsonPropertyName("willRename")]
         public FileOperationRegistrationOptions WillRename { get; set; }
 
         /**
 		 * The server is interested in receiving didDeleteFiles file
 		 * notifications.
 		 */
-        [DataMember(Name = "didDelete")]
+        [JsonPropertyName("didDelete")]
         public FileOperationRegistrationOptions DidDelete { get; set; }
 
         /**
 		 * The server is interested in receiving willDeleteFiles file
 		 * requests.
 		 */
-        [DataMember(Name = "willDelete")]
+        [JsonPropertyName("willDelete")]
         public FileOperationRegistrationOptions WillDelete { get; set; }
     }
 }

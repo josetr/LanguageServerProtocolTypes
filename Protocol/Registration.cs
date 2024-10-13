@@ -14,19 +14,19 @@ namespace LspTypes
          * The id used to register the request. The id can be used to deregister
          * the request again.
          */
-        [DataMember(Name = "id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
 
         /**
          * The method / capability to register for.
          */
-        [DataMember(Name = "method")]
+        [JsonPropertyName("method")]
         public string Method { get; set; }
 
         /**
          * Options necessary for the registration.
          */
-        [DataMember(Name = "registerOptions")]
+        [JsonPropertyName("registerOptions")]
         public object RegisterOptions { get; set; }
     }
 }

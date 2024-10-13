@@ -16,7 +16,7 @@ namespace LspTypes
         /**
 		 * The document uri to show.
 		 */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
@@ -25,7 +25,7 @@ namespace LspTypes
 		 * To show for example `https://code.visualstudio.com/`
 		 * in the default WEB browser set `external` to `true`.
 		 */
-        [DataMember(Name = "external")]
+        [JsonPropertyName("external")]
         public bool? External { get; set; }
 
         /**
@@ -34,7 +34,7 @@ namespace LspTypes
 		 * Clients might ignore this property if an external
 		 * program is started.
 		 */
-        [DataMember(Name = "takeFocus")]
+        [JsonPropertyName("takeFocus")]
         public bool? TakeFocus { get; set; }
 
         /**
@@ -43,7 +43,7 @@ namespace LspTypes
 		 * external program is started or the file is not a text
 		 * file.
 		 */
-        [DataMember(Name = "selection")]
+        [JsonPropertyName("selection")]
         public Range Selection { get; set; }
     }
 }

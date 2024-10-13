@@ -12,13 +12,13 @@ namespace LspTypes
         /**
          * The range's start position.
          */
-        [DataMember(Name = "start")]
+        [JsonPropertyName("start")]
         public Position Start { get; set; }
 
         /**
          * The range's end position.
          */
-        [DataMember(Name = "end")]
+        [JsonPropertyName("end")]
         public Position End { get; set; }
 
         public override bool Equals(object obj) { return this.Equals(obj as Range); }

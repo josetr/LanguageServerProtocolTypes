@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * Whether hover supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
@@ -19,7 +19,7 @@ namespace LspTypes
 	     * property refers to a `literal of type MarkupContent`.
 	     * The order describes the preferred format of the client.
          */
-        [DataMember(Name = "contentFormat")]
+        [JsonPropertyName("contentFormat")]
         public MarkupKind[] ContentFormat { get; set; }
     }
 }

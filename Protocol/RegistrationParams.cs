@@ -7,7 +7,7 @@ namespace LspTypes
     {
         public RegistrationParams() { }
 
-        [DataMember(Name = "registrations")]
+        [JsonPropertyName("registrations")]
         public Registration[] Registrations { get; set; }
     }
 }

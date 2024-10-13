@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * Did change configuration notification supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
     }
 }

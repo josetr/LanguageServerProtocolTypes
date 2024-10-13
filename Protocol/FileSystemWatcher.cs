@@ -23,7 +23,7 @@ namespace LspTypes
 	     *   (e.g., `example.[!0-9]` to match on `example.a`, `example.b`, but not
 	     *   `example.0`)
 	     */
-        [DataMember(Name = "globPattern")]
+        [JsonPropertyName("globPattern")]
         [JsonProperty(Required = Required.Always)]
         public string GlobPattern { get; set; }
 
@@ -32,7 +32,7 @@ namespace LspTypes
          * to WatchKind.Create | WatchKind.Change | WatchKind.Delete
          * which is 7.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         public uint? Kind { get; set; }
     }
 }

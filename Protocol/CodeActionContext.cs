@@ -20,7 +20,7 @@ namespace LspTypes
 	     * the error state of the resource. The primary parameter
 	     * to compute code actions is the provided range.
          */
-        [DataMember(Name = "diagnostics")]
+        [JsonPropertyName("diagnostics")]
         public Diagnostic[] Diagnostics { get; set; }
 
         /**
@@ -29,7 +29,7 @@ namespace LspTypes
          * Actions not of this kind are filtered out by the client before being
 	     * shown. So servers can omit computing them.
 	     */
-        [DataMember(Name = "only")]
+        [JsonPropertyName("only")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public CodeActionKind[] Only { get; set; }
     }

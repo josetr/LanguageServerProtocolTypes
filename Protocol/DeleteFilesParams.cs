@@ -17,7 +17,7 @@ namespace LspTypes
         /**
 	     * An array of all files/folders deleted in this operation.
 	     */
-        [DataMember(Name = "files")]
+        [JsonPropertyName("files")]
         [JsonProperty(Required = Required.Always)]
         public FileDelete[] Files { get; set; }
     }

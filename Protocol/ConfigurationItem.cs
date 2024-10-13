@@ -11,13 +11,13 @@ namespace LspTypes
         /**
          * The scope to get the configuration section for.
          */
-        [DataMember(Name = "scopeUri")]
+        [JsonPropertyName("scopeUri")]
         public string ScopeUri { get; set; }
 
         /**
          * The configuration section asked for.
          */
-        [DataMember(Name = "section")]
+        [JsonPropertyName("section")]
         public string Section { get; set; }
     }
 }

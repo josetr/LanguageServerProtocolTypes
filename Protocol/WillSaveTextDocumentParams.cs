@@ -13,13 +13,13 @@ namespace LspTypes
         /**
          * The document that will be saved.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         public TextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * The 'TextDocumentSaveReason'.
          */
-        [DataMember(Name = "reason")]
+        [JsonPropertyName("reason")]
         public TextDocumentSaveReason Reason { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The commands to be executed on the server
          */
-        [DataMember(Name = "commands")]
+        [JsonPropertyName("commands")]
         public string[] Commands { get; set; }
     }
 }

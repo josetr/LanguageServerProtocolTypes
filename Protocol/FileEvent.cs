@@ -15,14 +15,14 @@ namespace LspTypes
         /**
          * The file's URI.
          */
-        [DataMember(Name = "uri")]
+        [JsonPropertyName("uri")]
         [JsonProperty(Required = Required.Always)]
         public string Uri { get; set; }
 
         /**
          * The change type.
          */
-        [DataMember(Name = "type")]
+        [JsonPropertyName("type")]
         [JsonProperty(Required = Required.Always)]
         public FileChangeType FileChangeType { get; set; }
     }

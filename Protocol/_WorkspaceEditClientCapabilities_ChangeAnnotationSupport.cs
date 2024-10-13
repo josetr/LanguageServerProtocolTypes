@@ -13,7 +13,7 @@ namespace LspTypes
          * for instance all edits labelled with "Changes in Strings" would
          * be a tree node.
          */
-        [DataMember(Name = "groupsOnLabel")]
+        [JsonPropertyName("groupsOnLabel")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public bool? GroupsOnLabel { get; set; }
     }

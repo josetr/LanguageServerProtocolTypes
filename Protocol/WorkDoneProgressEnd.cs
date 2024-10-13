@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public WorkDoneProgressEnd() { }
 
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public string Kind { get; set; }
 
@@ -16,7 +16,7 @@ namespace LspTypes
          * Optional, a final message indicating to for example indicate the outcome
          * of the operation.
          */
-        [DataMember(Name = "message")]
+        [JsonPropertyName("message")]
         public string Message { get; set; }
     }
 }

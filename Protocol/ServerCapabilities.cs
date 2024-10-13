@@ -14,28 +14,28 @@ namespace LspTypes
 	     * TextDocumentSyncKind number. If omitted it defaults to
 	     * `TextDocumentSyncKind.None`.
          */
-        [DataMember(Name = "textDocumentSync")]
+        [JsonPropertyName("textDocumentSync")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<TextDocumentSyncOptions, TextDocumentSyncKind> TextDocumentSync { get; set; }
 
         /**
          * The server provides completion support.
          */
-        [DataMember(Name = "completionProvider")]
+        [JsonPropertyName("completionProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public CompletionOptions CompletionProvider { get; set; }
 
         /**
          * The server provides hover support.
          */
-        [DataMember(Name = "hoverProvider")]
+        [JsonPropertyName("hoverProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, HoverOptions> HoverProvider { get; set; }
 
         /**
          * The server provides signature help support.
          */
-        [DataMember(Name = "signatureHelpProvider")]
+        [JsonPropertyName("signatureHelpProvider")]
         public SignatureHelpOptions SignatureHelpProvider { get; set; }
 
         /**
@@ -43,14 +43,14 @@ namespace LspTypes
          *
          * @since 3.14.0
          */
-        [DataMember(Name = "declarationProvider")]
+        [JsonPropertyName("declarationProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DeclarationOptions, DeclarationRegistrationOptions> DeclarationProvider { get; set; }
 
         /**
          * The server provides goto definition support.
          */
-        [DataMember(Name = "definitionProvider")]
+        [JsonPropertyName("definitionProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DefinitionOptions> DefinitionProvider { get; set; }
 
@@ -59,7 +59,7 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "typeDefinitionProvider")]
+        [JsonPropertyName("typeDefinitionProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, TypeDefinitionOptions, TypeDefinitionRegistrationOptions> TypeDefinitionProvider { get; set; }
 
@@ -68,28 +68,28 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "implementationProvider")]
+        [JsonPropertyName("implementationProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, ImplementationOptions, ImplementationRegistrationOptions> ImplementationProvider { get; set; }
 
         /**
          * The server provides find references support.
          */
-        [DataMember(Name = "referencesProvider")]
+        [JsonPropertyName("referencesProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, ReferenceOptions> ReferencesProvider { get; set; }
 
         /**
          * The server provides document highlight support.
          */
-        [DataMember(Name = "documentHighlightProvider")]
+        [JsonPropertyName("documentHighlightProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentHighlightOptions> DocumentHighlightProvider { get; set; }
 
         /**
          * The server provides document symbol support.
          */
-        [DataMember(Name = "documentSymbolProvider")]
+        [JsonPropertyName("documentSymbolProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentSymbolOptions> DocumentSymbolProvider { get; set; }
 
@@ -98,20 +98,20 @@ namespace LspTypes
 	     * only valid if the client signals code action literal support via the
 	     * property `textDocument.codeAction.codeActionLiteralSupport`.
          */
-        [DataMember(Name = "codeActionProvider")]
+        [JsonPropertyName("codeActionProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, CodeActionOptions> CodeActionProvider { get; set; }
 
         /**
          * The server provides code lens.
          */
-        [DataMember(Name = "codeLensProvider")]
+        [JsonPropertyName("codeLensProvider")]
         public CodeLensOptions CodeLensProvider { get; set; }
 
         /**
          * The server provides document link support.
          */
-        [DataMember(Name = "documentLinkProvider")]
+        [JsonPropertyName("documentLinkProvider")]
         public DocumentLinkOptions DocumentLinkProvider { get; set; }
 
         /**
@@ -119,28 +119,28 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "colorProvider")]
+        [JsonPropertyName("colorProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentColorOptions, DocumentColorRegistrationOptions> ColorProvider { get; set; }
 
         /**
          * The server provides document formatting.
          */
-        [DataMember(Name = "documentFormattingProvider")]
+        [JsonPropertyName("documentFormattingProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentFormattingOptions> DocumentFormattingProvider { get; set; }
 
         /**
          * The server provides document range formatting.
          */
-        [DataMember(Name = "documentRangeFormattingProvider")]
+        [JsonPropertyName("documentRangeFormattingProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, DocumentRangeFormattingOptions> DocumentRangeFormattingProvider { get; set; }
 
         /**
          * The server provides document formatting on typing.
          */
-        [DataMember(Name = "documentOnTypeFormattingProvider")]
+        [JsonPropertyName("documentOnTypeFormattingProvider")]
         public DocumentOnTypeFormattingOptions DocumentOnTypeFormattingProvider { get; set; }
 
         /**
@@ -148,7 +148,7 @@ namespace LspTypes
          * specified if the client states that it supports
          * `prepareSupport` in its initial `initialize` request.
          */
-        [DataMember(Name = "renameProvider")]
+        [JsonPropertyName("renameProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, RenameOptions> RenameProvider { get; set; }
 
@@ -157,14 +157,14 @@ namespace LspTypes
          *
          * @since 3.10.0
          */
-        [DataMember(Name = "foldingRangeProvider")]
+        [JsonPropertyName("foldingRangeProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, FoldingRangeOptions, FoldingRangeRegistrationOptions> FoldingRangeProvider { get; set; }
 
         /**
          * The server provides execute command support.
          */
-        [DataMember(Name = "executeCommandProvider")]
+        [JsonPropertyName("executeCommandProvider")]
         public ExecuteCommandOptions ExecuteCommandProvider { get; set; }
 
         /**
@@ -172,7 +172,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "selectionRangeProvider")]
+        [JsonPropertyName("selectionRangeProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, SelectionRangeOptions, SelectionRangeRegistrationOptions> SelectionRangeProvider { get; set; }
 
@@ -181,7 +181,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "linkedEditingRangeProvider")]
+        [JsonPropertyName("linkedEditingRangeProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, LinkedEditingRangeOptions, LinkedEditingRangeRegistrationOptions> LinkedEditingRangeProvider { get; set; }
 
@@ -190,7 +190,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "callHierarchyProvider")]
+        [JsonPropertyName("callHierarchyProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, CallHierarchyOptions, CallHierarchyRegistrationOptions> CallHierarchyProvider { get; set; }
 
@@ -199,7 +199,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "semanticTokensProvider")]
+        [JsonPropertyName("semanticTokensProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<SemanticTokensOptions, SemanticTokensRegistrationOptions> SemanticTokensProvider { get; set; }
 
@@ -208,27 +208,27 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "monikerProvider")]
+        [JsonPropertyName("monikerProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, MonikerOptions, MonikerRegistrationOptions> MonikerProvider { get; set; }
 
         /**
          * The server provides workspace symbol support.
          */
-        [DataMember(Name = "workspaceSymbolProvider")]
+        [JsonPropertyName("workspaceSymbolProvider")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<bool, WorkspaceSymbolOptions> WorkspaceSymbolProvider { get; set; }
 
         /**
          * Workspace specific server capabilities
          */
-        [DataMember(Name = "workspace")]
+        [JsonPropertyName("workspace")]
         public _ServerCapabilities_Workspace Workspace { get; set; }
 
         /**
          * Experimental server capabilities.
          */
-        [DataMember(Name = "experimental")]
+        [JsonPropertyName("experimental")]
         public object Experimental { get; set; }
     }
 }

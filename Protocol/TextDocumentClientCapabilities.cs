@@ -11,25 +11,25 @@ namespace LspTypes
     {
         public TextDocumentClientCapabilities() { }
 
-        [DataMember(Name = "synchronization")]
+        [JsonPropertyName("synchronization")]
         public TextDocumentSyncClientCapabilities Synchronization { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/completion` request.
          */
-        [DataMember(Name = "completion")]
+        [JsonPropertyName("completion")]
         public CompletionClientCapabilities Completion { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/hover` request.
          */
-        [DataMember(Name = "hover")]
+        [JsonPropertyName("hover")]
         public HoverClientCapabilities Hover { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/signatureHelp` request.
          */
-        [DataMember(Name = "signatureHelp")]
+        [JsonPropertyName("signatureHelp")]
         public SignatureHelpClientCapabilities SignatureHelp { get; set; }
 
         /**
@@ -37,13 +37,13 @@ namespace LspTypes
          *
          * @since 3.14.0
          */
-        [DataMember(Name = "declaration")]
+        [JsonPropertyName("declaration")]
         public DeclarationClientCapabilities Declaration { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/definition` request.
          */
-        [DataMember(Name = "definition")]
+        [JsonPropertyName("definition")]
         public DefinitionClientCapabilities Definition { get; set; }
 
         /**
@@ -51,7 +51,7 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "typeDefinition")]
+        [JsonPropertyName("typeDefinition")]
         public TypeDefinitionClientCapabilities TypeDefinition { get; set; }
 
         /**
@@ -59,43 +59,43 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "implementation")]
+        [JsonPropertyName("implementation")]
         public ImplementationClientCapabilities Implementation { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/references` request.
          */
-        [DataMember(Name = "references")]
+        [JsonPropertyName("references")]
         public ReferenceClientCapabilities References { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/documentHighlight` request.
          */
-        [DataMember(Name = "documentHighlight")]
+        [JsonPropertyName("documentHighlight")]
         public DocumentHighlightClientCapabilities DocumentHighlight { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/documentSymbol` request.
          */
-        [DataMember(Name = "documentSymbol")]
+        [JsonPropertyName("documentSymbol")]
         public DocumentSymbolClientCapabilities DocumentSymbol { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/codeAction` request.
          */
-        [DataMember(Name = "codeAction")]
+        [JsonPropertyName("codeAction")]
         public CodeActionClientCapabilities CodeAction { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/codeLens` request.
          */
-        [DataMember(Name = "codeLens")]
+        [JsonPropertyName("codeLens")]
         public CodeLensClientCapabilities CodeLens { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/documentLink` request.
          */
-        [DataMember(Name = "documentLink")]
+        [JsonPropertyName("documentLink")]
         public DocumentLinkClientCapabilities DocumentLink { get; set; }
 
         /**
@@ -104,38 +104,38 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "colorProvider")]
+        [JsonPropertyName("colorProvider")]
         public DocumentColorClientCapabilities ColorProvider { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/formatting` request.
          */
-        [DataMember(Name = "formatting")]
+        [JsonPropertyName("formatting")]
         public DocumentFormattingClientCapabilities Formatting { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/rangeFormatting` request.
          */
-        [DataMember(Name = "rangeFormatting")]
+        [JsonPropertyName("rangeFormatting")]
         public DocumentRangeFormattingClientCapabilities RangeFormatting { get; set; }
 
         /** request.
          * Capabilities specific to the `textDocument/onTypeFormatting` request.
          */
-        [DataMember(Name = "onTypeFormatting")]
+        [JsonPropertyName("onTypeFormatting")]
         public DocumentOnTypeFormattingClientCapabilities OnTypeFormatting { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/rename` request.
          */
-        [DataMember(Name = "rename")]
+        [JsonPropertyName("rename")]
         public RenameClientCapabilities Rename { get; set; }
 
         /**
          * Capabilities specific to the `textDocument/publishDiagnostics`
 	     * notification.
 	     */
-        [DataMember(Name = "publishDiagnostics")]
+        [JsonPropertyName("publishDiagnostics")]
         public PublishDiagnosticsClientCapabilities PublishDiagnostics { get; set; }
 
         /**
@@ -143,7 +143,7 @@ namespace LspTypes
          *
          * @since 3.10.0
          */
-        [DataMember(Name = "foldingRange")]
+        [JsonPropertyName("foldingRange")]
         public FoldingRangeClientCapabilities FoldingRange { get; set; }
 
         /**
@@ -151,7 +151,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "selectionRange")]
+        [JsonPropertyName("selectionRange")]
         public SelectionRangeClientCapabilities SelectionRange { get; set; }
 
         /**
@@ -159,7 +159,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "linkedEditingRange")]
+        [JsonPropertyName("linkedEditingRange")]
         public LinkedEditingRangeClientCapabilities LinkedEditingRange { get; set; }
 
         /**
@@ -167,7 +167,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "callHierarchy")]
+        [JsonPropertyName("callHierarchy")]
         public CallHierarchyClientCapabilities CallHierarchy { get; set; }
 
         /**
@@ -175,7 +175,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "semanticTokens")]
+        [JsonPropertyName("semanticTokens")]
         public SemanticTokensClientCapabilities SemanticTokens { get; set; }
 
         /**
@@ -183,7 +183,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "moniker")]
+        [JsonPropertyName("moniker")]
         public MonikerClientCapabilities Moniker { get; set; }
     }
 }

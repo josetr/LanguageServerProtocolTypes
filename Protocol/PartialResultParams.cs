@@ -17,7 +17,7 @@ namespace LspTypes
          * An optional token that a server can use to report partial results (e.g.
 	     * streaming) to the client.
          */
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

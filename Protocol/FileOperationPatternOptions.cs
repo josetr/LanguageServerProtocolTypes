@@ -11,7 +11,7 @@ namespace LspTypes
         /**
           * The pattern should be matched ignoring casing.
           */
-        [DataMember(Name = "ignoreCase")]
+        [JsonPropertyName("ignoreCase")]
         public bool? IgnoreCase { get; set; }
     }
 }

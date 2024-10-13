@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public WorkDoneProgressReport() { }
 
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public string Kind { get; set; }
 
@@ -19,7 +19,7 @@ namespace LspTypes
          * Clients that don't support cancellation or don't support control the
 	     * button's enablement state are allowed to ignore the setting.
          */
-        [DataMember(Name = "cancellable")]
+        [JsonPropertyName("cancellable")]
         public bool? Cancellable { get; set; }
 
         /**
@@ -29,7 +29,7 @@ namespace LspTypes
          * Examples: "3/25 files", "project/src/module2", "node_modules/some_dep".
          * If unset, the previous progress message (if any) is still valid.
          */
-        [DataMember(Name = "message")]
+        [JsonPropertyName("message")]
         public string Message { get; set; }
 
         /**
@@ -40,7 +40,7 @@ namespace LspTypes
          * The value should be steadily rising. Clients are free to ignore values
          * that are not following this rule. The value range is [0, 100]
          */
-        [DataMember(Name = "percentage")]
+        [JsonPropertyName("percentage")]
         public uint? Percentage { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The client supports versioned document changes in `WorkspaceEdit`s
          */
-        [DataMember(Name = "documentChanges")]
+        [JsonPropertyName("documentChanges")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public bool? DocumentChanges { get; set; }
 
@@ -21,7 +21,7 @@ namespace LspTypes
          *
          * @since 3.13.0
          */
-        [DataMember(Name = "resourceOperations")]
+        [JsonPropertyName("resourceOperations")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public ResourceOperationKind[] ResourceOperations;
 
@@ -31,7 +31,7 @@ namespace LspTypes
          *
          * @since 3.13.0
          */
-        [DataMember(Name = "failureHandling")]
+        [JsonPropertyName("failureHandling")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public FailureHandlingKind FailureHandling;
 
@@ -43,7 +43,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "normalizesLineEndings")]
+        [JsonPropertyName("normalizesLineEndings")]
         public bool? NormalizesLineEndings { get; set; }
 
         /**
@@ -52,7 +52,7 @@ namespace LspTypes
 	     *
 	     * @since 3.16.0
 	     */
-        [DataMember(Name = "changeAnnotationSupport")]
+        [JsonPropertyName("changeAnnotationSupport")]
         public _WorkspaceEditClientCapabilities_ChangeAnnotationSupport ChangeAnnotationSupport { get; set; }
     }
 }

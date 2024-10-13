@@ -8,10 +8,10 @@ namespace LspTypes
     {
         public CallHierarchyIncomingCallsParams() : base() { }
 
-        [DataMember(Name = "item")]
+        [JsonPropertyName("item")]
         public CallHierarchyItem Item { get; set; }
 
-        [DataMember(Name = "partialResultToken")]
+        [JsonPropertyName("partialResultToken")]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public SumType<int, string> PartialResultToken { get; set; }
     }

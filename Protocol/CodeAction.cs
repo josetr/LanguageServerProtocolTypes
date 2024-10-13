@@ -18,7 +18,7 @@ namespace LspTypes
         /**
          * A short, human-readable, title for this code action.
          */
-        [DataMember(Name = "title")]
+        [JsonPropertyName("title")]
         [JsonProperty(Required = Required.Always)]
         public string Title { get; set; }
 
@@ -27,13 +27,13 @@ namespace LspTypes
          *
          * Used to filter code actions.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         public CodeActionKind? Kind { get; set; }
 
         /**
          * The diagnostics that this code action resolves.
          */
-        [DataMember(Name = "diagnostics")]
+        [JsonPropertyName("diagnostics")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public Diagnostic[] Diagnostics { get; set; }
 
@@ -47,7 +47,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "isPreferred")]
+        [JsonPropertyName("isPreferred")]
         public bool? IsPreferred { get; set; }
         /**
          * Marks that the code action cannot currently be applied.
@@ -68,13 +68,13 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "disabled")]
+        [JsonPropertyName("disabled")]
         public _CodeAction_Disabled Disabled { get; set; }
 
         /**
          * The workspace edit this code action performs.
          */
-        [DataMember(Name = "edit")]
+        [JsonPropertyName("edit")]
         public WorkspaceEdit Edit { get; set; }
 
         /**
@@ -82,7 +82,7 @@ namespace LspTypes
          * provides an edit and a command, first the edit is
          * executed and then the command.
          */
-        [DataMember(Name = "command")]
+        [JsonPropertyName("command")]
         public Command Command { get; set; }
         /**
           * A data entry field that is preserved on a code action between
@@ -90,7 +90,7 @@ namespace LspTypes
           *
           * @since 3.16.0
           */
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public object Data { get; set; }
     }
 }

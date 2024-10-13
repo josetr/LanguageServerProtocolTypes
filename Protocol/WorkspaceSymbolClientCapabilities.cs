@@ -11,14 +11,14 @@ namespace LspTypes
         /**
          * Symbol request supports dynamic registration.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
 
         /**
          * Specific capabilities for the `SymbolKind` in the `workspace/symbol`
 	     * request.
 	     */
-        [DataMember(Name = "symbolKind")]
+        [JsonPropertyName("symbolKind")]
         public _WorkspaceSymbolClientCapabilities_SymbolKind SymbolKind { get; set; }
 
         /**
@@ -27,7 +27,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "tagSupport")]
+        [JsonPropertyName("tagSupport")]
         public _WorkspaceSymbolClientCapabilities_TagSupport TagSupport { get; set; }
     }
 }

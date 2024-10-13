@@ -17,14 +17,14 @@ namespace LspTypes
         /**
          * The range this highlight applies to.
          */
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         [JsonProperty(Required = Required.Always)]
         public Range Range { get; set; }
 
         /**
          * The highlight kind, default is DocumentHighlightKind.Text.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         public DocumentHighlightKind? Kind { get; set; }
     }
 }

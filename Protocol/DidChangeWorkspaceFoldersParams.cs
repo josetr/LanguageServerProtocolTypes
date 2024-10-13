@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The actual workspace folder change event.
          */
-        [DataMember(Name = "event")]
+        [JsonPropertyName("event")]
         [JsonProperty(Required = Required.Always)]
         public WorkspaceFoldersChangeEvent Event { get; set; }
     }

@@ -11,7 +11,7 @@ namespace LspTypes
         /**
 	     * The token to be used to report progress.
 	     */
-        [DataMember(Name = "token")]
+        [JsonPropertyName("token")]
         [JsonProperty(Required = Required.Always)]
         public SumType<int, string> Token { get; set; }
     }

@@ -8,10 +8,10 @@ namespace LspTypes
     {
         public DocumentSymbolRegistrationOptions() : base() { }
 
-        [DataMember(Name = "label")]
+        [JsonPropertyName("label")]
         public string Label { get; set; }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

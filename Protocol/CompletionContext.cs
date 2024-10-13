@@ -14,7 +14,7 @@ namespace LspTypes
         /**
          * How the completion was triggered.
          */
-        [DataMember(Name = "triggerKind")]
+        [JsonPropertyName("triggerKind")]
         public CompletionTriggerKind TriggerKind { get; set; }
 
         /**
@@ -22,7 +22,7 @@ namespace LspTypes
 	     * complete. Is undefined if
 	     * `triggerKind !== CompletionTriggerKind.TriggerCharacter`
 	     */
-        [DataMember(Name = "triggerCharacter")]
+        [JsonPropertyName("triggerCharacter")]
         public string TriggerCharacter { get; set; }
     }
 }

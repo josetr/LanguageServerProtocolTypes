@@ -17,13 +17,13 @@ namespace LspTypes
         /**
 	     * A Uri like `file` or `untitled`.
 	     */
-        [DataMember(Name = "scheme")]
+        [JsonPropertyName("scheme")]
         public string Scheme { get; set; }
 
         /**
 	     * The actual file operation pattern.
 	     */
-        [DataMember(Name = "pattern")]
+        [JsonPropertyName("pattern")]
         [JsonProperty(Required = Required.Always)]
         public FileOperationPattern Pattern { get; set; }
     }

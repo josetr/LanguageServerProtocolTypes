@@ -15,7 +15,7 @@ namespace LspTypes
 		 * 
          * @Since 3.15.0
          */
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
 
         /**
@@ -23,7 +23,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "showMessage")]
+        [JsonPropertyName("showMessage")]
         public ShowMessageRequestClientCapabilities ShowMessage { get; set; }
 
         /**
@@ -31,7 +31,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "showDocument")]
+        [JsonPropertyName("showDocument")]
         public ShowDocumentClientCapabilities ShowDocument { get; set; }
     }
 }

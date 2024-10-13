@@ -13,7 +13,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "regularExpressions")]
+        [JsonPropertyName("regularExpressions")]
         public RegularExpressionsClientCapabilities RegularExpressions { get; set; }
 
         /**
@@ -21,7 +21,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "markdown")]
+        [JsonPropertyName("markdown")]
         public MarkdownClientCapabilities Markdown { get; set; }
     }
 }

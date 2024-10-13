@@ -11,7 +11,7 @@ namespace LspTypes
          * The characters that trigger signature help
          * automatically.
          */
-        [DataMember(Name = "triggerCharacters")]
+        [JsonPropertyName("triggerCharacters")]
         public string[] TriggerCharacters { get; set; }
 
         /**
@@ -23,7 +23,7 @@ namespace LspTypes
          *
          * @since 3.15.0
          */
-        [DataMember(Name = "retriggerCharacters")]
+        [JsonPropertyName("retriggerCharacters")]
         public string[] RetriggerCharacters { get; set; }
     }
 }

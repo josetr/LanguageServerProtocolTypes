@@ -11,14 +11,14 @@ namespace LspTypes
         /**
          * The text document.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * The position inside the text document.
          */
-        [DataMember(Name = "position")]
+        [JsonPropertyName("position")]
         [JsonProperty(Required = Required.Always)]
         public Position Position { get; set; }
     }

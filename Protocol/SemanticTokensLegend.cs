@@ -8,13 +8,13 @@ namespace LspTypes
         /**
          * The token types a server uses.
          */
-        [DataMember(Name = "tokenTypes")]
+        [JsonPropertyName("tokenTypes")]
         public string[] tokenTypes { get; set; }
 
         /**
          * The token modifiers a server uses.
          */
-        [DataMember(Name = "tokenModifiers")]
+        [JsonPropertyName("tokenModifiers")]
         public string[] tokenModifiers { get; set; }
     }
 }

@@ -6,19 +6,19 @@ namespace LspTypes
     [DataContract]
     public class SemanticTokensRegistrationOptions : TextDocumentRegistrationOptions, ISemanticTokensOptions, IStaticRegistrationOptions
     {
-        [DataMember(Name = "legend")]
+        [JsonPropertyName("legend")]
         public SemanticTokensLegend Legend { get; set; }
 
-        [DataMember(Name = "range")]
+        [JsonPropertyName("range")]
         public SumType<bool, object> Range { get; set; }
 
-        [DataMember(Name = "full")]
+        [JsonPropertyName("full")]
         public SumType<bool, object> Full { get; set; }
 
-        [DataMember(Name = "id")]
+        [JsonPropertyName("id")]
         public string Id { get; set; }
 
-        [DataMember(Name = "workDoneProgress")]
+        [JsonPropertyName("workDoneProgress")]
         public bool? WorkDoneProgress { get; set; }
     }
 }

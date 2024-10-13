@@ -12,28 +12,28 @@ namespace LspTypes
          * A rename
          */
         // Must always be 'rename'.
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         [JsonProperty(Required = Required.Always)]
         public string Kind { get; set; }
 
         /**
          * The old (existing) location.
          */
-        [DataMember(Name = "oldUri")]
+        [JsonPropertyName("oldUri")]
         [JsonProperty(Required = Required.Always)]
         public string OldUri { get; set; }
 
         /**
          * The new location.
          */
-        [DataMember(Name = "newUri")]
+        [JsonPropertyName("newUri")]
         [JsonProperty(Required = Required.Always)]
         public string NewUri { get; set; }
 
         /**
          * Rename options.
          */
-        [DataMember(Name = "options")]
+        [JsonPropertyName("options")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public RenameFileOptions Options { get; set; }
 
@@ -42,7 +42,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "annotationId")]
+        [JsonPropertyName("annotationId")]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string AnnotationId { get; set; }
     }

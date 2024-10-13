@@ -12,10 +12,10 @@ namespace LspTypes
          * A server can then instead of computing all semantic tokens again simply
          * send a delta.
          */
-        [DataMember(Name = "resultId")]
+        [JsonPropertyName("resultId")]
         public string ResultId { get; set; }
 
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public uint[] Data { get; set; }
     }
 }

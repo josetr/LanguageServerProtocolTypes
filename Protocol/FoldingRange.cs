@@ -18,7 +18,7 @@ namespace LspTypes
 	     * after the line's last character. To be valid, the end must be zero or
 	     * larger and smaller than the number of lines in the document.
          */
-        [DataMember(Name = "startLine")]
+        [JsonPropertyName("startLine")]
         [JsonProperty(Required = Required.Always)]
         public uint StartLine { get; set; }
 
@@ -26,7 +26,7 @@ namespace LspTypes
          * The zero-based character offset from where the folded range starts. If
 	     * not defined, defaults to the length of the start line.
          */
-        [DataMember(Name = "startCharacter")]
+        [JsonPropertyName("startCharacter")]
         public uint? StartCharacter { get; set; }
 
         /**
@@ -34,7 +34,7 @@ namespace LspTypes
 	     * the line's last character. To be valid, the end must be zero or larger
 	     * and smaller than the number of lines in the document.
          */
-        [DataMember(Name = "endLine")]
+        [JsonPropertyName("endLine")]
         [JsonProperty(Required = Required.Always)]
         public uint EndLine { get; set; }
 
@@ -42,7 +42,7 @@ namespace LspTypes
          * The zero-based character offset before the folded range ends. If not
 	     * defined, defaults to the length of the end line.
          */
-        [DataMember(Name = "endCharacter")]
+        [JsonPropertyName("endCharacter")]
         public uint? EndCharacter { get; set; }
 
         /**
@@ -51,7 +51,7 @@ namespace LspTypes
 	     * 'Fold all comments'. See [FoldingRangeKind](#FoldingRangeKind) for an
 	     * enumeration of standardized kinds.
          */
-        [DataMember(Name = "kind")]
+        [JsonPropertyName("kind")]
         public string Kind { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace LspTypes
          * the symbol kinds from `File` to `Array` as defined in
          * the initial version of the protocol.
          */
-        [DataMember(Name = "valueSet")]
+        [JsonPropertyName("valueSet")]
         public SymbolKind[] ValueSet { get; set; }
     }
 }

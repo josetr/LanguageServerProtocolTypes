@@ -13,39 +13,39 @@ namespace LspTypes
          * to the workspace by supporting the request
          * 'workspace/applyEdit'
          */
-        [DataMember(Name = "applyEdit")]
+        [JsonPropertyName("applyEdit")]
         public bool? ApplyEdit { get; set; }
 
         /**
          * Capabilities specific to `WorkspaceEdit`s
          */
-        [DataMember(Name = "workspaceEdit")]
+        [JsonPropertyName("workspaceEdit")]
         public WorkspaceEditClientCapabilities WorkspaceEdit { get; set; }
 
         /**
          * Capabilities specific to the `workspace/didChangeConfiguration`
 		 * notification.
          */
-        [DataMember(Name = "didChangeConfiguration")]
+        [JsonPropertyName("didChangeConfiguration")]
         public DidChangeConfigurationClientCapabilities DidChangeConfiguration { get; set; }
 
         /**
          * Capabilities specific to the `workspace/didChangeWatchedFiles`
 		 * notification.
 		 */
-        [DataMember(Name = "didChangeWatchedFiles")]
+        [JsonPropertyName("didChangeWatchedFiles")]
         public DidChangeWatchedFilesClientCapabilities DidChangeWatchedFiles { get; set; }
 
         /**
          * Capabilities specific to the `workspace/symbol` request.
          */
-        [DataMember(Name = "symbol")]
+        [JsonPropertyName("symbol")]
         public WorkspaceSymbolClientCapabilities Symbol { get; set; }
 
         /**
          * Capabilities specific to the `workspace/executeCommand` request.
          */
-        [DataMember(Name = "executeCommand")]
+        [JsonPropertyName("executeCommand")]
         public ExecuteCommandClientCapabilities ExecuteCommand { get; set; }
 
         /**
@@ -53,7 +53,7 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "workspaceFolders")]
+        [JsonPropertyName("workspaceFolders")]
         public bool? WorkspaceFolders { get; set; }
 
         /**
@@ -61,7 +61,7 @@ namespace LspTypes
          *
          * @since 3.6.0
          */
-        [DataMember(Name = "configuration")]
+        [JsonPropertyName("configuration")]
         public bool? Configuration { get; set; }
 
         /**
@@ -70,7 +70,7 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "semanticTokens")]
+        [JsonPropertyName("semanticTokens")]
         public SemanticTokensWorkspaceClientCapabilities SemanticTokens { get; set; }
 
         /**
@@ -79,7 +79,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "codeLens")]
+        [JsonPropertyName("codeLens")]
         public CodeLensWorkspaceClientCapabilities CodeLens { get; set; }
 
         /**
@@ -87,7 +87,7 @@ namespace LspTypes
 		 *
 		 * @since 3.16.0
 		 */
-        [DataMember(Name = "fileOperations")]
+        [JsonPropertyName("fileOperations")]
         public _ClientCapabilities_Workspace_FileOperations fileOperations { get; set; }
 
     }

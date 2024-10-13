@@ -10,7 +10,7 @@ namespace LspTypes
         /**
          * Include the declaration of the current symbol.
          */
-        [DataMember(Name = "includeDeclaration")]
+        [JsonPropertyName("includeDeclaration")]
         public bool IncludeDeclaration { get; set; }
     }
 }

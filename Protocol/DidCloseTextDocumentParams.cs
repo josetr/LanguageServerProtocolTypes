@@ -11,7 +11,7 @@ namespace LspTypes
         /**
          * The document that was closed.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         [JsonProperty(Required = Required.Always)]
         public TextDocumentIdentifier TextDocument { get; set; }
     }

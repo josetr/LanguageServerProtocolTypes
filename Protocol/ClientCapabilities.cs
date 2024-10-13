@@ -17,19 +17,19 @@ namespace LspTypes
         /**
          * Workspace specific client capabilities.
          */
-        [DataMember(Name = "workspace")]
+        [JsonPropertyName("workspace")]
         public _ClientCapabilities_Workspace Workspace { get; set; }
 
         /**
          * Text document specific client capabilities.
          */
-        [DataMember(Name = "textDocument")]
+        [JsonPropertyName("textDocument")]
         public TextDocumentClientCapabilities TextDocument { get; set; }
 
         /**
          * Window specific client capabilities.
          */
-        [DataMember(Name = "window")]
+        [JsonPropertyName("window")]
         public _ClientCapabilities_Window Window { get; set; }
 
         /**
@@ -37,13 +37,13 @@ namespace LspTypes
          *
          * @since 3.16.0
          */
-        [DataMember(Name = "general")]
+        [JsonPropertyName("general")]
         public _ClientCapabilities_General General { get; set; }
 
         /**
          * Experimental client capabilities.
          */
-        [DataMember(Name = "experimental")]
+        [JsonPropertyName("experimental")]
         public object Experimental { get; set; }
     }
 }

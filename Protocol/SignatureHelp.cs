@@ -16,7 +16,7 @@ namespace LspTypes
          * One or more signatures. If no signatures are available the signature help
          * request should return `null`.
          */
-        [DataMember(Name = "signatures")]
+        [JsonPropertyName("signatures")]
         public SignatureInformation[] Signatures { get; set; }
 
         /**
@@ -30,7 +30,7 @@ namespace LspTypes
          * In future version of the protocol this property might become
          * mandatory to better express this.
          */
-        [DataMember(Name = "activeSignature")]
+        [JsonPropertyName("activeSignature")]
         public uint? ActiveSignature { get; set; }
 
         /**
@@ -42,7 +42,7 @@ namespace LspTypes
          * mandatory to better express the active parameter if the
          * active signature does have any.
          */
-        [DataMember(Name = "activeParameter")]
+        [JsonPropertyName("activeParameter")]
         public uint? ActiveParameter { get; set; }
     }
 }

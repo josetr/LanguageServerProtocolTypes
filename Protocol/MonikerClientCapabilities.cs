@@ -13,7 +13,7 @@ namespace LspTypes
 	     * StaticRegistrationOptions)` return value for the corresponding server
          * capability as well.
          */
-        [DataMember(Name = "dynamicRegistration")]
+        [JsonPropertyName("dynamicRegistration")]
         public bool? DynamicRegistration { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace LspTypes
     {
         public SemanticTokensPartialResult() { }
 
-        [DataMember(Name = "data")]
+        [JsonPropertyName("data")]
         public uint[] Data { get; set; }
     }
 }
