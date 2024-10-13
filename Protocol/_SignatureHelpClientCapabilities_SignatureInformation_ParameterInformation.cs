@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _SignatureHelpClientCapabilities_SignatureInformation_ParameterInformation
     {
         public _SignatureHelpClientCapabilities_SignatureInformation_ParameterInformation() { }

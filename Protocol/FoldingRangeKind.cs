@@ -7,7 +7,6 @@ namespace LspTypes
     /**
      * Enum of known range kinds
      */
-    [DataContract]
     [JsonConverter(typeof(StringEnumConverter))]
     public enum FoldingRangeKind
     {

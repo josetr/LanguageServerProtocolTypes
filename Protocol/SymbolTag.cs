@@ -7,7 +7,6 @@ namespace LspTypes
      *
      * @since 3.16
      */
-    [DataContract]
     public enum SymbolTag
     {
         /**

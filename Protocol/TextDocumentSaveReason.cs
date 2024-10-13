@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * Represents reasons why a text document is saved.
      */
-    [DataContract]
     public enum TextDocumentSaveReason
     {
         /**

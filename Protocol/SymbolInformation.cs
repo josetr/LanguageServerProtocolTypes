@@ -8,7 +8,6 @@ namespace LspTypes
      * Represents information about programming constructs like variables, classes,
      * interfaces etc.
      */
-    [DataContract]
     public class SymbolInformation : IEquatable<SymbolInformation>
     {
         public SymbolInformation() { }

@@ -10,7 +10,6 @@ namespace LspTypes
      * performance reasons the creation of a code lens and resolving should be done
      * in two stages.
      */
-    [DataContract]
     public class CodeLens
     {
         public CodeLens() { }

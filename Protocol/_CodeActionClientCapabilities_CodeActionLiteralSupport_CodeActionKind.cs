@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _CodeActionClientCapabilities_CodeActionLiteralSupport_CodeActionKind
     {
         public _CodeActionClientCapabilities_CodeActionLiteralSupport_CodeActionKind() { }

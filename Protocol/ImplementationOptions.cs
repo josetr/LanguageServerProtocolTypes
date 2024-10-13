@@ -6,7 +6,6 @@ namespace LspTypes
     public interface IImplementationOptions : IWorkDoneProgressOptions
     { }
 
-    [DataContract]
     public class ImplementationOptions : WorkDoneProgressOptions, IImplementationOptions
     {
     }

@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _SemanticTokensClientCapabilities_Requests
     {
         public _SemanticTokensClientCapabilities_Requests() { }

@@ -10,7 +10,6 @@ namespace LspTypes
      * A CodeAction must set either `edit` and/or a `command`. If both are supplied,
      * the `edit` is applied first, then the `command` is executed.
      */
-    [DataContract]
     public class CodeAction
     {
         public CodeAction() { }

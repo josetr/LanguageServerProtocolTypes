@@ -4,7 +4,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     [JsonConverter(typeof(StringEnumConverter))]
     public enum CodeActionKind
     {

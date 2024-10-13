@@ -6,7 +6,6 @@ namespace LspTypes
     public interface IDocumentColorOptions : IWorkDoneProgressOptions
     { }
 
-    [DataContract]
     public class DocumentColorOptions : WorkDoneProgressOptions, IDocumentColorOptions
     {
         public DocumentColorOptions() { }

@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Completion options.
      */
-    [DataContract]
     public class CompletionOptions : WorkDoneProgressOptions, ICompletionOptions
     {
         public CompletionOptions() { }

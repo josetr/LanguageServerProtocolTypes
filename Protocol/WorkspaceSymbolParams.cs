@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * The parameters of a Workspace Symbol Request.
      */
-    [DataContract]
     public class WorkspaceSymbolParams : WorkDoneProgressParams, IPartialResultParams
     {
         public WorkspaceSymbolParams() { }

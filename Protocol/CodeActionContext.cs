@@ -7,7 +7,6 @@ namespace LspTypes
      * Contains additional diagnostic information about the context in which
      * a code action is run.
      */
-    [DataContract]
     public class CodeActionContext
     {
         public CodeActionContext() { }

@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * General parameters to register for a capability.
      */
-    [DataContract]
     public class Registration
     {
         public Registration() { }

@@ -7,7 +7,6 @@ namespace LspTypes
     /**
      * The kind of resource operations supported by the client.
      */
-    [DataContract]
     [JsonConverter(typeof(StringEnumConverter))]
     public enum ResourceOperationKind
     {

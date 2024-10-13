@@ -4,7 +4,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class PublishDiagnosticParams
     {
         public PublishDiagnosticParams() { }

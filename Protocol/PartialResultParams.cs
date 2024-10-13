@@ -8,7 +8,6 @@ namespace LspTypes
         SumType<int, string> PartialResultToken { get; set; }
     }
 
-    [DataContract]
     public class PartialResultParams : IPartialResultParams
     {
         public PartialResultParams() { }

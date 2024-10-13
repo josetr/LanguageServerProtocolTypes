@@ -9,7 +9,6 @@ namespace LspTypes
         string[] MoreTriggerCharacter { get; set; }
     }
 
-    [DataContract]
     public class DocumentOnTypeFormattingOptions
     {
         public DocumentOnTypeFormattingOptions() { }

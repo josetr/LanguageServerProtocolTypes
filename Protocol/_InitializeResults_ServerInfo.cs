@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _InitializeResults_ServerInfo
     {
         public _InitializeResults_ServerInfo() { }

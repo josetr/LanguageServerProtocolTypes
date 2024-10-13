@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Rename file options
      */
-    [DataContract]
     public class RenameFileOptions
     {
         public RenameFileOptions() { }

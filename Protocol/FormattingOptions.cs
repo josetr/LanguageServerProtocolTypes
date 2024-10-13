@@ -7,7 +7,6 @@ namespace LspTypes
     /**
      * Value-object describing what options formatting should use.
      */
-    [DataContract]
     public class FormattingOptions
     {
         public FormattingOptions() { }

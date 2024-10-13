@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class ConfigurationItem
     {
         public ConfigurationItem() { }

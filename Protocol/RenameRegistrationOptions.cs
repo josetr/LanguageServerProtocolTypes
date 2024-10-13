@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class RenameRegistrationOptions : TextDocumentRegistrationOptions, IRenameOptions
     {
         public RenameRegistrationOptions() : base() { }

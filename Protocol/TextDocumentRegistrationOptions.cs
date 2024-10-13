@@ -8,7 +8,6 @@ namespace LspTypes
         DocumentFilter[] DocumentSelector { get; set; }
     }
 
-    [DataContract]
     public class TextDocumentRegistrationOptions : ITextDocumentRegistrationOptions
     {
         public TextDocumentRegistrationOptions() { }

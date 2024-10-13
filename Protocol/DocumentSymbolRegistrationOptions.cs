@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class DocumentSymbolRegistrationOptions : TextDocumentRegistrationOptions, IDocumentSymbolOptions
     {
         public DocumentSymbolRegistrationOptions() : base() { }

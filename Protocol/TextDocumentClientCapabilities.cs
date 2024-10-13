@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Text document specific client capabilities.
      */
-    [DataContract]
     public class TextDocumentClientCapabilities
     {
         public TextDocumentClientCapabilities() { }

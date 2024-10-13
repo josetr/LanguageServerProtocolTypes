@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * General parameters to unregister a capability.
      */
-    [DataContract]
     public class Unregistration
     {
         public Unregistration() { }

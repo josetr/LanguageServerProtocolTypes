@@ -9,7 +9,6 @@ namespace LspTypes
      * the background color of its range.
      *
      */
-    [DataContract]
     public class DocumentHighlight
     {
         public DocumentHighlight() { }

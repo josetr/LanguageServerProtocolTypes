@@ -7,7 +7,6 @@ namespace LspTypes
     {
     }
 
-    [DataContract]
     public class TypeDefinitionOptions : WorkDoneProgressOptions, ITypeDefinitionOptions
     {
         public TypeDefinitionOptions() { }

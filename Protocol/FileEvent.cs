@@ -7,7 +7,6 @@ namespace LspTypes
     /**
      * An event describing a file change.
      */
-    [DataContract]
     public class FileEvent
     {
         public FileEvent() { }

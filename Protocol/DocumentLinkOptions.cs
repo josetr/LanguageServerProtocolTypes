@@ -8,7 +8,6 @@ namespace LspTypes
         bool? ResolveProvider { get; set; }
     }
 
-    [DataContract]
     public class DocumentLinkOptions : WorkDoneProgressOptions, IDocumentLinkOptions
     {
         public DocumentLinkOptions() { }

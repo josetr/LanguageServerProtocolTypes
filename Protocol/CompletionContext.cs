@@ -6,7 +6,6 @@ namespace LspTypes
      * Contains additional information about the context in which a completion
      * request is triggered.
      */
-    [DataContract]
     public class CompletionContext
     {
         public CompletionContext() { }

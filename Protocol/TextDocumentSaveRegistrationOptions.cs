@@ -2,7 +2,6 @@
 
 namespace LspTypes
 {
-    [DataContract]
     public class TextDocumentSaveRegistrationOptions : TextDocumentRegistrationOptions
     {
         public TextDocumentSaveRegistrationOptions() { }

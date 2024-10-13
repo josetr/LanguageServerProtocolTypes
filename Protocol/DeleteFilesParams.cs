@@ -9,7 +9,6 @@ namespace LspTypes
      *
      * @since 3.16.0
      */
-    [DataContract]
     public class DeleteFilesParams
     {
         public DeleteFilesParams() { }

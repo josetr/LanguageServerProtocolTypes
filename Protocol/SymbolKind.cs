@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * A symbol kind.
      */
-    [DataContract]
     public enum SymbolKind
     {
         File = 1,

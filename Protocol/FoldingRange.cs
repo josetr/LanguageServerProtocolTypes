@@ -8,7 +8,6 @@ namespace LspTypes
      * than zero and smaller than the number of lines in the document. Clients
      * are free to ignore invalid ranges.
      */
-    [DataContract]
     public class FoldingRange
     {
         public FoldingRange() { }

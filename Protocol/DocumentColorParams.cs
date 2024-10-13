@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace LspTypes
 {
-    [DataContract]
     public class DocumentColorParams : WorkDoneProgressParams, IPartialResultParams
     {
         public DocumentColorParams() : base() { }

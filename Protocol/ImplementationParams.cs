@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class ImplementationParams : TextDocumentPositionParams, IWorkDoneProgressParams, IPartialResultParams
     {
         public ImplementationParams() : base() { }

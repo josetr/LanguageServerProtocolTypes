@@ -5,7 +5,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class LocationLink
     {
         public LocationLink() { }

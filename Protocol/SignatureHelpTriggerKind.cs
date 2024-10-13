@@ -7,7 +7,6 @@ namespace LspTypes
      *
      * @since 3.15.0
      */
-    [DataContract]
     public enum SignatureHelpTriggerKind
     {
         /**

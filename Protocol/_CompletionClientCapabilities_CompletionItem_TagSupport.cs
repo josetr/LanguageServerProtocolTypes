@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _CompletionClientCapabilities_CompletionItem_TagSupport
     {
         public _CompletionClientCapabilities_CompletionItem_TagSupport() { }

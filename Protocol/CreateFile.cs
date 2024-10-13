@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Create file operation
      */
-    [DataContract]
     public class CreateFile
     {
         public CreateFile() { }

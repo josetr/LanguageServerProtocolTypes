@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _WorkspaceSymbolClientCapabilities_SymbolKind
     {
         public _WorkspaceSymbolClientCapabilities_SymbolKind() { }

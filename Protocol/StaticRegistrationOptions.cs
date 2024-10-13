@@ -12,7 +12,6 @@ namespace LspTypes
     /**
      * Static registration options to be returned in the initialize request.
      */
-    [DataContract]
     public class StaticRegistrationOptions
     {
         public StaticRegistrationOptions() { }

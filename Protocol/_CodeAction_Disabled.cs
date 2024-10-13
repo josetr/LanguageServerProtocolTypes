@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _CodeAction_Disabled
     {
         public _CodeAction_Disabled() { }

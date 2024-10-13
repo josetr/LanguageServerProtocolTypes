@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * The parameters send in a will save text document notification.
      */
-    [DataContract]
     public class WillSaveTextDocumentParams
     {
         public WillSaveTextDocumentParams() { }

@@ -2,7 +2,6 @@
 
 namespace LspTypes
 {
-    [DataContract]
     public class SignatureHelpOptions : WorkDoneProgressOptions, ISignatureHelpOptions
     {
         public SignatureHelpOptions() { }

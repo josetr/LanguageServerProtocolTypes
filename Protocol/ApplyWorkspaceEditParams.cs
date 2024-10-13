@@ -9,7 +9,6 @@ namespace LspTypes
      * client to modify resource on the client side.
      * https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workspace_applyEdit
      */
-    [DataContract]
     public class ApplyWorkspaceEditParams
     {
         public ApplyWorkspaceEditParams() { }

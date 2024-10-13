@@ -5,7 +5,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class Location : IEquatable<Location>
     {
         public Location() { }

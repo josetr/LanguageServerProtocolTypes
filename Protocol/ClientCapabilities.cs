@@ -9,7 +9,6 @@ namespace LspTypes
      * client to the server.
      * https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
      */
-    [DataContract]
     public class ClientCapabilities
     {
         public ClientCapabilities() { }

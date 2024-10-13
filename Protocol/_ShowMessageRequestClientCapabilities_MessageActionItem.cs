@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _ShowMessageRequestClientCapabilities_MessageActionItem
     {
         public _ShowMessageRequestClientCapabilities_MessageActionItem() { }

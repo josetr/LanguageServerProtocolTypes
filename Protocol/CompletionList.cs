@@ -6,7 +6,6 @@ namespace LspTypes
      * Represents a collection of [completion items](#CompletionItem) to be
      * presented in the editor.
      */
-    [DataContract]
     public class CompletionList
     {
         public CompletionList() { }

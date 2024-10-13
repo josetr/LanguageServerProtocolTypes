@@ -6,7 +6,6 @@ namespace LspTypes
      * An event describing a change to a text document. If range and rangeLength are
      * omitted the new text is considered to be the full content of the document.
      */
-    [DataContract]
     public class TextDocumentContentChangeEvent
     {
         public TextDocumentContentChangeEvent() { }

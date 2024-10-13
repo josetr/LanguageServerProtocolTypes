@@ -4,7 +4,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _CompletionClientCapabilities_CompletionItemKind
     {
         public _CompletionClientCapabilities_CompletionItemKind() { }

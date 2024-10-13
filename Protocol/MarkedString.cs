@@ -17,7 +17,6 @@ namespace LspTypes
      * Note that markdown strings will be sanitized - that means html will be escaped.
      * @deprecated use MarkupContent instead.
      */
-    [DataContract]
     public class MarkedString
     {
         public MarkedString() { }

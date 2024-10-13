@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Params for the CodeActionRequest
      */
-    [DataContract]
     public class CodeActionParams : WorkDoneProgressParams, IPartialResultParams
     {
         public CodeActionParams() { }

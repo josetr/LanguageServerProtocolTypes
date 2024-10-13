@@ -3,7 +3,6 @@ using System.Runtime.Serialization;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _DocumentSymbolClientCapabilities_SymbolKind
     {
         public _DocumentSymbolClientCapabilities_SymbolKind() { }

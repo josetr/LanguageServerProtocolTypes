@@ -7,7 +7,6 @@ namespace LspTypes
     {
     }
 
-    [DataContract]
     public class FoldingRangeOptions : WorkDoneProgressOptions
     {
         public FoldingRangeOptions() { }

@@ -8,7 +8,6 @@ namespace LspTypes
      * can have a label, like a function-name, a doc-comment, and
      * a set of parameters.
      */
-    [DataContract]
     public class SignatureInformation
     {
         public SignatureInformation() { }

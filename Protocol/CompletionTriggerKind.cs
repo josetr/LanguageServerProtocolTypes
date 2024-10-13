@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * How a completion was triggered
      */
-    [DataContract]
     public enum CompletionTriggerKind
     {
         /**

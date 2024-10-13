@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 
 namespace LspTypes
 {
-    [DataContract]
     public class _ClientCapabilities_Window
     {
         public _ClientCapabilities_Window() { }

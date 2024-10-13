@@ -11,7 +11,6 @@ namespace LspTypes
      * Please note that `MarkupKinds` must not start with a `$`. This kinds
      * are reserved for internal usage.
      */
-    [DataContract]
     [JsonConverter(typeof(StringEnumConverter))]
     public enum MarkupKind
     {

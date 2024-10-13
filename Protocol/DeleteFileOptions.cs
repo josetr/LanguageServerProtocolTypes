@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Delete file options
      */
-    [DataContract]
     public class DeleteFileOptions
     {
         public DeleteFileOptions() { }

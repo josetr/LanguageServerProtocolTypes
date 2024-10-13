@@ -7,7 +7,6 @@ namespace LspTypes
      * callable. There can be multiple signature but only one
      * active and only one active parameter.
      */
-    [DataContract]
     public class SignatureHelp
     {
         public SignatureHelp() { }

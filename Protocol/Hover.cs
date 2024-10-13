@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * The result of a hover request.
      */
-    [DataContract]
     public class Hover
     {
         public Hover() { }

@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * A document highlight kind.
      */
-    [DataContract]
     public enum DocumentHighlightKind
     {
         /**

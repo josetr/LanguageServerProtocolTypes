@@ -9,7 +9,6 @@ namespace LspTypes
      * have two ranges: one that encloses its definition and one that points to its
      * most interesting range, e.g. the range of an identifier.
      */
-    [DataContract]
     public class DocumentSymbol
     {
         public DocumentSymbol() { }

@@ -6,7 +6,6 @@ namespace LspTypes
     /**
      * Describe options to be used when registering for file system change events.
      */
-    [DataContract]
     public class DidChangeWatchedFilesRegistrationOptions
     {
         public DidChangeWatchedFilesRegistrationOptions() { }

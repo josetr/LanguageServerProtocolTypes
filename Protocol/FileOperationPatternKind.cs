@@ -10,7 +10,6 @@ namespace LspTypes
      *
      * @since 3.16.0
      */
-    [DataContract]
     [JsonConverter(typeof(StringEnumConverter))]
     public enum FileOperationPatternKind
     {

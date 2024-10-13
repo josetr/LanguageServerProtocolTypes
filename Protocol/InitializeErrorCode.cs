@@ -5,7 +5,6 @@ namespace LspTypes
     /**
      * Known error codes for an `InitializeError`;
      */
-    [DataContract]
     public enum InitializeErrorCode
     {
         /**

@@ -2,7 +2,6 @@
 
 namespace LspTypes
 {
-    [DataContract]
     public class UnregistrationParams
     {
         public UnregistrationParams() { }
