@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace LspTypes
 {
@@ -10,7 +8,7 @@ namespace LspTypes
      *
      * @since 3.16.0
      */
-    [JsonConverter(typeof(StringEnumConverter))]
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum FileOperationPatternKind
     {
         /**

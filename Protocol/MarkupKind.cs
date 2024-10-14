@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace LspTypes
 {
@@ -11,7 +9,7 @@ namespace LspTypes
      * Please note that `MarkupKinds` must not start with a `$`. This kinds
      * are reserved for internal usage.
      */
-    [JsonConverter(typeof(StringEnumConverter))]
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum MarkupKind
     {
         /**
