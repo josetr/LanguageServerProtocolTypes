@@ -14,7 +14,6 @@ namespace LspTypes
 	     * including undo/redo. The number doesn't need to be consecutive.
          */
         [JsonPropertyName("version")]
-        [JsonProperty(Required = Required.Always)]
-        public int Version { get; set; }
+        public required int Version { get; set; }
     }
 }

@@ -16,8 +16,7 @@ namespace LspTypes
 	     * The name of the parser.
 	     */
         [JsonPropertyName("parser")]
-        [JsonProperty(Required = Required.Always)]
-        public string Parser { get; set; }
+        public required string Parser { get; set; }
 
         /**
 	     * The version of the parser.

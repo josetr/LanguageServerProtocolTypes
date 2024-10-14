@@ -11,7 +11,6 @@ namespace LspTypes
          * The tags supported by the client.
          */
         [JsonPropertyName("valueSet")]
-        [JsonProperty(Required = Required.Always)]
-        public DiagnosticTag[] ValueSet { get; set; }
+        public required DiagnosticTag[] ValueSet { get; set; }
     }
 }

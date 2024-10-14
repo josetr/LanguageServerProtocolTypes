@@ -11,8 +11,7 @@ namespace LspTypes
          * The document that was saved.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentIdentifier TextDocument { get; set; }
+        public required TextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * Optional the content when saved. Depends on the includeText value

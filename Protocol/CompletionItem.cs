@@ -18,8 +18,7 @@ namespace LspTypes
          * this completion.
          */
         [JsonPropertyName("label")]
-        [JsonProperty(Required = Required.Always)]
-        public string Label { get; set; }
+        public required string Label { get; set; }
 
         /**
          * The kind of this completion item. Based of the kind

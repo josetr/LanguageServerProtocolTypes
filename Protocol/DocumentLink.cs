@@ -15,8 +15,7 @@ namespace LspTypes
          * The range this link applies to.
          */
         [JsonPropertyName("range")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Range { get; set; }
+        public required Range Range { get; set; }
 
         /**
          * The uri this link points to. If missing a resolve request is sent later.

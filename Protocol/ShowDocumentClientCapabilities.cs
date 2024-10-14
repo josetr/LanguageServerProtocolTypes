@@ -17,7 +17,6 @@ namespace LspTypes
 	     * request.
 	     */
         [JsonPropertyName("support")]
-        [JsonProperty(Required = Required.Always)]
-        public bool Support { get; set; }
+        public required bool Support { get; set; }
     }
 }

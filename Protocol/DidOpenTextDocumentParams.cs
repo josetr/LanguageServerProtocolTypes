@@ -11,7 +11,6 @@ namespace LspTypes
          * The document that was opened.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentItem TextDocument { get; set; }
+        public required TextDocumentItem TextDocument { get; set; }
     }
 }

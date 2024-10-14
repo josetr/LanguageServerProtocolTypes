@@ -25,7 +25,6 @@ namespace LspTypes
          * The edits to apply.
          */
         [JsonPropertyName("edit")]
-        [JsonProperty(Required = Required.Always)]
-        public WorkspaceEdit Edit { get; set; }
+        public required WorkspaceEdit Edit { get; set; }
     }
 }

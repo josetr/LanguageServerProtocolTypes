@@ -11,8 +11,7 @@ namespace LspTypes
         * A character on which formatting should be triggered, like `}`.
         */
         [JsonPropertyName("firstTriggerCharacter")]
-        [JsonProperty(Required = Required.Always)]
-        public string FirstTriggerCharacter { get; set; }
+        public required string FirstTriggerCharacter { get; set; }
 
         /**
          * More trigger characters.

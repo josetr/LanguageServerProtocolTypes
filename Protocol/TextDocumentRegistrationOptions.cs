@@ -17,7 +17,6 @@ namespace LspTypes
 	     * null the document selector provided on the client side will be used.
          */
         [JsonPropertyName("documentSelector")]
-        [JsonProperty(Required = Required.Always)]
-        public DocumentFilter[] DocumentSelector { get; set; }
+        public required DocumentFilter[] DocumentSelector { get; set; }
     }
 }

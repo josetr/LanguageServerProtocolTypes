@@ -16,7 +16,6 @@ namespace LspTypes
 	     * The actual filters.
 	     */
         [JsonPropertyName("filters")]
-        [JsonProperty(Required = Required.Always)]
-        public FileOperationFilter[] Filters { get; set; }
+        public required FileOperationFilter[] Filters { get; set; }
     }
 }

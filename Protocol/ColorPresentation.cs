@@ -13,8 +13,7 @@ namespace LspTypes
 		 * selecting this color presentation.
 		 */
         [JsonPropertyName("label")]
-        [JsonProperty(Required = Required.Always)]
-        public string Label { get; set; }
+        public required string Label { get; set; }
 
         /**
 		 * An [edit](#TextEdit) which is applied to a document when selecting
@@ -22,8 +21,7 @@ namespace LspTypes
 		 * [label](#ColorPresentation.label) is used.
 		 */
         [JsonPropertyName("textEdit")]
-        [JsonProperty(Required = Required.Always)]
-        public TextEdit TextEdit { get; set; }
+        public required TextEdit TextEdit { get; set; }
 
         /**
 		 * An optional array of additional [text edits](#TextEdit) that are applied

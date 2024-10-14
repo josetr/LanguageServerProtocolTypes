@@ -11,15 +11,13 @@ namespace LspTypes
 	     * The start offset of the edit.
 	     */
         [JsonPropertyName("start")]
-        [JsonProperty(Required = Required.Always)]
-        public uint Start { get; set; }
+        public required uint Start { get; set; }
 
         /**
 	     * The count of elements to remove.
 	     */
         [JsonPropertyName("deleteCount")]
-        [JsonProperty(Required = Required.Always)]
-        public uint DeleteCount { get; set; }
+        public required uint DeleteCount { get; set; }
 
         /**
 	     * The elements to insert.

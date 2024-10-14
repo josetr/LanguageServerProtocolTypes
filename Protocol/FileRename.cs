@@ -16,14 +16,12 @@ namespace LspTypes
 	     * A file:// URI for the original location of the file/folder being renamed.
 	     */
         [JsonPropertyName("oldUri")]
-        [JsonProperty(Required = Required.Always)]
-        public string OldUri { get; set; }
+        public required string OldUri { get; set; }
 
         /**
 	     * A file:// URI for the new location of the file/folder being renamed.
 	     */
         [JsonPropertyName("newUri")]
-        [JsonProperty(Required = Required.Always)]
-        public string NewUri { get; set; }
+        public required string NewUri { get; set; }
     }
 }

@@ -23,7 +23,6 @@ namespace LspTypes
 	     * The actual file operation pattern.
 	     */
         [JsonPropertyName("pattern")]
-        [JsonProperty(Required = Required.Always)]
-        public FileOperationPattern Pattern { get; set; }
+        public required FileOperationPattern Pattern { get; set; }
     }
 }

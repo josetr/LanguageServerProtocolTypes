@@ -18,8 +18,7 @@ namespace LspTypes
          * A short, human-readable, title for this code action.
          */
         [JsonPropertyName("title")]
-        [JsonProperty(Required = Required.Always)]
-        public string Title { get; set; }
+        public required string Title { get; set; }
 
         /**
          * The kind of the code action.

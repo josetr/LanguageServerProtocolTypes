@@ -16,8 +16,7 @@ namespace LspTypes
 		 * The document uri to show.
 		 */
         [JsonPropertyName("uri")]
-        [JsonProperty(Required = Required.Always)]
-        public string Uri { get; set; }
+        public required string Uri { get; set; }
 
         /**
 		 * Indicates to show the resource in an external program.

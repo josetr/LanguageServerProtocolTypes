@@ -15,15 +15,13 @@ namespace LspTypes
          * Size of a tab in spaces.
          */
         [JsonPropertyName("tabSize")]
-        [JsonProperty(Required = Required.Always)]
-        public uint TabSize { get; set; }
+        public required uint TabSize { get; set; }
 
         /**
          * Prefer spaces over tabs.
          */
         [JsonPropertyName("insertSpaces")]
-        [JsonProperty(Required = Required.Always)]
-        public bool InsertSpaces { get; set; }
+        public required bool InsertSpaces { get; set; }
 
         /**
          * Trim trailing whitespace on a line.

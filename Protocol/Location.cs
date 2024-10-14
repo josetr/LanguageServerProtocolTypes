@@ -10,8 +10,7 @@ namespace LspTypes
         public Location() { }
 
         [JsonPropertyName("uri")]
-        [JsonProperty(Required = Required.Always)]
-        public string Uri { get; set; }
+        public required string Uri { get; set; }
 
         [JsonPropertyName("range")]
         public Range Range { get; set; }

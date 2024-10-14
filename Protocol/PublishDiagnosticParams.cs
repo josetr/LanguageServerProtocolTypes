@@ -12,8 +12,7 @@ namespace LspTypes
 	     * The URI for which diagnostic information is reported.
 	     */
         [JsonPropertyName("uri")]
-        [JsonProperty(Required = Required.Always)]
-        public string Uri { get; set; }
+        public required string Uri { get; set; }
 
         /**
 	     * Optional the version number of the document the diagnostics are published
@@ -29,7 +28,6 @@ namespace LspTypes
 	     * An array of diagnostic information items.
 	     */
         [JsonPropertyName("diagnostics")]
-        [JsonProperty(Required = Required.Always)]
-        public Diagnostic[] Diagnostics { get; set; }
+        public required Diagnostic[] Diagnostics { get; set; }
     }
 }

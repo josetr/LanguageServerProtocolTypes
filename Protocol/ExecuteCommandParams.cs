@@ -11,8 +11,7 @@ namespace LspTypes
          * The identifier of the actual command handler.
          */
         [JsonPropertyName("command")]
-        [JsonProperty(Required = Required.Always)]
-        public string Command { get; set; }
+        public required string Command { get; set; }
 
         /**
          * Arguments that the command should be invoked with.

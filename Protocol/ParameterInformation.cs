@@ -26,8 +26,8 @@ namespace LspTypes
 	     * label part in the `SignatureInformation.label`.
 	     */
         [JsonPropertyName("label")]
-        [JsonProperty(Required = Required.Always, DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public SumType<string, Tuple<uint, uint>> Label { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        public required SumType<string, Tuple<uint, uint>> Label { get; set; }
 
         /**
          * The human-readable doc-comment of this parameter. Will be shown

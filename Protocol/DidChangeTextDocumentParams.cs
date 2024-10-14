@@ -13,8 +13,7 @@ namespace LspTypes
          * been applied.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public VersionedTextDocumentIdentifier TextDocument { get; set; }
+        public required VersionedTextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * The actual content changes. The content changes describe single state
@@ -32,7 +31,6 @@ namespace LspTypes
 	     *   in the order you receive them.
          */
         [JsonPropertyName("contentChanges")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentContentChangeEvent[] ContentChanges { get; set; }
+        public required TextDocumentContentChangeEvent[] ContentChanges { get; set; }
     }
 }

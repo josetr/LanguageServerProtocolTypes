@@ -16,7 +16,6 @@ namespace LspTypes
 	     * The actual annotation identifier.
 	     */
         [JsonPropertyName("annotationId")]
-        [JsonProperty(Required = Required.Always)]
-        public string AnnotationId { get; set; }
+        public required string AnnotationId { get; set; }
     }
 }

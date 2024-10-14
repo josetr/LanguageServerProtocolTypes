@@ -18,8 +18,7 @@ namespace LspTypes
 	     * larger and smaller than the number of lines in the document.
          */
         [JsonPropertyName("startLine")]
-        [JsonProperty(Required = Required.Always)]
-        public uint StartLine { get; set; }
+        public required uint StartLine { get; set; }
 
         /**
          * The zero-based character offset from where the folded range starts. If
@@ -34,8 +33,7 @@ namespace LspTypes
 	     * and smaller than the number of lines in the document.
          */
         [JsonPropertyName("endLine")]
-        [JsonProperty(Required = Required.Always)]
-        public uint EndLine { get; set; }
+        public required uint EndLine { get; set; }
 
         /**
          * The zero-based character offset before the folded range ends. If not

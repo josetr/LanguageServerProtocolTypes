@@ -11,15 +11,13 @@ namespace LspTypes
          * The array of added workspace folders
          */
         [JsonPropertyName("added")]
-        [JsonProperty(Required = Required.Always)]
-        public WorkspaceFolder[] Added { get; set; }
+        public required WorkspaceFolder[] Added { get; set; }
 
 
         /**
          * The array of the removed workspace folders
          */
         [JsonPropertyName("removed")]
-        [JsonProperty(Required = Required.Always)]
-        public WorkspaceFolder[] Removed { get; set; }
+        public required WorkspaceFolder[] Removed { get; set; }
     }
 }

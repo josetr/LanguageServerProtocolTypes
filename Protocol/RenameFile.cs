@@ -12,22 +12,19 @@ namespace LspTypes
          */
         // Must always be 'rename'.
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public string Kind { get; set; }
+        public required string Kind { get; set; }
 
         /**
          * The old (existing) location.
          */
         [JsonPropertyName("oldUri")]
-        [JsonProperty(Required = Required.Always)]
-        public string OldUri { get; set; }
+        public required string OldUri { get; set; }
 
         /**
          * The new location.
          */
         [JsonPropertyName("newUri")]
-        [JsonProperty(Required = Required.Always)]
-        public string NewUri { get; set; }
+        public required string NewUri { get; set; }
 
         /**
          * Rename options.

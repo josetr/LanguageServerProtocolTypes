@@ -11,7 +11,6 @@ namespace LspTypes
          * The actual file events.
          */
         [JsonPropertyName("changes")]
-        [JsonProperty(Required = Required.Always)]
-        public FileEvent[] Changes { get; set; }
+        public required FileEvent[] Changes { get; set; }
     }
 }

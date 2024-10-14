@@ -23,8 +23,7 @@ namespace LspTypes
 	     *   `example.0`)
 	     */
         [JsonPropertyName("globPattern")]
-        [JsonProperty(Required = Required.Always)]
-        public string GlobPattern { get; set; }
+        public required string GlobPattern { get; set; }
 
         /**
          * The kind of events of interest. If omitted it defaults

@@ -15,8 +15,7 @@ namespace LspTypes
 	     * its process.
 	     */
         [JsonPropertyName("processId")]
-        //OK if missing [JsonProperty(Required = Required.Always)]
-        public int? ProcessId { get; set; }
+        //OK if missing public required int? ProcessId { get; set; }
 
         /**
          * Information about the client
@@ -55,8 +54,7 @@ namespace LspTypes
          */
         [JsonPropertyName("rootUri")]
         [JsonConverter(typeof(DocumentUriConverter))]
-        //OK if missing [JsonProperty(Required = Required.Always)]
-        public Uri RootUri { get; set; }
+        //OK if missing public required Uri RootUri { get; set; }
 
         /**
          * User provided initialization options.

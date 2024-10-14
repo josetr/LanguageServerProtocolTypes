@@ -8,7 +8,6 @@ namespace LspTypes
         public ConfigurationParams() { }
 
         [JsonPropertyName("items")]
-        [JsonProperty(Required = Required.Always)]
-        public ConfigurationItem[] Items { get; set; }
+        public required ConfigurationItem[] Items { get; set; }
     }
 }

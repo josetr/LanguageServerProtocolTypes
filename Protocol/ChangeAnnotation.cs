@@ -15,8 +15,7 @@ namespace LspTypes
 		 * is rendered prominent in the user interface.
 		 */
         [JsonPropertyName("label")]
-        [JsonProperty(Required = Required.Always)]
-        public string Label { get; set; }
+        public required string Label { get; set; }
 
         /**
 		 * A flag which indicates that user confirmation is needed

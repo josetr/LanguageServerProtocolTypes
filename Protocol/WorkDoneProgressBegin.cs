@@ -8,8 +8,7 @@ namespace LspTypes
         public WorkDoneProgressBegin() { }
 
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public string Kind { get; set; }
+        public required string Kind { get; set; }
 
         /**
          * Mandatory title of the progress operation. Used to briefly inform about
@@ -18,8 +17,7 @@ namespace LspTypes
          * Examples: "Indexing" or "Linking dependencies".
          */
         [JsonPropertyName("title")]
-        [JsonProperty(Required = Required.Always)]
-        public string Title { get; set; }
+        public required string Title { get; set; }
 
         /**
          * Controls if a cancel button should show to allow the user to cancel the

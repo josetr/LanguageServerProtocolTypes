@@ -12,8 +12,7 @@ namespace LspTypes
 		  * identical length and contain identical text content. The ranges cannot overlap.
 		  */
         [JsonPropertyName("ranges")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Ranges { get; set; }
+        public required Range Ranges { get; set; }
 
         /**
 		 * An optional word pattern (regular expression) that describes valid contents for

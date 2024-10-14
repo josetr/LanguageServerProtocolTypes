@@ -22,11 +22,9 @@ namespace LspTypes
         public MarkedString() { }
 
         [JsonPropertyName("language")]
-        [JsonProperty(Required = Required.Always)]
-        public string Language { get; set; }
+        public required string Language { get; set; }
 
         [JsonPropertyName("value")]
-        [JsonProperty(Required = Required.Always)]
-        public string Value { get; set; }
+        public required string Value { get; set; }
     }
 }

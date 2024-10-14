@@ -17,8 +17,7 @@ namespace LspTypes
          * Indicates whether the edit was applied or not.
          */
         [JsonPropertyName("applied")]
-        [JsonProperty(Required = Required.Always)]
-        public bool Applied { get; set; }
+        public required bool Applied { get; set; }
 
         /**
          * An optional textual description for why the edit was not applied.

@@ -11,8 +11,7 @@ namespace LspTypes
 		 * The engine's name.
 		 */
         [JsonPropertyName("engine")]
-        [JsonProperty(Required = Required.Always)]
-        public string Engine { get; set; }
+        public required string Engine { get; set; }
 
         /**
 		 * The engine's version.

@@ -11,8 +11,7 @@ namespace LspTypes
          * The document to provide document links for.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentIdentifier TextDocument { get; set; }
+        public required TextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * An optional token that a server can use to report partial results (e.g. streaming) to

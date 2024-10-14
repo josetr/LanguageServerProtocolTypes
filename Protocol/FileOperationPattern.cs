@@ -27,8 +27,7 @@ namespace LspTypes
 		 *   not `example.0`)
 		 */
         [JsonPropertyName("glob")]
-        [JsonProperty(Required = Required.Always)]
-        public string Glob { get; set; }
+        public required string Glob { get; set; }
 
         /**
 		 * Whether to match files or folders with this pattern.

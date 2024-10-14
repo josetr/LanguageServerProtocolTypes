@@ -16,7 +16,6 @@ namespace LspTypes
 	     * A boolean indicating if the show was successful.
 	     */
         [JsonPropertyName("success")]
-        [JsonProperty(Required = Required.Always)]
-        public bool Success { get; set; }
+        public required bool Success { get; set; }
     }
 }

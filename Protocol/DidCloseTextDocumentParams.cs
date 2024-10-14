@@ -11,7 +11,6 @@ namespace LspTypes
          * The document that was closed.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentIdentifier TextDocument { get; set; }
+        public required TextDocumentIdentifier TextDocument { get; set; }
     }
 }

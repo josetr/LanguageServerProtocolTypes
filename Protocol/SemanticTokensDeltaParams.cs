@@ -11,16 +11,14 @@ namespace LspTypes
 	     * The text document.
 	     */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentIdentifier TextDocument { get; set; }
+        public required TextDocumentIdentifier TextDocument { get; set; }
 
         /**
 	     * The result id of a previous response. The result Id can either point to
 	     * a full response or a delta response depending on what was received last.
 	     */
         [JsonPropertyName("previousResultId")]
-        [JsonProperty(Required = Required.Always)]
-        public string PreviousResultId { get; set; }
+        public required string PreviousResultId { get; set; }
 
         /**
          * An optional token that a server can use to report partial results (e.g. streaming) to

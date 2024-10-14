@@ -11,7 +11,6 @@ namespace LspTypes
          * The actual changed settings
          */
         [JsonPropertyName("settings")]
-        [JsonProperty(Required = Required.Always)]
-        public object Settings { get; set; }
+        public required object Settings { get; set; }
     }
 }

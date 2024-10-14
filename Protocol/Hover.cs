@@ -14,8 +14,8 @@ namespace LspTypes
          * The hover's content
          */
         [JsonPropertyName("contents")]
-        [JsonProperty(Required = Required.Always, DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public SumType<string, MarkedString, MarkedString[], MarkupContent> Contents { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        public required SumType<string, MarkedString, MarkedString[], MarkupContent> Contents { get; set; }
 
         /**
          * An optional range is a range inside a text document

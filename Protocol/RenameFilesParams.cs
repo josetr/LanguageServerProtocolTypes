@@ -18,7 +18,6 @@ namespace LspTypes
 	     * is renamed, only the folder will be included, and not its children.
 	     */
         [JsonPropertyName("files")]
-        [JsonProperty(Required = Required.Always)]
-        public FileRename[] Files { get; set; }
+        public required FileRename[] Files { get; set; }
     }
 }

@@ -11,8 +11,7 @@ namespace LspTypes
          * The name of the server as defined by the server.
          */
         [JsonPropertyName("name")]
-        [JsonProperty(Required = Required.Always)]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         /**
          * The server's version as defined by the server.

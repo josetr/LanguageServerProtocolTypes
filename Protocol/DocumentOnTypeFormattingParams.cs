@@ -11,14 +11,12 @@ namespace LspTypes
          * The character that has been typed.
          */
         [JsonPropertyName("ch")]
-        [JsonProperty(Required = Required.Always)]
-        public string Character { get; set; }
+        public required string Character { get; set; }
 
         /**
          * The format options.
          */
         [JsonPropertyName("options")]
-        [JsonProperty(Required = Required.Always)]
-        public FormattingOptions Options { get; set; }
+        public required FormattingOptions Options { get; set; }
     }
 }

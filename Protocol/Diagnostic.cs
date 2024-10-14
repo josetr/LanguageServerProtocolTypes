@@ -11,8 +11,7 @@ namespace LspTypes
          * The range at which the message applies.
          */
         [JsonPropertyName("range")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Range { get; set; }
+        public required Range Range { get; set; }
 
         /**
          * The diagnostic's severity. Can be omitted. If omitted it is up to the
@@ -47,8 +46,7 @@ namespace LspTypes
          * The diagnostic's message.
          */
         [JsonPropertyName("message")]
-        [JsonProperty(Required = Required.Always)]
-        public string Message { get; set; }
+        public required string Message { get; set; }
 
         /**
          * Additional metadata about the diagnostic.

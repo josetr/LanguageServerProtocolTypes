@@ -17,8 +17,7 @@ namespace LspTypes
          * The range this highlight applies to.
          */
         [JsonPropertyName("range")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Range { get; set; }
+        public required Range Range { get; set; }
 
         /**
          * The highlight kind, default is DocumentHighlightKind.Text.

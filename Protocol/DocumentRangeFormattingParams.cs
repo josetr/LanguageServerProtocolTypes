@@ -11,21 +11,18 @@ namespace LspTypes
          * The document to format.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public TextDocumentIdentifier TextDocument { get; set; }
+        public required TextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * The range to format
          */
         [JsonPropertyName("range")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Range { get; set; }
+        public required Range Range { get; set; }
 
         /**
          * The format options
          */
         [JsonPropertyName("options")]
-        [JsonProperty(Required = Required.Always)]
-        public FormattingOptions Options { get; set; }
+        public required FormattingOptions Options { get; set; }
     }
 }

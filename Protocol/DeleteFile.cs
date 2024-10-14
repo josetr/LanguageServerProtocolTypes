@@ -15,15 +15,13 @@ namespace LspTypes
          */
         // Must always be 'delete'.
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public string Kind { get; set; }
+        public required string Kind { get; set; }
 
         /**
          * The file to delete.
          */
         [JsonPropertyName("uri")]
-        [JsonProperty(Required = Required.Always)]
-        public string Uri { get; set; }
+        public required string Uri { get; set; }
 
         /**
          * Delete options.

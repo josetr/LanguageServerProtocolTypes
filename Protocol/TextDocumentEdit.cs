@@ -11,8 +11,7 @@ namespace LspTypes
          * The text document to change.
          */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(Required = Required.Always)]
-        public OptionalVersionedTextDocumentIdentifier TextDocument { get; set; }
+        public required OptionalVersionedTextDocumentIdentifier TextDocument { get; set; }
 
         /**
          * The edits to be applied.
@@ -21,7 +20,6 @@ namespace LspTypes
 	     * client capability `workspace.workspaceEdit.changeAnnotationSupport`
          */
         [JsonPropertyName("edits")]
-        [JsonProperty(Required = Required.Always)]
-        public SumType<TextEdit, AnnotatedTextEdit>[] Edits { get; set; }
+        public required SumType<TextEdit, AnnotatedTextEdit>[] Edits { get; set; }
     }
 }

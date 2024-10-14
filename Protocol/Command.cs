@@ -11,15 +11,13 @@ namespace LspTypes
          * Title of the command, like `save`.
          */
         [JsonPropertyName("title")]
-        [JsonProperty(Required = Required.Always)]
-        public string Title { get; set; }
+        public required string Title { get; set; }
 
         /**
          * The identifier of the actual command handler.
          */
         [JsonPropertyName("command")]
-        [JsonProperty(Required = Required.Always)]
-        public string CommandIdentifier { get; set; }
+        public required string CommandIdentifier { get; set; }
 
         /**
          * Arguments that the command handler should be

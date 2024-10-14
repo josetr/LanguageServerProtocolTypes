@@ -11,8 +11,7 @@ namespace LspTypes
          * The capabilities the language server provides.
          */
         [JsonPropertyName("capabilities")]
-        [JsonProperty(Required = Required.Always)]
-        public ServerCapabilities Capabilities { get; set; }
+        public required ServerCapabilities Capabilities { get; set; }
 
         /**
          * Information about the server.

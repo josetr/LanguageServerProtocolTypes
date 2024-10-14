@@ -14,15 +14,13 @@ namespace LspTypes
          * A create
          */
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public string Kind { get; set; }
+        public required string Kind { get; set; }
 
         /**
          * The resource to create.
          */
         [JsonPropertyName("uri")]
-        [JsonProperty(Required = Required.Always)]
-        public string Uri { get; set; }
+        public required string Uri { get; set; }
 
         /**
          * Additional options

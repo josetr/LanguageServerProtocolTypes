@@ -19,8 +19,7 @@ namespace LspTypes
 	     * white spaces.
          */
         [DataMember(IsRequired = true, Name = "name")]
-        [JsonProperty(Required = Required.Always)]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         /**
          * More detail for this symbol, e.g the signature of a function.
@@ -32,8 +31,7 @@ namespace LspTypes
          * The kind of this symbol.
          */
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public SymbolKind Kind { get; set; }
+        public required SymbolKind Kind { get; set; }
 
         /**
          * Tags for this document symbol.
@@ -58,16 +56,14 @@ namespace LspTypes
 	     * symbol in the UI.
          */
         [JsonPropertyName("range")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Range { get; set; }
+        public required Range Range { get; set; }
 
         /**
          * The range that should be selected and revealed when this symbol is being
 	     * picked, e.g. the name of a function. Must be contained by the `range`.
          */
         [JsonPropertyName("selectionRange")]
-        [JsonProperty(Required = Required.Always)]
-        public Range SelectionRange { get; set; }
+        public required Range SelectionRange { get; set; }
 
         /**
          * Children of this symbol, e.g. properties of a class.

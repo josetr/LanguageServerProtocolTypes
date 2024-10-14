@@ -11,8 +11,7 @@ namespace LspTypes
          * The [range](#Range) of this selection range.
          */
         [JsonPropertyName("range")]
-        [JsonProperty(Required = Required.Always)]
-        public Range Range { get; set; }
+        public required Range Range { get; set; }
 
         /**
          * The parent selection range containing this range. Therefore

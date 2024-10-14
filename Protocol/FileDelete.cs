@@ -16,7 +16,6 @@ namespace LspTypes
 	     * A file:// URI for the location of the file/folder being deleted.
 	     */
         [JsonPropertyName("uri")]
-        [JsonProperty(Required = Required.Always)]
-        public string Uri { get; set; }
+        public required string Uri { get; set; }
     }
 }

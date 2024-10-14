@@ -8,8 +8,7 @@ namespace LspTypes
         public WorkDoneProgressEnd() { }
 
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public string Kind { get; set; }
+        public required string Kind { get; set; }
 
         /**
          * Optional, a final message indicating to for example indicate the outcome

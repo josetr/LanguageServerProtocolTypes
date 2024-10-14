@@ -16,7 +16,6 @@ namespace LspTypes
 	     * An URI to open with more information about the diagnostic error.
 	     */
         [JsonPropertyName("href")]
-        [JsonProperty(Required = Required.Always)]
-        public string Href { get; set; }
+        public required string Href { get; set; }
     }
 }

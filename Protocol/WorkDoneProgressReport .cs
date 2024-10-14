@@ -8,8 +8,7 @@ namespace LspTypes
         public WorkDoneProgressReport() { }
 
         [JsonPropertyName("kind")]
-        [JsonProperty(Required = Required.Always)]
-        public string Kind { get; set; }
+        public required string Kind { get; set; }
 
         /**
          * Controls enablement state of a cancel button. This property is only valid
