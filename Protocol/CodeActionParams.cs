@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     /**
      * Params for the CodeActionRequest
@@ -33,7 +30,7 @@ namespace LspTypes
          * the client.
          */
         [JsonPropertyName("partialResultToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<int, string> PartialResultToken { get; set; }
     }
 }

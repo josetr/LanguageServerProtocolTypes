@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class CallHierarchyOutgoingCallsParams : WorkDoneProgressParams, IPartialResultParams
     {
@@ -9,7 +6,7 @@ namespace LspTypes
         public CallHierarchyItem Item { get; set; }
 
         [JsonPropertyName("partialResultToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<int, string> PartialResultToken { get; set; }
     }
 }

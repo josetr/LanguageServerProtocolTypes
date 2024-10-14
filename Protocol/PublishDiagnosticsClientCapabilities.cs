@@ -1,7 +1,4 @@
-﻿using System.Runtime.Serialization;
-using Newtonsoft.Json;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class PublishDiagnosticsClientCapabilities
     {
@@ -20,7 +17,7 @@ namespace LspTypes
          * @since 3.15.0
          */
         [JsonPropertyName("tagSupport")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public _PublishDiagnosticsClientCapabilities_TagSupport TagSupport { get; set; }
 
         /**

@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.ComponentModel;
-using System.Runtime.Serialization;
+﻿using System.ComponentModel;
 
 namespace LspTypes
 {
@@ -47,7 +45,7 @@ namespace LspTypes
          * A human-readable string that represents a doc-comment.
          */
         [JsonPropertyName("documentation")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, MarkupContent> Documentation { get; set; }
 
         /**

@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class ServerCapabilities
     {
@@ -14,21 +11,21 @@ namespace LspTypes
 	     * `TextDocumentSyncKind.None`.
          */
         [JsonPropertyName("textDocumentSync")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<TextDocumentSyncOptions, TextDocumentSyncKind> TextDocumentSync { get; set; }
 
         /**
          * The server provides completion support.
          */
         [JsonPropertyName("completionProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public CompletionOptions CompletionProvider { get; set; }
 
         /**
          * The server provides hover support.
          */
         [JsonPropertyName("hoverProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, HoverOptions> HoverProvider { get; set; }
 
         /**
@@ -43,14 +40,14 @@ namespace LspTypes
          * @since 3.14.0
          */
         [JsonPropertyName("declarationProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DeclarationOptions, DeclarationRegistrationOptions> DeclarationProvider { get; set; }
 
         /**
          * The server provides goto definition support.
          */
         [JsonPropertyName("definitionProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DefinitionOptions> DefinitionProvider { get; set; }
 
         /**
@@ -59,7 +56,7 @@ namespace LspTypes
          * @since 3.6.0
          */
         [JsonPropertyName("typeDefinitionProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, TypeDefinitionOptions, TypeDefinitionRegistrationOptions> TypeDefinitionProvider { get; set; }
 
         /**
@@ -68,28 +65,28 @@ namespace LspTypes
          * @since 3.6.0
          */
         [JsonPropertyName("implementationProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, ImplementationOptions, ImplementationRegistrationOptions> ImplementationProvider { get; set; }
 
         /**
          * The server provides find references support.
          */
         [JsonPropertyName("referencesProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, ReferenceOptions> ReferencesProvider { get; set; }
 
         /**
          * The server provides document highlight support.
          */
         [JsonPropertyName("documentHighlightProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DocumentHighlightOptions> DocumentHighlightProvider { get; set; }
 
         /**
          * The server provides document symbol support.
          */
         [JsonPropertyName("documentSymbolProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DocumentSymbolOptions> DocumentSymbolProvider { get; set; }
 
         /**
@@ -98,7 +95,7 @@ namespace LspTypes
 	     * property `textDocument.codeAction.codeActionLiteralSupport`.
          */
         [JsonPropertyName("codeActionProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, CodeActionOptions> CodeActionProvider { get; set; }
 
         /**
@@ -119,21 +116,21 @@ namespace LspTypes
          * @since 3.6.0
          */
         [JsonPropertyName("colorProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DocumentColorOptions, DocumentColorRegistrationOptions> ColorProvider { get; set; }
 
         /**
          * The server provides document formatting.
          */
         [JsonPropertyName("documentFormattingProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DocumentFormattingOptions> DocumentFormattingProvider { get; set; }
 
         /**
          * The server provides document range formatting.
          */
         [JsonPropertyName("documentRangeFormattingProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, DocumentRangeFormattingOptions> DocumentRangeFormattingProvider { get; set; }
 
         /**
@@ -148,7 +145,7 @@ namespace LspTypes
          * `prepareSupport` in its initial `initialize` request.
          */
         [JsonPropertyName("renameProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, RenameOptions> RenameProvider { get; set; }
 
         /**
@@ -157,7 +154,7 @@ namespace LspTypes
          * @since 3.10.0
          */
         [JsonPropertyName("foldingRangeProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, FoldingRangeOptions, FoldingRangeRegistrationOptions> FoldingRangeProvider { get; set; }
 
         /**
@@ -172,7 +169,7 @@ namespace LspTypes
          * @since 3.15.0
          */
         [JsonPropertyName("selectionRangeProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, SelectionRangeOptions, SelectionRangeRegistrationOptions> SelectionRangeProvider { get; set; }
 
         /**
@@ -181,7 +178,7 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [JsonPropertyName("linkedEditingRangeProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, LinkedEditingRangeOptions, LinkedEditingRangeRegistrationOptions> LinkedEditingRangeProvider { get; set; }
 
         /**
@@ -190,7 +187,7 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [JsonPropertyName("callHierarchyProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, CallHierarchyOptions, CallHierarchyRegistrationOptions> CallHierarchyProvider { get; set; }
 
         /**
@@ -199,7 +196,7 @@ namespace LspTypes
          * @since 3.16.0
          */
         [JsonPropertyName("semanticTokensProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<SemanticTokensOptions, SemanticTokensRegistrationOptions> SemanticTokensProvider { get; set; }
 
         /**
@@ -208,14 +205,14 @@ namespace LspTypes
 	     * @since 3.16.0
 	     */
         [JsonPropertyName("monikerProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, MonikerOptions, MonikerRegistrationOptions> MonikerProvider { get; set; }
 
         /**
          * The server provides workspace symbol support.
          */
         [JsonPropertyName("workspaceSymbolProvider")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, WorkspaceSymbolOptions> WorkspaceSymbolProvider { get; set; }
 
         /**

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
 namespace LspTypes
 {
@@ -25,7 +24,7 @@ namespace LspTypes
 	     * label part in the `SignatureInformation.label`.
 	     */
         [JsonPropertyName("label")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public required SumType<string, Tuple<uint, uint>> Label { get; set; }
 
         /**
@@ -33,7 +32,7 @@ namespace LspTypes
          * in the UI but can be omitted.
          */
         [JsonPropertyName("documentation")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, MarkupContent> Documentation { get; set; }
     }
 }

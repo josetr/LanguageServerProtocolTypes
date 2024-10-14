@@ -18,7 +18,7 @@ namespace LspTypes
          * the client.
          */
         [JsonPropertyName("partialResultToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<int, string> PartialResultToken { get; set; }
     }
 }

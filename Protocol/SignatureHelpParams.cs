@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class SignatureHelpParams : TextDocumentPositionParams, IWorkDoneProgressParams
     {
@@ -15,14 +12,14 @@ namespace LspTypes
          * @since 3.15.0
          */
         [JsonPropertyName("context")]
-        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public SignatureHelpContext Context { get; set; }
 
         /**
          * An optional token that a server can use to report work done progress.
          */
         [JsonPropertyName("workDoneToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, int> WorkDoneToken { get; set; }
     }
 }

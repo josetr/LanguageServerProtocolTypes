@@ -1,7 +1,4 @@
-﻿using System.Runtime.Serialization;
-using Newtonsoft.Json;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class DocumentColorParams : WorkDoneProgressParams, IPartialResultParams
     {
@@ -11,11 +8,11 @@ namespace LspTypes
 	     * The text document.
 	     */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
         [JsonPropertyName("partialResultToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<int, string> PartialResultToken { get; set; }
 
     }

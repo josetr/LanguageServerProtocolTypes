@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class WorkspaceFoldersServerCapabilities
     {
@@ -23,7 +20,7 @@ namespace LspTypes
          * using the `client/unregisterCapability` request.
          */
         [JsonPropertyName("changeNotifications")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, bool> ChangeNotifications { get; set; }
     }
 }

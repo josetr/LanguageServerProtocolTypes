@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class Diagnostic
     {
@@ -24,7 +21,7 @@ namespace LspTypes
          * The diagnostic's code, which might appear in the user interface.
          */
         [JsonPropertyName("code")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, int> Code { get; set; }
 
         /**

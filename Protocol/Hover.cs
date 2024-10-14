@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace LspTypes
 {
@@ -14,7 +13,7 @@ namespace LspTypes
          * The hover's content
          */
         [JsonPropertyName("contents")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public required SumType<string, MarkedString, MarkedString[], MarkupContent> Contents { get; set; }
 
         /**

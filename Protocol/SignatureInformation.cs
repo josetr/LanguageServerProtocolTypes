@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     /**
      * Represents the signature of something callable. A signature
@@ -24,7 +21,7 @@ namespace LspTypes
          * in the UI but can be omitted.
          */
         [JsonPropertyName("documentation")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, MarkupContent> Documentation { get; set; }
 
         /**

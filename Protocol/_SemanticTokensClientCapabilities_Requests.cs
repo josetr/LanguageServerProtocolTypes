@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class _SemanticTokensClientCapabilities_Requests
     {
@@ -12,7 +9,7 @@ namespace LspTypes
 		 * if the server provides a corresponding handler.
          */
         [JsonPropertyName("range")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, object> Range { get; set; }
 
         /**
@@ -20,7 +17,7 @@ namespace LspTypes
 		 * if the server provides a corresponding handler.
          */
         [JsonPropertyName("full")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<bool, object> Full { get; set; }
     }
 }

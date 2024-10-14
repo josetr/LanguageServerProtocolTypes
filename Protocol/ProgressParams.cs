@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class ProgressParams<T>
     {
@@ -11,7 +8,7 @@ namespace LspTypes
          * The progress token provided by the client or server.
          */
         [JsonPropertyName("token")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public required SumType<string, int> Token { get; set; }
 
         /**

@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class SelectionRangeParams : WorkDoneProgressParams, IPartialResultParams
     {
@@ -11,18 +8,18 @@ namespace LspTypes
 		 * The text document.
 		 */
         [JsonPropertyName("textDocument")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public TextDocumentIdentifier TextDocument { get; set; }
 
         /**
 		 * The positions inside the text document.
 		 */
         [JsonPropertyName("positions")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public Position[] Positions { get; set; }
 
         [JsonPropertyName("partialResultToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<int, string> PartialResultToken { get; set; }
     }
 }

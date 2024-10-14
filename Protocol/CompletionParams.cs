@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization;
-
-namespace LspTypes
+﻿namespace LspTypes
 {
     public class CompletionParams : TextDocumentPositionParams, IWorkDoneProgressParams, IPartialResultParams
     {
@@ -13,14 +10,14 @@ namespace LspTypes
 	     * `completion.contextSupport === true`
          */
         [JsonPropertyName("context")]
-        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public CompletionContext Context { get; set; }
 
         /**
          * An optional token that a server can use to report work done progress.
          */
         [JsonPropertyName("workDoneToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<string, int> WorkDoneToken { get; set; }
 
         /**
@@ -28,7 +25,7 @@ namespace LspTypes
          * the client.
          */
         [JsonPropertyName("partialResultToken")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public SumType<int, string> PartialResultToken { get; set; }
     }
 }
